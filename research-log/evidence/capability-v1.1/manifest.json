@@ -1,0 +1,56 @@
+[
+  {
+    "source": "capability-runs/v1.1-contract/comparison.json",
+    "snapshot": "research-log/evidence/capability-v1.1/comparison.json",
+    "sha256": "2d4de24dfa56cdd4da25e400e3843bbed350c0566a2c6b7327a40b85b8d7520c",
+    "bytes": 33768
+  },
+  {
+    "source": "capability-runs/v1.1-contract/comparison.md",
+    "snapshot": "research-log/evidence/capability-v1.1/comparison.md",
+    "sha256": "e2176011c72d48ae12b2d5cf92dc00bea7c08da87b7773ec5ac936ee043ff9e8",
+    "bytes": 4513
+  },
+  {
+    "source": "capability-runs/v1.1-contract/paired.json",
+    "snapshot": "research-log/evidence/capability-v1.1/paired.json",
+    "sha256": "9a876bbf1a6514926a756529cdaf82b13462733aa1ff347f6826541bb32079d4",
+    "bytes": 141866
+  },
+  {
+    "source": "capability-runs/v1.1-contract/per-instance.csv",
+    "snapshot": "research-log/evidence/capability-v1.1/per-instance.csv",
+    "sha256": "d1ac54a346a1882a0e5922d4d70f1318049ba5b2528b2080fe98c400cc00fd6e",
+    "bytes": 2679
+  },
+  {
+    "source": "capability-runs/v1.1-contract/preflight.json",
+    "snapshot": "research-log/evidence/capability-v1.1/preflight.json",
+    "sha256": "538a243db9094b8857181769ccd9cd93e21447dee0d11185b107bc1c92a57dc3",
+    "bytes": 1328
+  },
+  {
+    "source": "capability-runs/v1.1-contract/provenance.json",
+    "snapshot": "research-log/evidence/capability-v1.1/provenance.json",
+    "sha256": "ebbc473aff72769b2297ac4cac247229fa33e9ef97eebc03842bf4857cc0c28b",
+    "bytes": 1692
+  },
+  {
+    "source": "capability-runs/v1.1-contract/representatives.json",
+    "snapshot": "research-log/evidence/capability-v1.1/representatives.json",
+    "sha256": "a494e19ea034e44e39bf416f137fbe4642c374256db77e400bc00baa3d383c25",
+    "bytes": 27178
+  },
+  {
+    "source": "capability-runs/v1.1-contract/samples.jsonl",
+    "snapshot": "research-log/evidence/capability-v1.1/samples.jsonl",
+    "sha256": "3c6c0a044b75a5fe457526dc9669ab3c1411eeb33b4ccbb57251ea6fb821a380",
+    "bytes": 1859793
+  },
+  {
+    "source": "capability-runs/v1.1-contract/summary.json",
+    "snapshot": "research-log/evidence/capability-v1.1/summary.json",
+    "sha256": "f4227da269ec188d3cd72dfab27b6a22dba33d3ed1effedba45c6643275d407f",
+    "bytes": 12928
+  }
+]

@@ -1,0 +1,1202 @@
+{
+  "v1": {
+    "groups": {
+      "train/extraction": {
+        "successes": 4,
+        "attempts": 112,
+        "success_rate": 0.03571428571428571,
+        "mixed_instance_fraction": 0.2857142857142857,
+        "next_action_correct_rate": 0.03571428571428571,
+        "failures": {
+          "wrong_final_answer": 41,
+          "unnecessary_call": 17,
+          "invalid_json": 41,
+          "invalid_arguments": 6,
+          "invalid_format": 2,
+          "unknown_tool": 1
+        },
+        "format_failures": 43
+      },
+      "train/comparison": {
+        "successes": 2,
+        "attempts": 112,
+        "success_rate": 0.017857142857142856,
+        "mixed_instance_fraction": 0.2857142857142857,
+        "next_action_correct_rate": 0.017857142857142856,
+        "failures": {
+          "wrong_final_answer": 24,
+          "invalid_json": 84,
+          "invalid_arguments": 2
+        },
+        "format_failures": 84
+      },
+      "train/selection": {
+        "successes": 4,
+        "attempts": 112,
+        "success_rate": 0.03571428571428571,
+        "mixed_instance_fraction": 0.42857142857142855,
+        "next_action_correct_rate": 0.03571428571428571,
+        "failures": {
+          "unnecessary_call": 18,
+          "unknown_tool": 40,
+          "invalid_json": 43,
+          "invalid_arguments": 7
+        },
+        "format_failures": 43
+      },
+      "train/multistep": {
+        "successes": 0,
+        "attempts": 112,
+        "success_rate": 0.0,
+        "mixed_instance_fraction": 0.0,
+        "next_action_correct_rate": 0.0,
+        "failures": {
+          "invalid_json": 82,
+          "wrong_final_answer": 14,
+          "missing_requirements": 10,
+          "invalid_format": 5,
+          "unknown_tool": 1
+        },
+        "format_failures": 87
+      },
+      "train/overall": {
+        "successes": 10,
+        "attempts": 448,
+        "success_rate": 0.022321428571428572,
+        "mixed_instance_fraction": 0.25,
+        "next_action_correct_rate": 0.022321428571428572,
+        "failures": {
+          "wrong_final_answer": 79,
+          "unnecessary_call": 35,
+          "invalid_json": 250,
+          "invalid_arguments": 15,
+          "invalid_format": 7,
+          "unknown_tool": 42,
+          "missing_requirements": 10
+        },
+        "format_failures": 257
+      },
+      "test/extraction": {
+        "successes": 3,
+        "attempts": 48,
+        "success_rate": 0.0625,
+        "mixed_instance_fraction": 0.3333333333333333,
+        "next_action_correct_rate": 0.0625,
+        "failures": {
+          "invalid_json": 41,
+          "wrong_final_answer": 3,
+          "invalid_format": 1
+        },
+        "format_failures": 42
+      },
+      "test/comparison": {
+        "successes": 1,
+        "attempts": 48,
+        "success_rate": 0.020833333333333332,
+        "mixed_instance_fraction": 0.3333333333333333,
+        "next_action_correct_rate": 0.020833333333333332,
+        "failures": {
+          "wrong_final_answer": 6,
+          "invalid_json": 41
+        },
+        "format_failures": 41
+      },
+      "test/selection": {
+        "successes": 2,
+        "attempts": 48,
+        "success_rate": 0.041666666666666664,
+        "mixed_instance_fraction": 0.3333333333333333,
+        "next_action_correct_rate": 0.041666666666666664,
+        "failures": {
+          "unnecessary_call": 9,
+          "unknown_tool": 13,
+          "invalid_json": 23,
+          "invalid_format": 1
+        },
+        "format_failures": 24
+      },
+      "test/multistep": {
+        "successes": 0,
+        "attempts": 48,
+        "success_rate": 0.0,
+        "mixed_instance_fraction": 0.0,
+        "next_action_correct_rate": 0.0,
+        "failures": {
+          "wrong_final_answer": 7,
+          "invalid_json": 35,
+          "invalid_format": 2,
+          "unknown_tool": 1,
+          "unnecessary_call": 1,
+          "missing_requirements": 2
+        },
+        "format_failures": 37
+      },
+      "test/overall": {
+        "successes": 6,
+        "attempts": 192,
+        "success_rate": 0.03125,
+        "mixed_instance_fraction": 0.25,
+        "next_action_correct_rate": 0.03125,
+        "failures": {
+          "invalid_json": 140,
+          "wrong_final_answer": 16,
+          "invalid_format": 4,
+          "unnecessary_call": 10,
+          "unknown_tool": 14,
+          "missing_requirements": 2
+        },
+        "format_failures": 144
+      }
+    },
+    "instances": {
+      "capability-v1-42-extraction-0000": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-extraction-0001": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-extraction-0002": {
+        "successes": 1,
+        "attempts": 16,
+        "success_rate": 0.0625,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-extraction-0003": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-extraction-0004": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-extraction-0005": {
+        "successes": 3,
+        "attempts": 16,
+        "success_rate": 0.1875,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-extraction-0006": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-extraction-0007": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-extraction-0008": {
+        "successes": 3,
+        "attempts": 16,
+        "success_rate": 0.1875,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-extraction-0009": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0000": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0001": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0002": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0003": {
+        "successes": 1,
+        "attempts": 16,
+        "success_rate": 0.0625,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-comparison-0004": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0005": {
+        "successes": 1,
+        "attempts": 16,
+        "success_rate": 0.0625,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-comparison-0006": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0007": {
+        "successes": 1,
+        "attempts": 16,
+        "success_rate": 0.0625,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-comparison-0008": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0009": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-selection-0000": {
+        "successes": 2,
+        "attempts": 16,
+        "success_rate": 0.125,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-selection-0001": {
+        "successes": 2,
+        "attempts": 16,
+        "success_rate": 0.125,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-selection-0002": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-selection-0003": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-selection-0004": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-selection-0005": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-selection-0006": {
+        "successes": 1,
+        "attempts": 16,
+        "success_rate": 0.0625,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-selection-0007": {
+        "successes": 1,
+        "attempts": 16,
+        "success_rate": 0.0625,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-selection-0008": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-selection-0009": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0000": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0001": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0002": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0003": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0004": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0005": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0006": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0007": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0008": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0009": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      }
+    }
+  },
+  "v1.1": {
+    "groups": {
+      "train/extraction": {
+        "successes": 16,
+        "attempts": 112,
+        "success_rate": 0.14285714285714285,
+        "mixed_instance_fraction": 1.0,
+        "next_action_correct_rate": 0.14285714285714285,
+        "failures": {
+          "wrong_final_answer": 69,
+          "unnecessary_call": 14,
+          "invalid_json": 13
+        },
+        "format_failures": 13
+      },
+      "train/comparison": {
+        "successes": 2,
+        "attempts": 112,
+        "success_rate": 0.017857142857142856,
+        "mixed_instance_fraction": 0.14285714285714285,
+        "next_action_correct_rate": 0.017857142857142856,
+        "failures": {
+          "wrong_final_answer": 21,
+          "invalid_json": 82,
+          "invalid_format": 1,
+          "unnecessary_call": 6
+        },
+        "format_failures": 83
+      },
+      "train/selection": {
+        "successes": 37,
+        "attempts": 112,
+        "success_rate": 0.33035714285714285,
+        "mixed_instance_fraction": 1.0,
+        "next_action_correct_rate": 0.33035714285714285,
+        "failures": {
+          "unnecessary_call": 26,
+          "invalid_format": 47,
+          "invalid_arguments": 1,
+          "invalid_json": 1
+        },
+        "format_failures": 48
+      },
+      "train/multistep": {
+        "successes": 0,
+        "attempts": 112,
+        "success_rate": 0.0,
+        "mixed_instance_fraction": 0.0,
+        "next_action_correct_rate": 0.0,
+        "failures": {
+          "invalid_json": 62,
+          "invalid_format": 47,
+          "unnecessary_call": 1,
+          "wrong_final_answer": 1,
+          "missing_requirements": 1
+        },
+        "format_failures": 109
+      },
+      "train/overall": {
+        "successes": 55,
+        "attempts": 448,
+        "success_rate": 0.12276785714285714,
+        "mixed_instance_fraction": 0.5357142857142857,
+        "next_action_correct_rate": 0.12276785714285714,
+        "failures": {
+          "wrong_final_answer": 91,
+          "unnecessary_call": 47,
+          "invalid_json": 158,
+          "invalid_format": 95,
+          "invalid_arguments": 1,
+          "missing_requirements": 1
+        },
+        "format_failures": 253
+      },
+      "test/extraction": {
+        "successes": 4,
+        "attempts": 48,
+        "success_rate": 0.08333333333333333,
+        "mixed_instance_fraction": 0.3333333333333333,
+        "next_action_correct_rate": 0.08333333333333333,
+        "failures": {
+          "invalid_json": 28,
+          "wrong_final_answer": 16
+        },
+        "format_failures": 28
+      },
+      "test/comparison": {
+        "successes": 0,
+        "attempts": 48,
+        "success_rate": 0.0,
+        "mixed_instance_fraction": 0.0,
+        "next_action_correct_rate": 0.0,
+        "failures": {
+          "invalid_json": 38,
+          "wrong_final_answer": 9,
+          "invalid_format": 1
+        },
+        "format_failures": 39
+      },
+      "test/selection": {
+        "successes": 13,
+        "attempts": 48,
+        "success_rate": 0.2708333333333333,
+        "mixed_instance_fraction": 1.0,
+        "next_action_correct_rate": 0.2708333333333333,
+        "failures": {
+          "invalid_format": 21,
+          "unnecessary_call": 13,
+          "invalid_arguments": 1
+        },
+        "format_failures": 21
+      },
+      "test/multistep": {
+        "successes": 0,
+        "attempts": 48,
+        "success_rate": 0.0,
+        "mixed_instance_fraction": 0.0,
+        "next_action_correct_rate": 0.0,
+        "failures": {
+          "wrong_final_answer": 3,
+          "invalid_format": 15,
+          "invalid_json": 29,
+          "unnecessary_call": 1
+        },
+        "format_failures": 44
+      },
+      "test/overall": {
+        "successes": 17,
+        "attempts": 192,
+        "success_rate": 0.08854166666666667,
+        "mixed_instance_fraction": 0.3333333333333333,
+        "next_action_correct_rate": 0.08854166666666667,
+        "failures": {
+          "invalid_json": 95,
+          "wrong_final_answer": 28,
+          "invalid_format": 37,
+          "unnecessary_call": 14,
+          "invalid_arguments": 1
+        },
+        "format_failures": 132
+      }
+    },
+    "instances": {
+      "capability-v1-42-extraction-0000": {
+        "successes": 1,
+        "attempts": 16,
+        "success_rate": 0.0625,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-extraction-0001": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-extraction-0002": {
+        "successes": 2,
+        "attempts": 16,
+        "success_rate": 0.125,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-extraction-0003": {
+        "successes": 1,
+        "attempts": 16,
+        "success_rate": 0.0625,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-extraction-0004": {
+        "successes": 1,
+        "attempts": 16,
+        "success_rate": 0.0625,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-extraction-0005": {
+        "successes": 4,
+        "attempts": 16,
+        "success_rate": 0.25,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-extraction-0006": {
+        "successes": 3,
+        "attempts": 16,
+        "success_rate": 0.1875,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-extraction-0007": {
+        "successes": 4,
+        "attempts": 16,
+        "success_rate": 0.25,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-extraction-0008": {
+        "successes": 4,
+        "attempts": 16,
+        "success_rate": 0.25,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-extraction-0009": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0000": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0001": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0002": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0003": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0004": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0005": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0006": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0007": {
+        "successes": 2,
+        "attempts": 16,
+        "success_rate": 0.125,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-comparison-0008": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-comparison-0009": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-selection-0000": {
+        "successes": 8,
+        "attempts": 16,
+        "success_rate": 0.5,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-selection-0001": {
+        "successes": 2,
+        "attempts": 16,
+        "success_rate": 0.125,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-selection-0002": {
+        "successes": 5,
+        "attempts": 16,
+        "success_rate": 0.3125,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-selection-0003": {
+        "successes": 5,
+        "attempts": 16,
+        "success_rate": 0.3125,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-selection-0004": {
+        "successes": 2,
+        "attempts": 16,
+        "success_rate": 0.125,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-selection-0005": {
+        "successes": 1,
+        "attempts": 16,
+        "success_rate": 0.0625,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-selection-0006": {
+        "successes": 10,
+        "attempts": 16,
+        "success_rate": 0.625,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-selection-0007": {
+        "successes": 3,
+        "attempts": 16,
+        "success_rate": 0.1875,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-selection-0008": {
+        "successes": 4,
+        "attempts": 16,
+        "success_rate": 0.25,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-selection-0009": {
+        "successes": 10,
+        "attempts": 16,
+        "success_rate": 0.625,
+        "mixed_rewards": true
+      },
+      "capability-v1-42-multistep-0000": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0001": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0002": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0003": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0004": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0005": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0006": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0007": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0008": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      },
+      "capability-v1-42-multistep-0009": {
+        "successes": 0,
+        "attempts": 16,
+        "success_rate": 0.0,
+        "mixed_rewards": false
+      }
+    }
+  },
+  "diagnostics_v1": {
+    "train/extraction": {
+      "first_tool_name_matches_required": 0,
+      "attempts": 112,
+      "first_lookup_executions": 0,
+      "successful_lookup_observations": 0,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 69
+    },
+    "train/comparison": {
+      "first_tool_name_matches_required": 0,
+      "attempts": 112,
+      "first_lookup_executions": 0,
+      "successful_lookup_observations": 0,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 28
+    },
+    "train/selection": {
+      "first_tool_name_matches_required": 15,
+      "attempts": 112,
+      "first_lookup_executions": 4,
+      "successful_lookup_observations": 4,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 69
+    },
+    "train/multistep": {
+      "first_tool_name_matches_required": 4,
+      "attempts": 112,
+      "first_lookup_executions": 0,
+      "successful_lookup_observations": 0,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 25
+    },
+    "train/overall": {
+      "first_tool_name_matches_required": 19,
+      "attempts": 448,
+      "first_lookup_executions": 4,
+      "successful_lookup_observations": 4,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 191
+    },
+    "test/extraction": {
+      "first_tool_name_matches_required": 0,
+      "attempts": 48,
+      "first_lookup_executions": 0,
+      "successful_lookup_observations": 0,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 6
+    },
+    "test/comparison": {
+      "first_tool_name_matches_required": 0,
+      "attempts": 48,
+      "first_lookup_executions": 0,
+      "successful_lookup_observations": 0,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 7
+    },
+    "test/selection": {
+      "first_tool_name_matches_required": 7,
+      "attempts": 48,
+      "first_lookup_executions": 2,
+      "successful_lookup_observations": 2,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 24
+    },
+    "test/multistep": {
+      "first_tool_name_matches_required": 1,
+      "attempts": 48,
+      "first_lookup_executions": 0,
+      "successful_lookup_observations": 0,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 11
+    },
+    "test/overall": {
+      "first_tool_name_matches_required": 8,
+      "attempts": 192,
+      "first_lookup_executions": 2,
+      "successful_lookup_observations": 2,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 48
+    }
+  },
+  "diagnostics_v1.1": {
+    "train/extraction": {
+      "first_tool_name_matches_required": 0,
+      "attempts": 112,
+      "first_lookup_executions": 0,
+      "successful_lookup_observations": 0,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 99
+    },
+    "train/comparison": {
+      "first_tool_name_matches_required": 0,
+      "attempts": 112,
+      "first_lookup_executions": 0,
+      "successful_lookup_observations": 0,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 29
+    },
+    "train/selection": {
+      "first_tool_name_matches_required": 56,
+      "attempts": 112,
+      "first_lookup_executions": 37,
+      "successful_lookup_observations": 37,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 64
+    },
+    "train/multistep": {
+      "first_tool_name_matches_required": 43,
+      "attempts": 112,
+      "first_lookup_executions": 0,
+      "successful_lookup_observations": 0,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 3
+    },
+    "train/overall": {
+      "first_tool_name_matches_required": 99,
+      "attempts": 448,
+      "first_lookup_executions": 37,
+      "successful_lookup_observations": 37,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 195
+    },
+    "test/extraction": {
+      "first_tool_name_matches_required": 0,
+      "attempts": 48,
+      "first_lookup_executions": 0,
+      "successful_lookup_observations": 0,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 20
+    },
+    "test/comparison": {
+      "first_tool_name_matches_required": 0,
+      "attempts": 48,
+      "first_lookup_executions": 0,
+      "successful_lookup_observations": 0,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 9
+    },
+    "test/selection": {
+      "first_tool_name_matches_required": 26,
+      "attempts": 48,
+      "first_lookup_executions": 13,
+      "successful_lookup_observations": 13,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 27
+    },
+    "test/multistep": {
+      "first_tool_name_matches_required": 14,
+      "attempts": 48,
+      "first_lookup_executions": 0,
+      "successful_lookup_observations": 0,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 4
+    },
+    "test/overall": {
+      "first_tool_name_matches_required": 40,
+      "attempts": 192,
+      "first_lookup_executions": 13,
+      "successful_lookup_observations": 13,
+      "later_model_turns": 0,
+      "prior_history_pairs_verified": 0,
+      "correct_actions_after_observation": 0,
+      "terminal_successes_after_observation": 0,
+      "terminal_failures_after_observation": {},
+      "first_valid_action_envelopes": 60
+    }
+  },
+  "paired_fixes": 64,
+  "paired_regressions": 8,
+  "status_transitions": [
+    {
+      "before": "invalid_json",
+      "after": "invalid_json",
+      "count": 197
+    },
+    {
+      "before": "invalid_json",
+      "after": "invalid_format",
+      "count": 82
+    },
+    {
+      "before": "invalid_json",
+      "after": "wrong_final_answer",
+      "count": 58
+    },
+    {
+      "before": "wrong_final_answer",
+      "after": "wrong_final_answer",
+      "count": 50
+    },
+    {
+      "before": "wrong_final_answer",
+      "after": "invalid_json",
+      "count": 37
+    },
+    {
+      "before": "invalid_json",
+      "after": "success",
+      "count": 29
+    },
+    {
+      "before": "unknown_tool",
+      "after": "invalid_format",
+      "count": 28
+    },
+    {
+      "before": "invalid_json",
+      "after": "unnecessary_call",
+      "count": 24
+    },
+    {
+      "before": "unnecessary_call",
+      "after": "unnecessary_call",
+      "count": 19
+    },
+    {
+      "before": "unknown_tool",
+      "after": "success",
+      "count": 16
+    },
+    {
+      "before": "unnecessary_call",
+      "after": "success",
+      "count": 11
+    },
+    {
+      "before": "unknown_tool",
+      "after": "unnecessary_call",
+      "count": 11
+    },
+    {
+      "before": "missing_requirements",
+      "after": "invalid_json",
+      "count": 9
+    },
+    {
+      "before": "success",
+      "after": "success",
+      "count": 8
+    },
+    {
+      "before": "unnecessary_call",
+      "after": "wrong_final_answer",
+      "count": 6
+    },
+    {
+      "before": "unnecessary_call",
+      "after": "invalid_format",
+      "count": 6
+    },
+    {
+      "before": "invalid_arguments",
+      "after": "unnecessary_call",
+      "count": 5
+    },
+    {
+      "before": "invalid_format",
+      "after": "invalid_format",
+      "count": 5
+    },
+    {
+      "before": "wrong_final_answer",
+      "after": "success",
+      "count": 4
+    },
+    {
+      "before": "success",
+      "after": "invalid_json",
+      "count": 4
+    },
+    {
+      "before": "invalid_arguments",
+      "after": "success",
+      "count": 4
+    },
+    {
+      "before": "unnecessary_call",
+      "after": "invalid_json",
+      "count": 3
+    },
+    {
+      "before": "invalid_arguments",
+      "after": "invalid_format",
+      "count": 3
+    },
+    {
+      "before": "wrong_final_answer",
+      "after": "invalid_format",
+      "count": 3
+    },
+    {
+      "before": "success",
+      "after": "invalid_format",
+      "count": 3
+    },
+    {
+      "before": "invalid_format",
+      "after": "invalid_json",
+      "count": 3
+    },
+    {
+      "before": "invalid_arguments",
+      "after": "wrong_final_answer",
+      "count": 2
+    },
+    {
+      "before": "invalid_format",
+      "after": "wrong_final_answer",
+      "count": 2
+    },
+    {
+      "before": "missing_requirements",
+      "after": "invalid_format",
+      "count": 2
+    },
+    {
+      "before": "success",
+      "after": "wrong_final_answer",
+      "count": 1
+    },
+    {
+      "before": "invalid_format",
+      "after": "unnecessary_call",
+      "count": 1
+    },
+    {
+      "before": "invalid_arguments",
+      "after": "invalid_arguments",
+      "count": 1
+    },
+    {
+      "before": "unknown_tool",
+      "after": "invalid_arguments",
+      "count": 1
+    },
+    {
+      "before": "wrong_final_answer",
+      "after": "unnecessary_call",
+      "count": 1
+    },
+    {
+      "before": "missing_requirements",
+      "after": "missing_requirements",
+      "count": 1
+    }
+  ]
+}

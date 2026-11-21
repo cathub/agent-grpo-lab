@@ -15,3 +15,7 @@
 - Earliest Git commit already contains all levels. Two Git snapshots cannot establish every intermediate implementation change; later runner files were uncommitted. Snapshots/hashes preserve their current evidence, not a fabricated commit history.
 - Most run timestamps, original shell transcript, exact model cache revision at each run, dependency lockfiles and host metrics are missing. Do not infer these from current file timestamps.
 - No training gains, after-training metrics or Benchmarkv2results exist. The future blog must retain this boundary.
+
+## Addendum: v1.1 contract-only experiment
+
+The later v1.1 configuration removes the advertised ROAS/campaign mismatch, but does not alter the original v1 evidence or fix its metric/winner shortcut. Success rises 16 -> 72/640; multistep remains zero first lookup/completion. These are prompt-intervention gains, not trained-model gains. Exact historical checkpoint identity remains unverified despite four exact original raw smoke matches.

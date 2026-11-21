@@ -10,3 +10,5 @@ This is an outline, not a claim that training occurred. Link evidence from resea
 6. **One formatting instruction changes success to83.59%.** Paired68->107/128,44fixes/5regressions, strictinteger type caveat. Prompt engineering, not trained reasoning.
 7. **A larger benchmark exposes evaluation problems.** Frozen40instances,640rollouts,16successes; disjoint scenarios do not prevent metric/winner shortcut. Advertised versus executable tool mismatch; conservative failureaudit.
 8. **What must be fixed before GRPO.** Newversioncontract, independentlybalancedlabels,freshholdout,validation-onlypromptselection and immutable provenance. Finish with testable plans, not nonexistenttrainingimprovements.
+
+9. **Fixing the advertised contract without training.** Benchmark v1.1 keeps tasks/scoring/seeds frozen, removes unsupported ROAS/campaign material, and improves 16/640 to 72/640. Show paired fixes/regressions and why zero unknown tools does not mean solved multi-step behavior. Keep the metric shortcut explicit; this is not v2 or GRPO. Evidence: research-log/experiments/009-benchmark-v1.1-contract.md.

@@ -13,3 +13,5 @@ Dates use explicit evidence, not filesystem mtimes. Relative ordering is RECONST
 9. **2026-11-20 client date, current reconstruction:** journal and blog outline created; no inference, benchmark revision or training.
 
 Saved artifacts verify results and configurations, not most timestamps. See experiment entries for raw evidence, limitations and commands.
+
+10. **2026-11-20 client date, VERIFIED artifacts:** [Benchmark v1.1 contract correction](experiments/009-benchmark-v1.1-contract.md), after four exact original-prompt smoke matches and passing contract tests. Same 640 seeds/tasks; 16 -> 72 successes, unknown_tool 56 -> 0; no training. Full UTC timestamps are in the entry and run metadata.

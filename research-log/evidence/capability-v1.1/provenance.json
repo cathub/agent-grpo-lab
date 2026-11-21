@@ -1,0 +1,24 @@
+{
+  "configuration_sha256": "5d59de6020fc1f8f901205d487c2e18f8ecc755c9b3f885e5419741b3ea46007",
+  "dataset_sha256": "c7712fe925f53c0f6f65d699800ec3122b0604601af08b232935473931bc5586",
+  "frozen_scorer_sha256": "b5b3b82ce73d182c8d5f0308ee6141be9dcb399feda9f310e8f1fc24ed788b19",
+  "host": "macOS-14.5-arm64-arm-64bit",
+  "python": "3.11.14",
+  "base_git_commit": "9edb4d4476567f43985441012ad9fdc0c49a8165",
+  "commands": [
+    ".venv/bin/python -m unittest discover -q",
+    ".venv/bin/python -m src.capability_v11 --output capability-runs/v1.1-contract",
+    ".venv/bin/python -m src.report_capability_v11"
+  ],
+  "new_source_sha256": {
+    "src/capability_v11.py": "eb37a08bc07e865c9facf94a22aa99ae130bdc6139f02eb61920364812d23f78",
+    "src/report_capability_v11.py": "321ca02252171d36c2f60d2284d7977a745fde2dcf516fa58def0637cd7992fe",
+    "tests/test_capability_v11.py": "01cd814e311112dc1e9b43f550e3f6cb22d370adbc9b21f21016ff21548d492d"
+  },
+  "unchanged_original_artifacts": {
+    "/Users/boli/development/agent-grpo-lab/research-log/evidence/benchmarks/capability-v1/dataset.json": "c7712fe925f53c0f6f65d699800ec3122b0604601af08b232935473931bc5586",
+    "/Users/boli/development/agent-grpo-lab/research-log/evidence/source-snapshot/capability_benchmark.py": "b5b3b82ce73d182c8d5f0308ee6141be9dcb399feda9f310e8f1fc24ed788b19",
+    "/Users/boli/development/agent-grpo-lab/research-log/evidence/capability-runs/base-before/summary.json": "de360a8bfef4ad900afb32046e05f0159d047826127f917984ecc03e6de9de57",
+    "/Users/boli/development/agent-grpo-lab/research-log/evidence/capability-runs/base-before/samples.jsonl": "d2aa2dd0ed64bc772c3ea92c62b980ce13ed15480b078c6d9c1156e124914392"
+  }
+}

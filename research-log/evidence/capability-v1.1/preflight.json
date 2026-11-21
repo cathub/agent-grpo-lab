@@ -1,0 +1,31 @@
+{
+  "contract_cases": 9,
+  "scripted_category_smokes": 4,
+  "status": "passed",
+  "original_model_reproduction": [
+    {
+      "category": "extraction",
+      "seed": 500000,
+      "raw_output": "{\n  \"final_answer\": {\n    \"revenue\": {\n      \"observation_id\": 1\n    },\n    \"spend\": {\n      \"observation_id\": 1\n    }\n  }\n}",
+      "exact_match": true
+    },
+    {
+      "category": "comparison",
+      "seed": 501000,
+      "raw_output": "{\"final_answer\": {\"revenue\": {\"observation_id\": 332}, \"spend\": {\"observation_id\": 551}, \"platform\": \"google\"}}",
+      "exact_match": true
+    },
+    {
+      "category": "selection",
+      "seed": 502000,
+      "raw_output": "{\"tool\":\"get_revenue\",\"arguments\":{\"platform\": \"meta\",\"start_date\": \"2024-03-19\",\"end_date\": \"2024-03-21\"}}",
+      "exact_match": true
+    },
+    {
+      "category": "multistep",
+      "seed": 503000,
+      "raw_output": "```json\n{\n  \"tool\": \"get_ad_spend\",\n  \"arguments\": {\n    \"platform\": \"meta\",\n    \"start_date\": \"2024-04-28\",\n    \"end_date\": \"2024-04-30\"\n  },\n  \"observation_id\": 10000\n}\n\n{\n  \"tool\": \"get_ad_spend\",\n  \"arguments\": {\n    \"platform\": \"tiktok\",\n    \"start_date\": \"2024-04-28\",\n    \"end_date\": \"2024-",
+      "exact_match": true
+    }
+  ]
+}

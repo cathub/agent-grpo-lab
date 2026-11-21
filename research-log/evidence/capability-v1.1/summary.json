@@ -1,0 +1,412 @@
+{
+  "groups": {
+    "train/extraction": {
+      "successes": 16,
+      "attempts": 112,
+      "success_rate": 0.14285714285714285,
+      "mixed_instance_fraction": 1.0,
+      "next_action_correct_rate": 0.14285714285714285,
+      "failures": {
+        "wrong_final_answer": 69,
+        "unnecessary_call": 14,
+        "invalid_json": 13
+      },
+      "format_failures": 13
+    },
+    "train/comparison": {
+      "successes": 2,
+      "attempts": 112,
+      "success_rate": 0.017857142857142856,
+      "mixed_instance_fraction": 0.14285714285714285,
+      "next_action_correct_rate": 0.017857142857142856,
+      "failures": {
+        "wrong_final_answer": 21,
+        "invalid_json": 82,
+        "invalid_format": 1,
+        "unnecessary_call": 6
+      },
+      "format_failures": 83
+    },
+    "train/selection": {
+      "successes": 37,
+      "attempts": 112,
+      "success_rate": 0.33035714285714285,
+      "mixed_instance_fraction": 1.0,
+      "next_action_correct_rate": 0.33035714285714285,
+      "failures": {
+        "unnecessary_call": 26,
+        "invalid_format": 47,
+        "invalid_arguments": 1,
+        "invalid_json": 1
+      },
+      "format_failures": 48
+    },
+    "train/multistep": {
+      "successes": 0,
+      "attempts": 112,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.0,
+      "failures": {
+        "invalid_json": 62,
+        "invalid_format": 47,
+        "unnecessary_call": 1,
+        "wrong_final_answer": 1,
+        "missing_requirements": 1
+      },
+      "format_failures": 109
+    },
+    "train/overall": {
+      "successes": 55,
+      "attempts": 448,
+      "success_rate": 0.12276785714285714,
+      "mixed_instance_fraction": 0.5357142857142857,
+      "next_action_correct_rate": 0.12276785714285714,
+      "failures": {
+        "wrong_final_answer": 91,
+        "unnecessary_call": 47,
+        "invalid_json": 158,
+        "invalid_format": 95,
+        "invalid_arguments": 1,
+        "missing_requirements": 1
+      },
+      "format_failures": 253
+    },
+    "test/extraction": {
+      "successes": 4,
+      "attempts": 48,
+      "success_rate": 0.08333333333333333,
+      "mixed_instance_fraction": 0.3333333333333333,
+      "next_action_correct_rate": 0.08333333333333333,
+      "failures": {
+        "invalid_json": 28,
+        "wrong_final_answer": 16
+      },
+      "format_failures": 28
+    },
+    "test/comparison": {
+      "successes": 0,
+      "attempts": 48,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.0,
+      "failures": {
+        "invalid_json": 38,
+        "wrong_final_answer": 9,
+        "invalid_format": 1
+      },
+      "format_failures": 39
+    },
+    "test/selection": {
+      "successes": 13,
+      "attempts": 48,
+      "success_rate": 0.2708333333333333,
+      "mixed_instance_fraction": 1.0,
+      "next_action_correct_rate": 0.2708333333333333,
+      "failures": {
+        "invalid_format": 21,
+        "unnecessary_call": 13,
+        "invalid_arguments": 1
+      },
+      "format_failures": 21
+    },
+    "test/multistep": {
+      "successes": 0,
+      "attempts": 48,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.0,
+      "failures": {
+        "wrong_final_answer": 3,
+        "invalid_format": 15,
+        "invalid_json": 29,
+        "unnecessary_call": 1
+      },
+      "format_failures": 44
+    },
+    "test/overall": {
+      "successes": 17,
+      "attempts": 192,
+      "success_rate": 0.08854166666666667,
+      "mixed_instance_fraction": 0.3333333333333333,
+      "next_action_correct_rate": 0.08854166666666667,
+      "failures": {
+        "invalid_json": 95,
+        "wrong_final_answer": 28,
+        "invalid_format": 37,
+        "unnecessary_call": 14,
+        "invalid_arguments": 1
+      },
+      "format_failures": 132
+    }
+  },
+  "instances": {
+    "capability-v1-42-extraction-0000": {
+      "successes": 1,
+      "attempts": 16,
+      "success_rate": 0.0625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-extraction-0001": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0002": {
+      "successes": 2,
+      "attempts": 16,
+      "success_rate": 0.125,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-extraction-0003": {
+      "successes": 1,
+      "attempts": 16,
+      "success_rate": 0.0625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-extraction-0004": {
+      "successes": 1,
+      "attempts": 16,
+      "success_rate": 0.0625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-extraction-0005": {
+      "successes": 4,
+      "attempts": 16,
+      "success_rate": 0.25,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-extraction-0006": {
+      "successes": 3,
+      "attempts": 16,
+      "success_rate": 0.1875,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-extraction-0007": {
+      "successes": 4,
+      "attempts": 16,
+      "success_rate": 0.25,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-extraction-0008": {
+      "successes": 4,
+      "attempts": 16,
+      "success_rate": 0.25,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-extraction-0009": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0000": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0001": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0002": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0003": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0004": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0005": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0006": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0007": {
+      "successes": 2,
+      "attempts": 16,
+      "success_rate": 0.125,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-comparison-0008": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0009": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-selection-0000": {
+      "successes": 8,
+      "attempts": 16,
+      "success_rate": 0.5,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0001": {
+      "successes": 2,
+      "attempts": 16,
+      "success_rate": 0.125,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0002": {
+      "successes": 5,
+      "attempts": 16,
+      "success_rate": 0.3125,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0003": {
+      "successes": 5,
+      "attempts": 16,
+      "success_rate": 0.3125,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0004": {
+      "successes": 2,
+      "attempts": 16,
+      "success_rate": 0.125,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0005": {
+      "successes": 1,
+      "attempts": 16,
+      "success_rate": 0.0625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0006": {
+      "successes": 10,
+      "attempts": 16,
+      "success_rate": 0.625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0007": {
+      "successes": 3,
+      "attempts": 16,
+      "success_rate": 0.1875,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0008": {
+      "successes": 4,
+      "attempts": 16,
+      "success_rate": 0.25,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0009": {
+      "successes": 10,
+      "attempts": 16,
+      "success_rate": 0.625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-multistep-0000": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0001": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0002": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0003": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0004": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0005": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0006": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0007": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0008": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0009": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    }
+  },
+  "configuration": {
+    "version": "capability-v1.1",
+    "dataset": "research-log/evidence/benchmarks/capability-v1/dataset.json",
+    "dataset_sha256": "c7712fe925f53c0f6f65d699800ec3122b0604601af08b232935473931bc5586",
+    "scorer_snapshot_sha256": "b5b3b82ce73d182c8d5f0308ee6141be9dcb399feda9f310e8f1fc24ed788b19",
+    "system_prompt": "Return exactly one JSON action per turn, without markdown, explanation, or tags. A tool action has exactly keys \"tool\" and \"arguments\". After the required tools, submit {\"final_answer\": value}, using a JSON number for amounts or ratios, or a lowercase name for comparisons. Date ranges include both endpoints. Preserve the requested scope. Do not duplicate calls. Tool observations contain id and result. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}",
+    "decoding": {
+      "max_tokens": 128,
+      "temperature": 0.7,
+      "top_p": 1.0,
+      "seed": 0
+    },
+    "samples_per_instance": 16,
+    "sampling_seed_base": 500000
+  },
+  "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+  "versions": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.30.7",
+    "transformers": "5.23.0"
+  },
+  "started_utc": "2026-11-21T07:32:34.234998+00:00",
+  "finished_utc": "2026-11-21T07:41:45.557371+00:00",
+  "cached_revisions": [
+    "a5339a4131f135d0fdc6a5c8b5bbed2753bbe0f3"
+  ],
+  "original_checkpoint_revision": "UNVERIFIED: v1 did not record a resolved revision"
+}

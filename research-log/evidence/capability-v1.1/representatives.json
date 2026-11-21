@@ -1,0 +1,403 @@
+[
+  {
+    "task_id": "capability-v1-42-selection-0000",
+    "sample_id": 5,
+    "seed": 502004,
+    "v1": {
+      "task_id": "capability-v1-42-selection-0000",
+      "category": "selection",
+      "split": "train",
+      "sample_id": 5,
+      "seed": 502004,
+      "reward": 0,
+      "status": "unnecessary_call",
+      "next_action_correct": false,
+      "final_answer_correct": null,
+      "trajectory": [
+        {
+          "raw_output": "{\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"meta\",\"start_date\":\"2143-03-19\",\"end_date\":\"2143-03-21\"}}",
+          "observation": {
+            "done": true,
+            "status": "unnecessary_call"
+          }
+        }
+      ]
+    },
+    "v1.1": {
+      "task_id": "capability-v1-42-selection-0000",
+      "category": "selection",
+      "split": "train",
+      "sample_id": 5,
+      "seed": 502004,
+      "reward": 1,
+      "status": "success",
+      "next_action_correct": true,
+      "final_answer_correct": null,
+      "trajectory": [
+        {
+          "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"meta\",\"start_date\":\"2143-03-19\",\"end_date\":\"2143-03-21\"}}",
+          "observation": {
+            "id": 1,
+            "result": 697,
+            "done": true,
+            "status": "success"
+          }
+        }
+      ],
+      "input_messages_per_turn": [
+        [
+          {
+            "role": "system",
+            "content": "Return exactly one JSON action per turn, without markdown, explanation, or tags. A tool action has exactly keys \"tool\" and \"arguments\". After the required tools, submit {\"final_answer\": value}, using a JSON number for amounts or ratios, or a lowercase name for comparisons. Date ranges include both endpoints. Preserve the requested scope. Do not duplicate calls. Tool observations contain id and result. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+          },
+          {
+            "role": "user",
+            "content": "Retrieve advertising spend in USD for meta from 2143-03-19 through 2143-03-21. No value for this metric has been retrieved. Return only the next tool action. Available unrelated information: {\"platform\": \"meta\", \"metric\": \"get_conversions\", \"result\": 675}"
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "task_id": "capability-v1-42-selection-0000",
+    "sample_id": 8,
+    "seed": 502007,
+    "v1": {
+      "task_id": "capability-v1-42-selection-0000",
+      "category": "selection",
+      "split": "train",
+      "sample_id": 8,
+      "seed": 502007,
+      "reward": 0,
+      "status": "invalid_arguments",
+      "next_action_correct": false,
+      "final_answer_correct": null,
+      "trajectory": [
+        {
+          "raw_output": "{\"tool\":\"get_revenue\",\"arguments\":{\"platform\":\"meta\",\"start_date\":\"2024-03-19\",\"end_date\":\"2024-03-21\",\"campaign\":\"prospecting\"}}",
+          "observation": {
+            "done": true,
+            "status": "invalid_arguments"
+          }
+        }
+      ]
+    },
+    "v1.1": {
+      "task_id": "capability-v1-42-selection-0000",
+      "category": "selection",
+      "split": "train",
+      "sample_id": 8,
+      "seed": 502007,
+      "reward": 0,
+      "status": "invalid_format",
+      "next_action_correct": false,
+      "final_answer_correct": null,
+      "trajectory": [
+        {
+          "raw_output": "{\"tool-action\": \"get_ad_spend\", \"arguments\": {\"platform\": \"meta\", \"start_date\": \"2143-03-19\", \"end_date\": \"2143-03-21\"}}",
+          "observation": {
+            "done": true,
+            "status": "invalid_format"
+          }
+        }
+      ],
+      "input_messages_per_turn": [
+        [
+          {
+            "role": "system",
+            "content": "Return exactly one JSON action per turn, without markdown, explanation, or tags. A tool action has exactly keys \"tool\" and \"arguments\". After the required tools, submit {\"final_answer\": value}, using a JSON number for amounts or ratios, or a lowercase name for comparisons. Date ranges include both endpoints. Preserve the requested scope. Do not duplicate calls. Tool observations contain id and result. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+          },
+          {
+            "role": "user",
+            "content": "Retrieve advertising spend in USD for meta from 2143-03-19 through 2143-03-21. No value for this metric has been retrieved. Return only the next tool action. Available unrelated information: {\"platform\": \"meta\", \"metric\": \"get_conversions\", \"result\": 675}"
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0000",
+    "sample_id": 2,
+    "seed": 500001,
+    "v1": {
+      "task_id": "capability-v1-42-extraction-0000",
+      "category": "extraction",
+      "split": "train",
+      "sample_id": 2,
+      "seed": 500001,
+      "reward": 0,
+      "status": "unnecessary_call",
+      "next_action_correct": false,
+      "final_answer_correct": null,
+      "trajectory": [
+        {
+          "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\": \"meta\",\"start_date\": \"2024-12-31\",\"end_date\": \"2024-12-31\"}}",
+          "observation": {
+            "done": true,
+            "status": "unnecessary_call"
+          }
+        }
+      ]
+    },
+    "v1.1": {
+      "task_id": "capability-v1-42-extraction-0000",
+      "category": "extraction",
+      "split": "train",
+      "sample_id": 2,
+      "seed": 500001,
+      "reward": 1,
+      "status": "success",
+      "next_action_correct": true,
+      "final_answer_correct": true,
+      "trajectory": [
+        {
+          "raw_output": "{\"final_answer\": 260}",
+          "observation": {
+            "done": true,
+            "status": "success"
+          }
+        }
+      ],
+      "input_messages_per_turn": [
+        [
+          {
+            "role": "system",
+            "content": "Return exactly one JSON action per turn, without markdown, explanation, or tags. A tool action has exactly keys \"tool\" and \"arguments\". After the required tools, submit {\"final_answer\": value}, using a JSON number for amounts or ratios, or a lowercase name for comparisons. Date ranges include both endpoints. Preserve the requested scope. Do not duplicate calls. Tool observations contain id and result. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+          },
+          {
+            "role": "user",
+            "content": "Extract the advertising spend in USD for meta. Date range: 2142-12-29 through 2142-12-31. Observation: {\"id\": 1, \"result\": 260}"
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0000",
+    "sample_id": 1,
+    "seed": 500000,
+    "v1": {
+      "task_id": "capability-v1-42-extraction-0000",
+      "category": "extraction",
+      "split": "train",
+      "sample_id": 1,
+      "seed": 500000,
+      "reward": 0,
+      "status": "wrong_final_answer",
+      "next_action_correct": false,
+      "final_answer_correct": false,
+      "trajectory": [
+        {
+          "raw_output": "{\n  \"final_answer\": {\n    \"revenue\": {\n      \"observation_id\": 1\n    },\n    \"spend\": {\n      \"observation_id\": 1\n    }\n  }\n}",
+          "observation": {
+            "done": true,
+            "status": "wrong_final_answer"
+          }
+        }
+      ]
+    },
+    "v1.1": {
+      "task_id": "capability-v1-42-extraction-0000",
+      "category": "extraction",
+      "split": "train",
+      "sample_id": 1,
+      "seed": 500000,
+      "reward": 0,
+      "status": "wrong_final_answer",
+      "next_action_correct": false,
+      "final_answer_correct": false,
+      "trajectory": [
+        {
+          "raw_output": "{\"final_answer\": \"260\"}",
+          "observation": {
+            "done": true,
+            "status": "wrong_final_answer"
+          }
+        }
+      ],
+      "input_messages_per_turn": [
+        [
+          {
+            "role": "system",
+            "content": "Return exactly one JSON action per turn, without markdown, explanation, or tags. A tool action has exactly keys \"tool\" and \"arguments\". After the required tools, submit {\"final_answer\": value}, using a JSON number for amounts or ratios, or a lowercase name for comparisons. Date ranges include both endpoints. Preserve the requested scope. Do not duplicate calls. Tool observations contain id and result. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+          },
+          {
+            "role": "user",
+            "content": "Extract the advertising spend in USD for meta. Date range: 2142-12-29 through 2142-12-31. Observation: {\"id\": 1, \"result\": 260}"
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "task_id": "capability-v1-42-comparison-0000",
+    "sample_id": 1,
+    "seed": 501000,
+    "v1": {
+      "task_id": "capability-v1-42-comparison-0000",
+      "category": "comparison",
+      "split": "train",
+      "sample_id": 1,
+      "seed": 501000,
+      "reward": 0,
+      "status": "wrong_final_answer",
+      "next_action_correct": false,
+      "final_answer_correct": false,
+      "trajectory": [
+        {
+          "raw_output": "{\"final_answer\": {\"revenue\": {\"observation_id\": 332}, \"spend\": {\"observation_id\": 551}, \"platform\": \"google\"}}",
+          "observation": {
+            "done": true,
+            "status": "wrong_final_answer"
+          }
+        }
+      ]
+    },
+    "v1.1": {
+      "task_id": "capability-v1-42-comparison-0000",
+      "category": "comparison",
+      "split": "train",
+      "sample_id": 1,
+      "seed": 501000,
+      "reward": 0,
+      "status": "wrong_final_answer",
+      "next_action_correct": false,
+      "final_answer_correct": false,
+      "trajectory": [
+        {
+          "raw_output": "{\"final_answer\": \"tiktok\"}",
+          "observation": {
+            "done": true,
+            "status": "wrong_final_answer"
+          }
+        }
+      ],
+      "input_messages_per_turn": [
+        [
+          {
+            "role": "system",
+            "content": "Return exactly one JSON action per turn, without markdown, explanation, or tags. A tool action has exactly keys \"tool\" and \"arguments\". After the required tools, submit {\"final_answer\": value}, using a JSON number for amounts or ratios, or a lowercase name for comparisons. Date ranges include both endpoints. Preserve the requested scope. Do not duplicate calls. Tool observations contain id and result. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+          },
+          {
+            "role": "user",
+            "content": "Which platform has the highest advertising spend in USD from 2143-02-07 through 2143-02-09? Retrieved totals: tiktok=521; google=551; meta=332."
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "task_id": "capability-v1-42-multistep-0000",
+    "sample_id": 2,
+    "seed": 503001,
+    "v1": {
+      "task_id": "capability-v1-42-multistep-0000",
+      "category": "multistep",
+      "split": "train",
+      "sample_id": 2,
+      "seed": 503001,
+      "reward": 0,
+      "status": "invalid_json",
+      "next_action_correct": false,
+      "final_answer_correct": null,
+      "trajectory": [
+        {
+          "raw_output": "```json\n{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"meta\",\"start_date\":\"2024-04-21\",\"end_date\":\"2024-04-28\",\"campaign\":\"prospecting\"}}\n{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-04-21\",\"end_date\":\"2024-04-28\",\"campaign\":\"prospecting\"}}\n{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"google\",\"start_date\":\"2024-04-21",
+          "observation": {
+            "done": true,
+            "status": "invalid_json"
+          }
+        }
+      ]
+    },
+    "v1.1": {
+      "task_id": "capability-v1-42-multistep-0000",
+      "category": "multistep",
+      "split": "train",
+      "sample_id": 2,
+      "seed": 503001,
+      "reward": 0,
+      "status": "invalid_format",
+      "next_action_correct": false,
+      "final_answer_correct": null,
+      "trajectory": [
+        {
+          "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"meta\",\"start_date\":\"2143-04-28\",\"end_date\":\"2143-04-30\"},\"final_answer\":\"meta\"}",
+          "observation": {
+            "done": true,
+            "status": "invalid_format"
+          }
+        }
+      ],
+      "input_messages_per_turn": [
+        [
+          {
+            "role": "system",
+            "content": "Return exactly one JSON action per turn, without markdown, explanation, or tags. A tool action has exactly keys \"tool\" and \"arguments\". After the required tools, submit {\"final_answer\": value}, using a JSON number for amounts or ratios, or a lowercase name for comparisons. Date ranges include both endpoints. Preserve the requested scope. Do not duplicate calls. Tool observations contain id and result. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+          },
+          {
+            "role": "user",
+            "content": "Use the tools to compare advertising spend in USD for meta, tiktok, google from 2143-04-28 through 2143-04-30. Retrieve all three totals and return the highest platform name."
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "task_id": "capability-v1-42-multistep-0002",
+    "sample_id": 13,
+    "seed": 503212,
+    "v1": {
+      "task_id": "capability-v1-42-multistep-0002",
+      "category": "multistep",
+      "split": "train",
+      "sample_id": 13,
+      "seed": 503212,
+      "reward": 0,
+      "status": "invalid_json",
+      "next_action_correct": false,
+      "final_answer_correct": null,
+      "trajectory": [
+        {
+          "raw_output": "{\"tool\":\"get_revenue\",\"arguments\":{\"platform\":\"google\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\",\"campaign\":\"brand\"}}{\"tool\":\"get_revenue\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\",\"campaign\":\"brand\"}}{\"tool\":\"get_revenue\",\"arguments\":{\"platform\":\"meta\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-0",
+          "observation": {
+            "done": true,
+            "status": "invalid_json"
+          }
+        }
+      ]
+    },
+    "v1.1": {
+      "task_id": "capability-v1-42-multistep-0002",
+      "category": "multistep",
+      "split": "train",
+      "sample_id": 13,
+      "seed": 503212,
+      "reward": 0,
+      "status": "unnecessary_call",
+      "next_action_correct": false,
+      "final_answer_correct": null,
+      "trajectory": [
+        {
+          "raw_output": "{\"tool\":\"get_revenue\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-05-01\",\"end_date\":\"2024-05-08\"}}",
+          "observation": {
+            "done": true,
+            "status": "unnecessary_call"
+          }
+        }
+      ],
+      "input_messages_per_turn": [
+        [
+          {
+            "role": "system",
+            "content": "Return exactly one JSON action per turn, without markdown, explanation, or tags. A tool action has exactly keys \"tool\" and \"arguments\". After the required tools, submit {\"final_answer\": value}, using a JSON number for amounts or ratios, or a lowercase name for comparisons. Date ranges include both endpoints. Preserve the requested scope. Do not duplicate calls. Tool observations contain id and result. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+          },
+          {
+            "role": "user",
+            "content": "Use the tools to compare revenue in USD for tiktok, google, meta from 2143-05-06 through 2143-05-08. Retrieve all three totals and return the highest platform name."
+          }
+        ]
+      ]
+    }
+  }
+]
