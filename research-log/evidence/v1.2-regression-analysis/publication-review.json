@@ -1,0 +1,29 @@
+{
+  "status": "PAUSED_NOT_PUSHED",
+  "pending_commits": [
+    "5544081",
+    "8848c70"
+  ],
+  "secret_pattern_findings": [],
+  "release_review_flags": [
+    {
+      "file": "research-log/evidence/capability-v1.1/provenance.json",
+      "bytes": 1692,
+      "large_raw_file": false,
+      "machine_specific_paths": true
+    },
+    {
+      "file": "research-log/evidence/capability-v1.1/samples.jsonl",
+      "bytes": 1859793,
+      "large_raw_file": true,
+      "machine_specific_paths": false
+    },
+    {
+      "file": "research-log/evidence/capability-v1.2/samples.jsonl",
+      "bytes": 2782125,
+      "large_raw_file": true,
+      "machine_specific_paths": false
+    }
+  ],
+  "reason": "Explicit large-raw-rollout public-release approval not yet confirmed; do not rewrite history"
+}

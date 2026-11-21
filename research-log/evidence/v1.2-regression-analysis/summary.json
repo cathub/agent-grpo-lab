@@ -1,0 +1,135 @@
+{
+  "regressions": 31,
+  "fixes": 47,
+  "regression_causes": {
+    "superfluous tool action on supplied data": 12,
+    "semantic content plus representation": 1,
+    "schema/structure": 5,
+    "format/type only": 4,
+    "wrong tool/metric": 3,
+    "wrong lookup scope": 6
+  },
+  "regression_outcomes": {
+    "unnecessary_call": 21,
+    "wrong_final_answer": 5,
+    "invalid_format": 5
+  },
+  "profiles": {
+    "v1.1": {
+      "extraction": {
+        "attempts": 160,
+        "successes": 20,
+        "parsed_top_level_tool_fields": 14,
+        "failures": {
+          "wrong_final_answer": 85,
+          "unnecessary_call": 14,
+          "invalid_json": 41
+        },
+        "lookup_observations": 0,
+        "later_turns": 0
+      },
+      "comparison": {
+        "attempts": 160,
+        "successes": 2,
+        "parsed_top_level_tool_fields": 8,
+        "failures": {
+          "wrong_final_answer": 30,
+          "invalid_json": 120,
+          "invalid_format": 2,
+          "unnecessary_call": 6
+        },
+        "lookup_observations": 0,
+        "later_turns": 0
+      },
+      "selection": {
+        "attempts": 160,
+        "successes": 50,
+        "parsed_top_level_tool_fields": 94,
+        "failures": {
+          "unnecessary_call": 39,
+          "invalid_format": 68,
+          "invalid_arguments": 2,
+          "invalid_json": 1
+        },
+        "lookup_observations": 50,
+        "later_turns": 0
+      },
+      "multistep": {
+        "attempts": 160,
+        "successes": 0,
+        "parsed_top_level_tool_fields": 61,
+        "failures": {
+          "invalid_json": 91,
+          "invalid_format": 62,
+          "wrong_final_answer": 4,
+          "unnecessary_call": 2,
+          "missing_requirements": 1
+        },
+        "lookup_observations": 0,
+        "later_turns": 0
+      }
+    },
+    "v1.2": {
+      "extraction": {
+        "attempts": 160,
+        "successes": 0,
+        "parsed_top_level_tool_fields": 109,
+        "failures": {
+          "invalid_format": 30,
+          "unnecessary_call": 97,
+          "wrong_final_answer": 33
+        },
+        "lookup_observations": 0,
+        "later_turns": 0
+      },
+      "comparison": {
+        "attempts": 160,
+        "successes": 0,
+        "parsed_top_level_tool_fields": 147,
+        "failures": {
+          "invalid_format": 89,
+          "unnecessary_call": 56,
+          "wrong_final_answer": 1,
+          "invalid_json": 11,
+          "invalid_arguments": 3
+        },
+        "lookup_observations": 0,
+        "later_turns": 0
+      },
+      "selection": {
+        "attempts": 160,
+        "successes": 88,
+        "parsed_top_level_tool_fields": 159,
+        "failures": {
+          "unnecessary_call": 68,
+          "invalid_format": 2,
+          "invalid_arguments": 1,
+          "invalid_json": 1
+        },
+        "lookup_observations": 88,
+        "later_turns": 0
+      },
+      "multistep": {
+        "attempts": 160,
+        "successes": 0,
+        "parsed_top_level_tool_fields": 78,
+        "failures": {
+          "invalid_format": 68,
+          "invalid_json": 82,
+          "unnecessary_call": 10
+        },
+        "lookup_observations": 0,
+        "later_turns": 0
+      }
+    }
+  },
+  "fix_origins": {
+    "unnecessary_call": 11,
+    "invalid_format": 35,
+    "invalid_json": 1
+  },
+  "source_sha256": {
+    "research-log/evidence/capability-v1.1/samples.jsonl": "3c6c0a044b75a5fe457526dc9669ab3c1411eeb33b4ccbb57251ea6fb821a380",
+    "research-log/evidence/capability-v1.2/samples.jsonl": "017bc2d81ed6f1b3155ee3c02bc09653e1bc2fec4faa4c86abeed56a3fc7d848"
+  }
+}

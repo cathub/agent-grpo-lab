@@ -17,3 +17,5 @@ Saved artifacts verify results and configurations, not most timestamps. See expe
 10. **2026-11-20 client date, VERIFIED artifacts:** [Benchmark v1.1 contract correction](experiments/009-benchmark-v1.1-contract.md), after four exact original-prompt smoke matches and passing contract tests. Same 640 seeds/tasks; 16 -> 72 successes, unknown_tool 56 -> 0; no training. Full UTC timestamps are in the entry and run metadata.
 
 11. **2026-11-21 client date, VERIFIED artifacts:** [Benchmark v1.2 output protocol](experiments/010-benchmark-v1.2-protocol.md). Training-only paired pilot reproduced 16 v1.1 controls; frozen full run 72→88/640 but extraction/comparison regress to zero. Selection improves 50→88/160. No training; no test-set-driven revisions.
+
+12. **2026-11-21, read-only regression audit:** [Entry 011](experiments/011-v1.2-regression-analysis.md) classifies all 31 losses and 47 fixes; Action Bias remains a hypothesis. No inference/training. Publication review pauses push because pending ancestors contain large raw rollouts and machine-specific provenance paths requiring explicit release approval.
