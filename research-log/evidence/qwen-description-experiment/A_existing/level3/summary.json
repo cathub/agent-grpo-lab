@@ -1,0 +1,76 @@
+{
+  "by_level": {
+    "3": {
+      "average_tool_calls_per_task": 0.0,
+      "average_trajectory_length": 1.0,
+      "failure_category_counts": {
+        "invalid_json": 3
+      },
+      "final_answer_correctness": 0.0,
+      "final_answers_correct": 0,
+      "final_answers_submitted": 0,
+      "informative_group_ratio": 0.0,
+      "prompt_group_count": 3,
+      "reward_distribution": {
+        "0": 3,
+        "1": 0
+      },
+      "rollout_count": 3,
+      "task_success_rate": 0.0,
+      "trajectory_length_counts": {
+        "1": 3
+      }
+    }
+  },
+  "metadata": {
+    "dataset_version": "scenarios-v1/train",
+    "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+    "sampling_parameters": {
+      "max_tokens": 128,
+      "samples_per_prompt": 1,
+      "seed": 0,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "verifier_version": "environment-v1"
+  },
+  "prompt_groups": {
+    "l3-train-campaign": {
+      "informative": false,
+      "level": 3,
+      "mean_reward": 0.0,
+      "prompt": "Which google campaign, brand or prospecting, had higher ROAS during 2025-02-01 through 2025-02-03 inclusive? Calculate both with the ROAS tool. Break ties alphabetically.",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "split": "train",
+      "success_count": 0,
+      "success_rate": 0.0
+    },
+    "l3-train-constrained": {
+      "informative": false,
+      "level": 3,
+      "mean_reward": 0.0,
+      "prompt": "For 2025-02-01 through 2025-02-03 inclusive, which platform had the highest ROAS among google, meta, and tiktok with at least 25 conversions? Check conversions and calculate ROAS with the tool for all three. Break ties alphabetically.",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "split": "train",
+      "success_count": 0,
+      "success_rate": 0.0
+    },
+    "l3-train-roas": {
+      "informative": false,
+      "level": 3,
+      "mean_reward": 0.0,
+      "prompt": "Use the ROAS tool to calculate google's brand campaign ROAS for 2025-02-01 through 2025-02-03 inclusive.",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "split": "train",
+      "success_count": 0,
+      "success_rate": 0.0
+    }
+  },
+  "samples_per_prompt": 1,
+  "splits": [
+    "train"
+  ]
+}

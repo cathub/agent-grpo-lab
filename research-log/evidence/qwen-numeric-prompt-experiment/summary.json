@@ -1,0 +1,137 @@
+{
+  "reports": [
+    {
+      "seed_range": [
+        20000,
+        20063
+      ],
+      "samples": 64,
+      "baseline_successes": 37.0,
+      "modified_successes": 51.0,
+      "baseline_categories": {
+        "success": 37,
+        "numeric_string": 14,
+        "object": 4,
+        "invalid_json": 1,
+        "other_string": 8
+      },
+      "modified_categories": {
+        "success": 51,
+        "numeric_string": 12,
+        "numeric_type_mismatch": 1
+      },
+      "fixed_seeds": [
+        20002,
+        20004,
+        20018,
+        20023,
+        20025,
+        20027,
+        20028,
+        20031,
+        20032,
+        20033,
+        20037,
+        20038,
+        20039,
+        20040,
+        20041,
+        20042,
+        20045,
+        20051
+      ],
+      "regressed_seeds": [
+        20007,
+        20024,
+        20049,
+        20058
+      ]
+    },
+    {
+      "seed_range": [
+        30000,
+        30063
+      ],
+      "samples": 64,
+      "baseline_successes": 31.0,
+      "modified_successes": 56.0,
+      "baseline_categories": {
+        "object": 13,
+        "success": 31,
+        "other_string": 5,
+        "numeric_string": 14,
+        "invalid_json": 1
+      },
+      "modified_categories": {
+        "success": 56,
+        "numeric_string": 7,
+        "other_string": 1
+      },
+      "fixed_seeds": [
+        30000,
+        30001,
+        30004,
+        30007,
+        30010,
+        30011,
+        30013,
+        30020,
+        30021,
+        30023,
+        30024,
+        30026,
+        30027,
+        30033,
+        30034,
+        30037,
+        30041,
+        30042,
+        30043,
+        30045,
+        30048,
+        30053,
+        30054,
+        30057,
+        30058,
+        30061
+      ],
+      "regressed_seeds": [
+        30016
+      ]
+    }
+  ],
+  "original_messages": [
+    {
+      "role": "system",
+      "content": "Return exactly one JSON action per turn, without markdown, explanation, or tags. A tool action has exactly keys \"tool\" and \"arguments\". After the required tools, submit {\"final_answer\": value}, using a JSON number for amounts or ratios, or a lowercase name for comparisons. Date ranges include both endpoints. Preserve the requested scope. Do not duplicate calls. Tool observations contain id and result. calculate_roas requires revenue and spend objects with observation_id referencing earlier get_revenue and get_ad_spend observations for the same scope, not raw numbers. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"campaign\": {\"type\": \"string\", \"enum\": [\"brand\", \"prospecting\"], \"description\": \"Optional; omit to sum all campaigns.\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"campaign\": {\"type\": \"string\", \"enum\": [\"brand\", \"prospecting\"], \"description\": \"Optional; omit to sum all campaigns.\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"campaign\": {\"type\": \"string\", \"enum\": [\"brand\", \"prospecting\"], \"description\": \"Optional; omit to sum all campaigns.\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"calculate_roas\", \"description\": \"Revenue divided by spend as a ratio.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"revenue\": {\"type\": \"object\", \"properties\": {\"observation_id\": {\"type\": \"integer\"}}, \"required\": [\"observation_id\"], \"additionalProperties\": false}, \"spend\": {\"type\": \"object\", \"properties\": {\"observation_id\": {\"type\": \"integer\"}}, \"required\": [\"observation_id\"], \"additionalProperties\": false}}, \"required\": [\"revenue\", \"spend\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+    },
+    {
+      "role": "user",
+      "content": "How much did google's brand campaign spend in USD over 2025-02-01 through 2025-02-03 inclusive?\nRetrieved data for February 1\u20133, 2025: Google brand campaign total advertising spend = 129 USD."
+    }
+  ],
+  "modified_messages": [
+    {
+      "role": "system",
+      "content": "Return exactly one JSON action per turn, without markdown, explanation, or tags. A tool action has exactly keys \"tool\" and \"arguments\". After the required tools, submit {\"final_answer\": value}, using a JSON number for amounts or ratios, or a lowercase name for comparisons. Date ranges include both endpoints. Preserve the requested scope. Do not duplicate calls. Tool observations contain id and result. calculate_roas requires revenue and spend objects with observation_id referencing earlier get_revenue and get_ad_spend observations for the same scope, not raw numbers. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"campaign\": {\"type\": \"string\", \"enum\": [\"brand\", \"prospecting\"], \"description\": \"Optional; omit to sum all campaigns.\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"campaign\": {\"type\": \"string\", \"enum\": [\"brand\", \"prospecting\"], \"description\": \"Optional; omit to sum all campaigns.\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"campaign\": {\"type\": \"string\", \"enum\": [\"brand\", \"prospecting\"], \"description\": \"Optional; omit to sum all campaigns.\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"calculate_roas\", \"description\": \"Revenue divided by spend as a ratio.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"revenue\": {\"type\": \"object\", \"properties\": {\"observation_id\": {\"type\": \"integer\"}}, \"required\": [\"observation_id\"], \"additionalProperties\": false}, \"spend\": {\"type\": \"object\", \"properties\": {\"observation_id\": {\"type\": \"integer\"}}, \"required\": [\"observation_id\"], \"additionalProperties\": false}}, \"required\": [\"revenue\", \"spend\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}} When the answer is numeric, output it as a JSON number, not a string. The final_answer must contain only the requested value, without units, explanations, or nested objects."
+    },
+    {
+      "role": "user",
+      "content": "How much did google's brand campaign spend in USD over 2025-02-01 through 2025-02-03 inclusive?\nRetrieved data for February 1\u20133, 2025: Google brand campaign total advertising spend = 129 USD."
+    }
+  ],
+  "added_instruction": "When the answer is numeric, output it as a JSON number, not a string. The final_answer must contain only the requested value, without units, explanations, or nested objects.",
+  "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+  "parameters": {
+    "max_tokens": 128,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "seed": 0,
+    "samples_per_prompt": 1
+  },
+  "versions": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.30.7",
+    "transformers": "5.23.0"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "by_level": {
+    "2": {
+      "average_tool_calls_per_task": 0.6666666666666666,
+      "average_trajectory_length": 1.3333333333333333,
+      "failure_category_counts": {
+        "invalid_json": 1,
+        "unnecessary_call": 1,
+        "wrong_final_answer": 1
+      },
+      "final_answer_correctness": 0.0,
+      "final_answers_correct": 0,
+      "final_answers_submitted": 1,
+      "informative_group_ratio": 0.0,
+      "prompt_group_count": 3,
+      "reward_distribution": {
+        "0": 3,
+        "1": 0
+      },
+      "rollout_count": 3,
+      "task_success_rate": 0.0,
+      "trajectory_length_counts": {
+        "1": 2,
+        "2": 1
+      }
+    }
+  },
+  "metadata": {
+    "dataset_version": "scenarios-v1/train",
+    "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+    "sampling_parameters": {
+      "max_tokens": 128,
+      "samples_per_prompt": 1,
+      "seed": 0,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "verifier_version": "environment-v1"
+  },
+  "prompt_groups": {
+    "l2-train-campaign": {
+      "informative": false,
+      "level": 2,
+      "mean_reward": 0.0,
+      "prompt": "How much did google's brand campaign spend in USD over 2025-02-01 through 2025-02-03 inclusive?",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "split": "train",
+      "success_count": 0,
+      "success_rate": 0.0
+    },
+    "l2-train-combined": {
+      "informative": false,
+      "level": 2,
+      "mean_reward": 0.0,
+      "prompt": "Give the combined revenue in USD for google's brand and meta's prospecting campaigns during 2025-02-01 through 2025-02-03 inclusive.",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "split": "train",
+      "success_count": 0,
+      "success_rate": 0.0
+    },
+    "l2-train-platform": {
+      "informative": false,
+      "level": 2,
+      "mean_reward": 0.0,
+      "prompt": "Which had more conversions, google or meta, for 2025-02-01 through 2025-02-03 inclusive? Break ties by choosing the alphabetically later name.",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "split": "train",
+      "success_count": 0,
+      "success_rate": 0.0
+    }
+  },
+  "samples_per_prompt": 1,
+  "splits": [
+    "train"
+  ]
+}

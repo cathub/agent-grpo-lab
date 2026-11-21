@@ -1,0 +1,1477 @@
+{
+  "level1_all": [
+    {
+      "prompt": "Get spend for google from 2025-01-01 through 2025-01-01.",
+      "tool": "get_ad_spend",
+      "arguments": {
+        "platform": "google",
+        "start_date": "2025-01-01",
+        "end_date": "2025-01-01"
+      },
+      "expected_result": 100
+    },
+    {
+      "prompt": "Get spend for google from 2025-01-02 through 2025-01-02.",
+      "tool": "get_ad_spend",
+      "arguments": {
+        "platform": "google",
+        "start_date": "2025-01-02",
+        "end_date": "2025-01-02"
+      },
+      "expected_result": 120
+    },
+    {
+      "prompt": "Get spend for google from 2025-01-03 through 2025-01-03.",
+      "tool": "get_ad_spend",
+      "arguments": {
+        "platform": "google",
+        "start_date": "2025-01-03",
+        "end_date": "2025-01-03"
+      },
+      "expected_result": 80
+    },
+    {
+      "prompt": "Get spend for google from 2025-01-01 through 2025-01-03.",
+      "tool": "get_ad_spend",
+      "arguments": {
+        "platform": "google",
+        "start_date": "2025-01-01",
+        "end_date": "2025-01-03"
+      },
+      "expected_result": 300
+    },
+    {
+      "prompt": "Get spend for meta from 2025-01-01 through 2025-01-01.",
+      "tool": "get_ad_spend",
+      "arguments": {
+        "platform": "meta",
+        "start_date": "2025-01-01",
+        "end_date": "2025-01-01"
+      },
+      "expected_result": 70
+    },
+    {
+      "prompt": "Get spend for meta from 2025-01-02 through 2025-01-02.",
+      "tool": "get_ad_spend",
+      "arguments": {
+        "platform": "meta",
+        "start_date": "2025-01-02",
+        "end_date": "2025-01-02"
+      },
+      "expected_result": 90
+    },
+    {
+      "prompt": "Get spend for meta from 2025-01-03 through 2025-01-03.",
+      "tool": "get_ad_spend",
+      "arguments": {
+        "platform": "meta",
+        "start_date": "2025-01-03",
+        "end_date": "2025-01-03"
+      },
+      "expected_result": 110
+    },
+    {
+      "prompt": "Get spend for meta from 2025-01-01 through 2025-01-03.",
+      "tool": "get_ad_spend",
+      "arguments": {
+        "platform": "meta",
+        "start_date": "2025-01-01",
+        "end_date": "2025-01-03"
+      },
+      "expected_result": 270
+    },
+    {
+      "prompt": "Get conversions for google from 2025-01-01 through 2025-01-01.",
+      "tool": "get_conversions",
+      "arguments": {
+        "platform": "google",
+        "start_date": "2025-01-01",
+        "end_date": "2025-01-01"
+      },
+      "expected_result": 4
+    },
+    {
+      "prompt": "Get conversions for google from 2025-01-02 through 2025-01-02.",
+      "tool": "get_conversions",
+      "arguments": {
+        "platform": "google",
+        "start_date": "2025-01-02",
+        "end_date": "2025-01-02"
+      },
+      "expected_result": 7
+    },
+    {
+      "prompt": "Get conversions for google from 2025-01-03 through 2025-01-03.",
+      "tool": "get_conversions",
+      "arguments": {
+        "platform": "google",
+        "start_date": "2025-01-03",
+        "end_date": "2025-01-03"
+      },
+      "expected_result": 3
+    },
+    {
+      "prompt": "Get conversions for google from 2025-01-01 through 2025-01-03.",
+      "tool": "get_conversions",
+      "arguments": {
+        "platform": "google",
+        "start_date": "2025-01-01",
+        "end_date": "2025-01-03"
+      },
+      "expected_result": 14
+    },
+    {
+      "prompt": "Get conversions for meta from 2025-01-01 through 2025-01-01.",
+      "tool": "get_conversions",
+      "arguments": {
+        "platform": "meta",
+        "start_date": "2025-01-01",
+        "end_date": "2025-01-01"
+      },
+      "expected_result": 2
+    },
+    {
+      "prompt": "Get conversions for meta from 2025-01-02 through 2025-01-02.",
+      "tool": "get_conversions",
+      "arguments": {
+        "platform": "meta",
+        "start_date": "2025-01-02",
+        "end_date": "2025-01-02"
+      },
+      "expected_result": 5
+    },
+    {
+      "prompt": "Get conversions for meta from 2025-01-03 through 2025-01-03.",
+      "tool": "get_conversions",
+      "arguments": {
+        "platform": "meta",
+        "start_date": "2025-01-03",
+        "end_date": "2025-01-03"
+      },
+      "expected_result": 6
+    },
+    {
+      "prompt": "Get conversions for meta from 2025-01-01 through 2025-01-03.",
+      "tool": "get_conversions",
+      "arguments": {
+        "platform": "meta",
+        "start_date": "2025-01-01",
+        "end_date": "2025-01-03"
+      },
+      "expected_result": 13
+    },
+    {
+      "prompt": "Compute ROAS for revenue $0 and spend $50.",
+      "tool": "calculate_roas",
+      "arguments": {
+        "revenue": 0,
+        "spend": 50
+      },
+      "expected_result": 0
+    },
+    {
+      "prompt": "Compute ROAS for revenue $90 and spend $60.",
+      "tool": "calculate_roas",
+      "arguments": {
+        "revenue": 90,
+        "spend": 60
+      },
+      "expected_result": 1.5
+    },
+    {
+      "prompt": "Compute ROAS for revenue $125 and spend $100.",
+      "tool": "calculate_roas",
+      "arguments": {
+        "revenue": 125,
+        "spend": 100
+      },
+      "expected_result": 1.25
+    },
+    {
+      "prompt": "Compute ROAS for revenue $300 and spend $75.",
+      "tool": "calculate_roas",
+      "arguments": {
+        "revenue": 300,
+        "spend": 75
+      },
+      "expected_result": 4
+    }
+  ],
+  "episodes": {
+    "train": [
+      {
+        "task_id": "l1-01",
+        "level": 1,
+        "split": "train",
+        "prompt": "Get spend for google from 2025-01-01 through 2025-01-01.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get spend for google from 2025-01-01 through 2025-01-01.",
+          "tool": "get_ad_spend",
+          "arguments": {
+            "platform": "google",
+            "start_date": "2025-01-01",
+            "end_date": "2025-01-01"
+          },
+          "expected_result": 100
+        }
+      },
+      {
+        "task_id": "l1-02",
+        "level": 1,
+        "split": "train",
+        "prompt": "Get spend for google from 2025-01-02 through 2025-01-02.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get spend for google from 2025-01-02 through 2025-01-02.",
+          "tool": "get_ad_spend",
+          "arguments": {
+            "platform": "google",
+            "start_date": "2025-01-02",
+            "end_date": "2025-01-02"
+          },
+          "expected_result": 120
+        }
+      },
+      {
+        "task_id": "l1-05",
+        "level": 1,
+        "split": "train",
+        "prompt": "Get spend for meta from 2025-01-01 through 2025-01-01.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get spend for meta from 2025-01-01 through 2025-01-01.",
+          "tool": "get_ad_spend",
+          "arguments": {
+            "platform": "meta",
+            "start_date": "2025-01-01",
+            "end_date": "2025-01-01"
+          },
+          "expected_result": 70
+        }
+      },
+      {
+        "task_id": "l1-06",
+        "level": 1,
+        "split": "train",
+        "prompt": "Get spend for meta from 2025-01-02 through 2025-01-02.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get spend for meta from 2025-01-02 through 2025-01-02.",
+          "tool": "get_ad_spend",
+          "arguments": {
+            "platform": "meta",
+            "start_date": "2025-01-02",
+            "end_date": "2025-01-02"
+          },
+          "expected_result": 90
+        }
+      },
+      {
+        "task_id": "l1-09",
+        "level": 1,
+        "split": "train",
+        "prompt": "Get conversions for google from 2025-01-01 through 2025-01-01.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get conversions for google from 2025-01-01 through 2025-01-01.",
+          "tool": "get_conversions",
+          "arguments": {
+            "platform": "google",
+            "start_date": "2025-01-01",
+            "end_date": "2025-01-01"
+          },
+          "expected_result": 4
+        }
+      },
+      {
+        "task_id": "l1-10",
+        "level": 1,
+        "split": "train",
+        "prompt": "Get conversions for google from 2025-01-02 through 2025-01-02.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get conversions for google from 2025-01-02 through 2025-01-02.",
+          "tool": "get_conversions",
+          "arguments": {
+            "platform": "google",
+            "start_date": "2025-01-02",
+            "end_date": "2025-01-02"
+          },
+          "expected_result": 7
+        }
+      },
+      {
+        "task_id": "l1-13",
+        "level": 1,
+        "split": "train",
+        "prompt": "Get conversions for meta from 2025-01-01 through 2025-01-01.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get conversions for meta from 2025-01-01 through 2025-01-01.",
+          "tool": "get_conversions",
+          "arguments": {
+            "platform": "meta",
+            "start_date": "2025-01-01",
+            "end_date": "2025-01-01"
+          },
+          "expected_result": 2
+        }
+      },
+      {
+        "task_id": "l1-14",
+        "level": 1,
+        "split": "train",
+        "prompt": "Get conversions for meta from 2025-01-02 through 2025-01-02.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get conversions for meta from 2025-01-02 through 2025-01-02.",
+          "tool": "get_conversions",
+          "arguments": {
+            "platform": "meta",
+            "start_date": "2025-01-02",
+            "end_date": "2025-01-02"
+          },
+          "expected_result": 5
+        }
+      },
+      {
+        "task_id": "l1-17",
+        "level": 1,
+        "split": "train",
+        "prompt": "Compute ROAS for revenue $0 and spend $50.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Compute ROAS for revenue $0 and spend $50.",
+          "tool": "calculate_roas",
+          "arguments": {
+            "revenue": 0,
+            "spend": 50
+          },
+          "expected_result": 0
+        }
+      },
+      {
+        "task_id": "l1-18",
+        "level": 1,
+        "split": "train",
+        "prompt": "Compute ROAS for revenue $90 and spend $60.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Compute ROAS for revenue $90 and spend $60.",
+          "tool": "calculate_roas",
+          "arguments": {
+            "revenue": 90,
+            "spend": 60
+          },
+          "expected_result": 1.5
+        }
+      },
+      {
+        "task_id": "l2-train-platform",
+        "level": 2,
+        "split": "train",
+        "prompt": "Which had more conversions, google or meta, for 2025-02-01 through 2025-02-03 inclusive? Break ties by choosing the alphabetically later name.",
+        "expected_answer": "meta",
+        "required_lookups": [
+          [
+            "get_conversions",
+            {
+              "platform": "google",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": null
+            }
+          ],
+          [
+            "get_conversions",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": null
+            }
+          ]
+        ],
+        "required_roas": [],
+        "max_steps": 3,
+        "legacy": null
+      },
+      {
+        "task_id": "l2-train-campaign",
+        "level": 2,
+        "split": "train",
+        "prompt": "How much did google's brand campaign spend in USD over 2025-02-01 through 2025-02-03 inclusive?",
+        "expected_answer": 129,
+        "required_lookups": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "google",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": "brand"
+            }
+          ]
+        ],
+        "required_roas": [],
+        "max_steps": 2,
+        "legacy": null
+      },
+      {
+        "task_id": "l2-train-combined",
+        "level": 2,
+        "split": "train",
+        "prompt": "Give the combined revenue in USD for google's brand and meta's prospecting campaigns during 2025-02-01 through 2025-02-03 inclusive.",
+        "expected_answer": 709,
+        "required_lookups": [
+          [
+            "get_revenue",
+            {
+              "platform": "google",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": "brand"
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": "prospecting"
+            }
+          ]
+        ],
+        "required_roas": [],
+        "max_steps": 3,
+        "legacy": null
+      },
+      {
+        "task_id": "l3-train-roas",
+        "level": 3,
+        "split": "train",
+        "prompt": "Use the ROAS tool to calculate google's brand campaign ROAS for 2025-02-01 through 2025-02-03 inclusive.",
+        "expected_answer": 1.6744186046511629,
+        "required_lookups": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "google",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": "brand"
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "google",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": "brand"
+            }
+          ]
+        ],
+        "required_roas": [
+          {
+            "platform": "google",
+            "start_date": "2025-02-01",
+            "end_date": "2025-02-03",
+            "campaign": "brand"
+          }
+        ],
+        "max_steps": 4,
+        "legacy": null
+      },
+      {
+        "task_id": "l3-train-campaign",
+        "level": 3,
+        "split": "train",
+        "prompt": "Which google campaign, brand or prospecting, had higher ROAS during 2025-02-01 through 2025-02-03 inclusive? Calculate both with the ROAS tool. Break ties alphabetically.",
+        "expected_answer": "prospecting",
+        "required_lookups": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "google",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": "brand"
+            }
+          ],
+          [
+            "get_ad_spend",
+            {
+              "platform": "google",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": "prospecting"
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "google",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": "brand"
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "google",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": "prospecting"
+            }
+          ]
+        ],
+        "required_roas": [
+          {
+            "platform": "google",
+            "start_date": "2025-02-01",
+            "end_date": "2025-02-03",
+            "campaign": "brand"
+          },
+          {
+            "platform": "google",
+            "start_date": "2025-02-01",
+            "end_date": "2025-02-03",
+            "campaign": "prospecting"
+          }
+        ],
+        "max_steps": 7,
+        "legacy": null
+      },
+      {
+        "task_id": "l3-train-constrained",
+        "level": 3,
+        "split": "train",
+        "prompt": "For 2025-02-01 through 2025-02-03 inclusive, which platform had the highest ROAS among google, meta, and tiktok with at least 25 conversions? Check conversions and calculate ROAS with the tool for all three. Break ties alphabetically.",
+        "expected_answer": "meta",
+        "required_lookups": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "google",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": null
+            }
+          ],
+          [
+            "get_ad_spend",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": null
+            }
+          ],
+          [
+            "get_ad_spend",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": null
+            }
+          ],
+          [
+            "get_conversions",
+            {
+              "platform": "google",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": null
+            }
+          ],
+          [
+            "get_conversions",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": null
+            }
+          ],
+          [
+            "get_conversions",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": null
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "google",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": null
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": null
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-01",
+              "end_date": "2025-02-03",
+              "campaign": null
+            }
+          ]
+        ],
+        "required_roas": [
+          {
+            "platform": "google",
+            "start_date": "2025-02-01",
+            "end_date": "2025-02-03",
+            "campaign": null
+          },
+          {
+            "platform": "meta",
+            "start_date": "2025-02-01",
+            "end_date": "2025-02-03",
+            "campaign": null
+          },
+          {
+            "platform": "tiktok",
+            "start_date": "2025-02-01",
+            "end_date": "2025-02-03",
+            "campaign": null
+          }
+        ],
+        "max_steps": 13,
+        "legacy": null
+      }
+    ],
+    "validation": [
+      {
+        "task_id": "l1-03",
+        "level": 1,
+        "split": "validation",
+        "prompt": "Get spend for google from 2025-01-03 through 2025-01-03.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get spend for google from 2025-01-03 through 2025-01-03.",
+          "tool": "get_ad_spend",
+          "arguments": {
+            "platform": "google",
+            "start_date": "2025-01-03",
+            "end_date": "2025-01-03"
+          },
+          "expected_result": 80
+        }
+      },
+      {
+        "task_id": "l1-07",
+        "level": 1,
+        "split": "validation",
+        "prompt": "Get spend for meta from 2025-01-03 through 2025-01-03.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get spend for meta from 2025-01-03 through 2025-01-03.",
+          "tool": "get_ad_spend",
+          "arguments": {
+            "platform": "meta",
+            "start_date": "2025-01-03",
+            "end_date": "2025-01-03"
+          },
+          "expected_result": 110
+        }
+      },
+      {
+        "task_id": "l1-11",
+        "level": 1,
+        "split": "validation",
+        "prompt": "Get conversions for google from 2025-01-03 through 2025-01-03.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get conversions for google from 2025-01-03 through 2025-01-03.",
+          "tool": "get_conversions",
+          "arguments": {
+            "platform": "google",
+            "start_date": "2025-01-03",
+            "end_date": "2025-01-03"
+          },
+          "expected_result": 3
+        }
+      },
+      {
+        "task_id": "l1-15",
+        "level": 1,
+        "split": "validation",
+        "prompt": "Get conversions for meta from 2025-01-03 through 2025-01-03.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get conversions for meta from 2025-01-03 through 2025-01-03.",
+          "tool": "get_conversions",
+          "arguments": {
+            "platform": "meta",
+            "start_date": "2025-01-03",
+            "end_date": "2025-01-03"
+          },
+          "expected_result": 6
+        }
+      },
+      {
+        "task_id": "l1-19",
+        "level": 1,
+        "split": "validation",
+        "prompt": "Compute ROAS for revenue $125 and spend $100.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Compute ROAS for revenue $125 and spend $100.",
+          "tool": "calculate_roas",
+          "arguments": {
+            "revenue": 125,
+            "spend": 100
+          },
+          "expected_result": 1.25
+        }
+      },
+      {
+        "task_id": "l2-validation-platform",
+        "level": 2,
+        "split": "validation",
+        "prompt": "From 2025-02-08 through 2025-02-11 inclusive, name the higher-converting platform of meta and tiktok. Break ties by choosing the alphabetically later name.",
+        "expected_answer": "meta",
+        "required_lookups": [
+          [
+            "get_conversions",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": null
+            }
+          ],
+          [
+            "get_conversions",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": null
+            }
+          ]
+        ],
+        "required_roas": [],
+        "max_steps": 3,
+        "legacy": null
+      },
+      {
+        "task_id": "l2-validation-campaign",
+        "level": 2,
+        "split": "validation",
+        "prompt": "How much did meta's brand campaign spend in USD over 2025-02-08 through 2025-02-11 inclusive?",
+        "expected_answer": 274,
+        "required_lookups": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": "brand"
+            }
+          ]
+        ],
+        "required_roas": [],
+        "max_steps": 2,
+        "legacy": null
+      },
+      {
+        "task_id": "l2-validation-combined",
+        "level": 2,
+        "split": "validation",
+        "prompt": "Give the combined revenue in USD for meta's brand and tiktok's prospecting campaigns during 2025-02-08 through 2025-02-11 inclusive.",
+        "expected_answer": 1325,
+        "required_lookups": [
+          [
+            "get_revenue",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": "brand"
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": "prospecting"
+            }
+          ]
+        ],
+        "required_roas": [],
+        "max_steps": 3,
+        "legacy": null
+      },
+      {
+        "task_id": "l3-validation-roas",
+        "level": 3,
+        "split": "validation",
+        "prompt": "Use the ROAS tool to calculate meta's brand campaign ROAS for 2025-02-08 through 2025-02-11 inclusive.",
+        "expected_answer": 2.2664233576642334,
+        "required_lookups": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": "brand"
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": "brand"
+            }
+          ]
+        ],
+        "required_roas": [
+          {
+            "platform": "meta",
+            "start_date": "2025-02-08",
+            "end_date": "2025-02-11",
+            "campaign": "brand"
+          }
+        ],
+        "max_steps": 4,
+        "legacy": null
+      },
+      {
+        "task_id": "l3-validation-campaign",
+        "level": 3,
+        "split": "validation",
+        "prompt": "Which meta campaign, brand or prospecting, had higher ROAS during 2025-02-08 through 2025-02-11 inclusive? Calculate both with the ROAS tool. Break ties alphabetically.",
+        "expected_answer": "brand",
+        "required_lookups": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": "brand"
+            }
+          ],
+          [
+            "get_ad_spend",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": "prospecting"
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": "brand"
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": "prospecting"
+            }
+          ]
+        ],
+        "required_roas": [
+          {
+            "platform": "meta",
+            "start_date": "2025-02-08",
+            "end_date": "2025-02-11",
+            "campaign": "brand"
+          },
+          {
+            "platform": "meta",
+            "start_date": "2025-02-08",
+            "end_date": "2025-02-11",
+            "campaign": "prospecting"
+          }
+        ],
+        "max_steps": 7,
+        "legacy": null
+      },
+      {
+        "task_id": "l3-validation-constrained",
+        "level": 3,
+        "split": "validation",
+        "prompt": "For 2025-02-08 through 2025-02-11 inclusive, which platform had the highest ROAS among google, meta, and tiktok with at least 37 conversions? Check conversions and calculate ROAS with the tool for all three. Break ties alphabetically.",
+        "expected_answer": "google",
+        "required_lookups": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "google",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": null
+            }
+          ],
+          [
+            "get_ad_spend",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": null
+            }
+          ],
+          [
+            "get_ad_spend",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": null
+            }
+          ],
+          [
+            "get_conversions",
+            {
+              "platform": "google",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": null
+            }
+          ],
+          [
+            "get_conversions",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": null
+            }
+          ],
+          [
+            "get_conversions",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": null
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "google",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": null
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": null
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-08",
+              "end_date": "2025-02-11",
+              "campaign": null
+            }
+          ]
+        ],
+        "required_roas": [
+          {
+            "platform": "google",
+            "start_date": "2025-02-08",
+            "end_date": "2025-02-11",
+            "campaign": null
+          },
+          {
+            "platform": "meta",
+            "start_date": "2025-02-08",
+            "end_date": "2025-02-11",
+            "campaign": null
+          },
+          {
+            "platform": "tiktok",
+            "start_date": "2025-02-08",
+            "end_date": "2025-02-11",
+            "campaign": null
+          }
+        ],
+        "max_steps": 13,
+        "legacy": null
+      }
+    ],
+    "test": [
+      {
+        "task_id": "l1-04",
+        "level": 1,
+        "split": "test",
+        "prompt": "Get spend for google from 2025-01-01 through 2025-01-03.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get spend for google from 2025-01-01 through 2025-01-03.",
+          "tool": "get_ad_spend",
+          "arguments": {
+            "platform": "google",
+            "start_date": "2025-01-01",
+            "end_date": "2025-01-03"
+          },
+          "expected_result": 300
+        }
+      },
+      {
+        "task_id": "l1-08",
+        "level": 1,
+        "split": "test",
+        "prompt": "Get spend for meta from 2025-01-01 through 2025-01-03.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get spend for meta from 2025-01-01 through 2025-01-03.",
+          "tool": "get_ad_spend",
+          "arguments": {
+            "platform": "meta",
+            "start_date": "2025-01-01",
+            "end_date": "2025-01-03"
+          },
+          "expected_result": 270
+        }
+      },
+      {
+        "task_id": "l1-12",
+        "level": 1,
+        "split": "test",
+        "prompt": "Get conversions for google from 2025-01-01 through 2025-01-03.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get conversions for google from 2025-01-01 through 2025-01-03.",
+          "tool": "get_conversions",
+          "arguments": {
+            "platform": "google",
+            "start_date": "2025-01-01",
+            "end_date": "2025-01-03"
+          },
+          "expected_result": 14
+        }
+      },
+      {
+        "task_id": "l1-16",
+        "level": 1,
+        "split": "test",
+        "prompt": "Get conversions for meta from 2025-01-01 through 2025-01-03.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Get conversions for meta from 2025-01-01 through 2025-01-03.",
+          "tool": "get_conversions",
+          "arguments": {
+            "platform": "meta",
+            "start_date": "2025-01-01",
+            "end_date": "2025-01-03"
+          },
+          "expected_result": 13
+        }
+      },
+      {
+        "task_id": "l1-20",
+        "level": 1,
+        "split": "test",
+        "prompt": "Compute ROAS for revenue $300 and spend $75.",
+        "expected_answer": null,
+        "required_lookups": [],
+        "required_roas": [],
+        "max_steps": 1,
+        "legacy": {
+          "prompt": "Compute ROAS for revenue $300 and spend $75.",
+          "tool": "calculate_roas",
+          "arguments": {
+            "revenue": 300,
+            "spend": 75
+          },
+          "expected_result": 4
+        }
+      },
+      {
+        "task_id": "l2-test-platform",
+        "level": 2,
+        "split": "test",
+        "prompt": "Compare total conversions over 2025-02-15 through 2025-02-17 inclusive: does tiktok or google lead? Break ties by choosing the alphabetically later name.",
+        "expected_answer": "google",
+        "required_lookups": [
+          [
+            "get_conversions",
+            {
+              "platform": "google",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": null
+            }
+          ],
+          [
+            "get_conversions",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": null
+            }
+          ]
+        ],
+        "required_roas": [],
+        "max_steps": 3,
+        "legacy": null
+      },
+      {
+        "task_id": "l2-test-campaign",
+        "level": 2,
+        "split": "test",
+        "prompt": "How much did tiktok's brand campaign spend in USD over 2025-02-15 through 2025-02-17 inclusive?",
+        "expected_answer": 273,
+        "required_lookups": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": "brand"
+            }
+          ]
+        ],
+        "required_roas": [],
+        "max_steps": 2,
+        "legacy": null
+      },
+      {
+        "task_id": "l2-test-combined",
+        "level": 2,
+        "split": "test",
+        "prompt": "Give the combined revenue in USD for tiktok's brand and google's prospecting campaigns during 2025-02-15 through 2025-02-17 inclusive.",
+        "expected_answer": 1095,
+        "required_lookups": [
+          [
+            "get_revenue",
+            {
+              "platform": "google",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": "prospecting"
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": "brand"
+            }
+          ]
+        ],
+        "required_roas": [],
+        "max_steps": 3,
+        "legacy": null
+      },
+      {
+        "task_id": "l3-test-roas",
+        "level": 3,
+        "split": "test",
+        "prompt": "Use the ROAS tool to calculate tiktok's brand campaign ROAS for 2025-02-15 through 2025-02-17 inclusive.",
+        "expected_answer": 1.3186813186813187,
+        "required_lookups": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": "brand"
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": "brand"
+            }
+          ]
+        ],
+        "required_roas": [
+          {
+            "platform": "tiktok",
+            "start_date": "2025-02-15",
+            "end_date": "2025-02-17",
+            "campaign": "brand"
+          }
+        ],
+        "max_steps": 4,
+        "legacy": null
+      },
+      {
+        "task_id": "l3-test-campaign",
+        "level": 3,
+        "split": "test",
+        "prompt": "Which tiktok campaign, brand or prospecting, had higher ROAS during 2025-02-15 through 2025-02-17 inclusive? Calculate both with the ROAS tool. Break ties alphabetically.",
+        "expected_answer": "prospecting",
+        "required_lookups": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": "brand"
+            }
+          ],
+          [
+            "get_ad_spend",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": "prospecting"
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": "brand"
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": "prospecting"
+            }
+          ]
+        ],
+        "required_roas": [
+          {
+            "platform": "tiktok",
+            "start_date": "2025-02-15",
+            "end_date": "2025-02-17",
+            "campaign": "brand"
+          },
+          {
+            "platform": "tiktok",
+            "start_date": "2025-02-15",
+            "end_date": "2025-02-17",
+            "campaign": "prospecting"
+          }
+        ],
+        "max_steps": 7,
+        "legacy": null
+      },
+      {
+        "task_id": "l3-test-constrained",
+        "level": 3,
+        "split": "test",
+        "prompt": "For 2025-02-15 through 2025-02-17 inclusive, which platform had the highest ROAS among google, meta, and tiktok with at least 28 conversions? Check conversions and calculate ROAS with the tool for all three. Break ties alphabetically.",
+        "expected_answer": "google",
+        "required_lookups": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "google",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": null
+            }
+          ],
+          [
+            "get_ad_spend",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": null
+            }
+          ],
+          [
+            "get_ad_spend",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": null
+            }
+          ],
+          [
+            "get_conversions",
+            {
+              "platform": "google",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": null
+            }
+          ],
+          [
+            "get_conversions",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": null
+            }
+          ],
+          [
+            "get_conversions",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": null
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "google",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": null
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "meta",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": null
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "tiktok",
+              "start_date": "2025-02-15",
+              "end_date": "2025-02-17",
+              "campaign": null
+            }
+          ]
+        ],
+        "required_roas": [
+          {
+            "platform": "google",
+            "start_date": "2025-02-15",
+            "end_date": "2025-02-17",
+            "campaign": null
+          },
+          {
+            "platform": "meta",
+            "start_date": "2025-02-15",
+            "end_date": "2025-02-17",
+            "campaign": null
+          },
+          {
+            "platform": "tiktok",
+            "start_date": "2025-02-15",
+            "end_date": "2025-02-17",
+            "campaign": null
+          }
+        ],
+        "max_steps": 13,
+        "legacy": null
+      }
+    ]
+  }
+}

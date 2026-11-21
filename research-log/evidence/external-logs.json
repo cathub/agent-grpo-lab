@@ -1,0 +1,32 @@
+[
+  {
+    "original_path": "qwen-finalization-experiment/turn-diagnostics.jsonl",
+    "sha256": "ee88d95d695bc6422b13a4e35df933989991505faa665c744392cf3311531e33",
+    "bytes": 2133184,
+    "preservation": "local-only; repeated rendered prompts omitted from Git snapshot"
+  },
+  {
+    "original_path": "qwen-level2-group16-diagnostics/turn-diagnostics.jsonl",
+    "sha256": "54a50eb17d059026fcd5a67a2653e34b362fa951590f4bac23d66cabb11a46b5",
+    "bytes": 632922,
+    "preservation": "local-only; repeated rendered prompts omitted from Git snapshot"
+  },
+  {
+    "original_path": "qwen-nohistory-reproduction/turn-diagnostics.jsonl",
+    "sha256": "5c0f6a3b18fa494930b230e61f4b24a438a1fea113f566653ea8e0d769a7721d",
+    "bytes": 1532543,
+    "preservation": "local-only; repeated rendered prompts omitted from Git snapshot"
+  },
+  {
+    "original_path": "qwen-numeric-prompt-experiment/turn-diagnostics.jsonl",
+    "sha256": "427453b91d97e34b9e133d03d140b5edbc08c963c69befe75131525e928828c7",
+    "bytes": 1597988,
+    "preservation": "local-only; repeated rendered prompts omitted from Git snapshot"
+  },
+  {
+    "original_path": "qwen-transition-experiment/turn-diagnostics.jsonl",
+    "sha256": "3dfe11cc91985b5cd4e81bc74330eab977e8f8da3cc03560f67424ae951aa2cc",
+    "bytes": 2064302,
+    "preservation": "local-only; repeated rendered prompts omitted from Git snapshot"
+  }
+]

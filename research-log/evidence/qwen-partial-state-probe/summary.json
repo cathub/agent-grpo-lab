@@ -1,0 +1,91 @@
+{
+  "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+  "parameters": {
+    "max_tokens": 128,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "seed": 0,
+    "samples_per_prompt": 1
+  },
+  "samples_per_state": 16,
+  "seed_policy": "seed 0 once; advancing RNG across branches",
+  "system_prompt": "Return exactly one JSON action per turn, without markdown, explanation, or tags. A tool action has exactly keys \"tool\" and \"arguments\". After the required tools, submit {\"final_answer\": value}, using a JSON number for amounts or ratios, or a lowercase name for comparisons. Date ranges include both endpoints. Preserve the requested scope. Do not duplicate calls. Tool observations contain id and result. calculate_roas requires revenue and spend objects with observation_id referencing earlier get_revenue and get_ad_spend observations for the same scope, not raw numbers. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"campaign\": {\"type\": \"string\", \"enum\": [\"brand\", \"prospecting\"], \"description\": \"Optional; omit to sum all campaigns.\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"campaign\": {\"type\": \"string\", \"enum\": [\"brand\", \"prospecting\"], \"description\": \"Optional; omit to sum all campaigns.\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"campaign\": {\"type\": \"string\", \"enum\": [\"brand\", \"prospecting\"], \"description\": \"Optional; omit to sum all campaigns.\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"calculate_roas\", \"description\": \"Revenue divided by spend as a ratio.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"revenue\": {\"type\": \"object\", \"properties\": {\"observation_id\": {\"type\": \"integer\"}}, \"required\": [\"observation_id\"], \"additionalProperties\": false}, \"spend\": {\"type\": \"object\", \"properties\": {\"observation_id\": {\"type\": \"integer\"}}, \"required\": [\"observation_id\"], \"additionalProperties\": false}}, \"required\": [\"revenue\", \"spend\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}",
+  "states": [
+    {
+      "task_id": "l2-train-platform",
+      "source_sample_id": 5,
+      "samples": 16,
+      "next_action_correct_count": 10,
+      "next_action_correct_rate": 0.625,
+      "terminal_success_count": 0,
+      "terminal_success_rate": 0.0,
+      "mixed_terminal_success_failure": false,
+      "outcomes": {
+        "unnecessary_call": 4,
+        "valid_nonterminal": 10,
+        "invalid_observation_reference": 2
+      }
+    },
+    {
+      "task_id": "l2-train-campaign",
+      "source_sample_id": 3,
+      "samples": 16,
+      "next_action_correct_count": 0,
+      "next_action_correct_rate": 0.0,
+      "terminal_success_count": 0,
+      "terminal_success_rate": 0.0,
+      "mixed_terminal_success_failure": false,
+      "outcomes": {
+        "unnecessary_call": 11,
+        "invalid_json": 5
+      }
+    },
+    {
+      "task_id": "l2-train-campaign",
+      "source_sample_id": 8,
+      "samples": 16,
+      "next_action_correct_count": 0,
+      "next_action_correct_rate": 0.0,
+      "terminal_success_count": 0,
+      "terminal_success_rate": 0.0,
+      "mixed_terminal_success_failure": false,
+      "outcomes": {
+        "invalid_json": 2,
+        "unnecessary_call": 10,
+        "invalid_observation_reference": 4
+      }
+    },
+    {
+      "task_id": "l2-train-campaign",
+      "source_sample_id": 14,
+      "samples": 16,
+      "next_action_correct_count": 0,
+      "next_action_correct_rate": 0.0,
+      "terminal_success_count": 0,
+      "terminal_success_rate": 0.0,
+      "mixed_terminal_success_failure": false,
+      "outcomes": {
+        "unnecessary_call": 10,
+        "invalid_json": 3,
+        "invalid_format": 2,
+        "invalid_observation_reference": 1
+      }
+    },
+    {
+      "task_id": "l2-train-campaign",
+      "source_sample_id": 16,
+      "samples": 16,
+      "next_action_correct_count": 0,
+      "next_action_correct_rate": 0.0,
+      "terminal_success_count": 0,
+      "terminal_success_rate": 0.0,
+      "mixed_terminal_success_failure": false,
+      "outcomes": {
+        "invalid_format": 2,
+        "unnecessary_call": 6,
+        "invalid_json": 4,
+        "invalid_observation_reference": 4
+      }
+    }
+  ]
+}

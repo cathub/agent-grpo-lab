@@ -1,0 +1,494 @@
+[
+  {
+    "original_path": "qwen-description-experiment/A_existing/level2/rollouts.jsonl",
+    "snapshot": "evidence/qwen-description-experiment/A_existing/level2/rollouts.jsonl",
+    "sha256": "7c78d1ffb8dda4c5a98aa82d6b9e7ddb9a0bb2bc05450f4166b9aa60964998a0",
+    "bytes": 1207
+  },
+  {
+    "original_path": "qwen-description-experiment/A_existing/level2/summary.json",
+    "snapshot": "evidence/qwen-description-experiment/A_existing/level2/summary.json",
+    "sha256": "f9e2fa4bbcad44c0694cb93be5fbb123315d54cde8d6dc517707348af0ef9aa1",
+    "bytes": 2133
+  },
+  {
+    "original_path": "qwen-description-experiment/A_existing/level3/rollouts.jsonl",
+    "snapshot": "evidence/qwen-description-experiment/A_existing/level3/rollouts.jsonl",
+    "sha256": "038308542d475f21f22a2734087923a4e7abd811569751956a7c936c3ea94158",
+    "bytes": 1941
+  },
+  {
+    "original_path": "qwen-description-experiment/A_existing/level3/summary.json",
+    "snapshot": "evidence/qwen-description-experiment/A_existing/level3/summary.json",
+    "sha256": "d2ba57fde27d5a7f3bb3bcce06f477fcbf59eced39cd0b66d76cbf6ac79cadfb",
+    "bytes": 2238
+  },
+  {
+    "original_path": "qwen-description-experiment/B_descriptions/level2/rollouts.jsonl",
+    "snapshot": "evidence/qwen-description-experiment/B_descriptions/level2/rollouts.jsonl",
+    "sha256": "a38d9d0be1b375bd3986b2151d5a662026a58aa52a458bf5c5a23d51d91df516",
+    "bytes": 1124
+  },
+  {
+    "original_path": "qwen-description-experiment/B_descriptions/level2/summary.json",
+    "snapshot": "evidence/qwen-description-experiment/B_descriptions/level2/summary.json",
+    "sha256": "f9e2fa4bbcad44c0694cb93be5fbb123315d54cde8d6dc517707348af0ef9aa1",
+    "bytes": 2133
+  },
+  {
+    "original_path": "qwen-description-experiment/B_descriptions/level3/rollouts.jsonl",
+    "snapshot": "evidence/qwen-description-experiment/B_descriptions/level3/rollouts.jsonl",
+    "sha256": "51995257ecfb280fc7e1fb9bf6a57f53b830a8e537e6905831a66a89feba0479",
+    "bytes": 1624
+  },
+  {
+    "original_path": "qwen-description-experiment/B_descriptions/level3/summary.json",
+    "snapshot": "evidence/qwen-description-experiment/B_descriptions/level3/summary.json",
+    "sha256": "e053048f89f9326c584a5c7bf5e00ae24fad3aca086a0bd301e87ccdb0ae9967",
+    "bytes": 2271
+  },
+  {
+    "original_path": "qwen-description-experiment/system-prompts.json",
+    "snapshot": "evidence/qwen-description-experiment/system-prompts.json",
+    "sha256": "90eceb23f638fb3e975fbca221e54605d546478ba0e4baa8d6cd6ed97f155c56",
+    "bytes": 8268
+  },
+  {
+    "original_path": "qwen-evaluation-output/rollouts.jsonl",
+    "snapshot": "evidence/qwen-evaluation-output/rollouts.jsonl",
+    "sha256": "e273894136d6cccf3a2cdcd98e45500ac23d6a0c0dacd14ab43724c21405cb21",
+    "bytes": 3129
+  },
+  {
+    "original_path": "qwen-evaluation-output/summary.json",
+    "snapshot": "evidence/qwen-evaluation-output/summary.json",
+    "sha256": "c8e740ce70a5c3a2e1432e599505b10d8559c6814073afe6b7ca7464f160f81e",
+    "bytes": 3219
+  },
+  {
+    "original_path": "qwen-fewshot-experiment/manifest.json",
+    "snapshot": "evidence/qwen-fewshot-experiment/manifest.json",
+    "sha256": "ceb32ec3d1ae53907816e2be2dac1322fc872eb7a76bc3165dbd65fceea0a8e5",
+    "bytes": 6728
+  },
+  {
+    "original_path": "qwen-fewshot-experiment/one_example_128/level2/rollouts.jsonl",
+    "snapshot": "evidence/qwen-fewshot-experiment/one_example_128/level2/rollouts.jsonl",
+    "sha256": "9ffd1812b94507f8e56fc709801916bb5b5711adf0a6f1639f688317f145ed7e",
+    "bytes": 1817
+  },
+  {
+    "original_path": "qwen-fewshot-experiment/one_example_128/level2/summary.json",
+    "snapshot": "evidence/qwen-fewshot-experiment/one_example_128/level2/summary.json",
+    "sha256": "cc7f4ca972fff184ee37e2283fac2729a0cce4f5167c534eedf172f984793f96",
+    "bytes": 2210
+  },
+  {
+    "original_path": "qwen-fewshot-experiment/one_example_128/level3/rollouts.jsonl",
+    "snapshot": "evidence/qwen-fewshot-experiment/one_example_128/level3/rollouts.jsonl",
+    "sha256": "4fb819acb8dcb71f9dfc33d5c52b858d349dcca5295f2914d6f1e7792b932286",
+    "bytes": 1990
+  },
+  {
+    "original_path": "qwen-fewshot-experiment/one_example_128/level3/summary.json",
+    "snapshot": "evidence/qwen-fewshot-experiment/one_example_128/level3/summary.json",
+    "sha256": "d2ba57fde27d5a7f3bb3bcce06f477fcbf59eced39cd0b66d76cbf6ac79cadfb",
+    "bytes": 2238
+  },
+  {
+    "original_path": "qwen-fewshot-experiment/original_256/level2/rollouts.jsonl",
+    "snapshot": "evidence/qwen-fewshot-experiment/original_256/level2/rollouts.jsonl",
+    "sha256": "7c78d1ffb8dda4c5a98aa82d6b9e7ddb9a0bb2bc05450f4166b9aa60964998a0",
+    "bytes": 1207
+  },
+  {
+    "original_path": "qwen-fewshot-experiment/original_256/level2/summary.json",
+    "snapshot": "evidence/qwen-fewshot-experiment/original_256/level2/summary.json",
+    "sha256": "d44cb4e660d43634d351ad3d89d9ede096e8e54b4e15fb06fd019bca2d85c8aa",
+    "bytes": 2133
+  },
+  {
+    "original_path": "qwen-fewshot-experiment/original_256/level3/rollouts.jsonl",
+    "snapshot": "evidence/qwen-fewshot-experiment/original_256/level3/rollouts.jsonl",
+    "sha256": "11855df57fdfbea2a959309cd575c46b3415d985c847b20c400d9d1ffad8e2be",
+    "bytes": 2264
+  },
+  {
+    "original_path": "qwen-fewshot-experiment/original_256/level3/summary.json",
+    "snapshot": "evidence/qwen-fewshot-experiment/original_256/level3/summary.json",
+    "sha256": "45fac89f6f99395077391528dddc5abc6c66743f1ea23dda99381e3a7bed32b8",
+    "bytes": 2238
+  },
+  {
+    "original_path": "qwen-finalization-experiment/rollouts.jsonl",
+    "snapshot": "evidence/qwen-finalization-experiment/rollouts.jsonl",
+    "sha256": "0e74599753d62f49afea97faf9a8c8bd60a85ab8d6b3ec68aabf846c6ab18c85",
+    "bytes": 107106
+  },
+  {
+    "original_path": "qwen-finalization-experiment/summary.json",
+    "snapshot": "evidence/qwen-finalization-experiment/summary.json",
+    "sha256": "bb76acb0ae13f8b27bbde00a1777dab451a8e69e06ac622e5d20fd1910e27547",
+    "bytes": 12365
+  },
+  {
+    "original_path": "qwen-level2-group16-diagnostics/rollouts.jsonl",
+    "snapshot": "evidence/qwen-level2-group16-diagnostics/rollouts.jsonl",
+    "sha256": "5dac460d248c3df7e71541b7cfd756c54442069d118af818330d01b3db2343bb",
+    "bytes": 25836
+  },
+  {
+    "original_path": "qwen-level2-group16-diagnostics/summary.json",
+    "snapshot": "evidence/qwen-level2-group16-diagnostics/summary.json",
+    "sha256": "46d2d60296ba1ba96b0a8addd6ae1f056eb8d89db9cfa079a076921451510fcf",
+    "bytes": 2326
+  },
+  {
+    "original_path": "qwen-level2-group16-diagnostics/system-prompt.txt",
+    "snapshot": "evidence/qwen-level2-group16-diagnostics/system-prompt.txt",
+    "sha256": "6514875d6b6337afc5b07521f30cb12c5bccb25ec1234b8a3168aa37119585cf",
+    "bytes": 2934
+  },
+  {
+    "original_path": "qwen-level2-group16-temp07/rollouts.jsonl",
+    "snapshot": "evidence/qwen-level2-group16-temp07/rollouts.jsonl",
+    "sha256": "5dac460d248c3df7e71541b7cfd756c54442069d118af818330d01b3db2343bb",
+    "bytes": 25836
+  },
+  {
+    "original_path": "qwen-level2-group16-temp07/summary.json",
+    "snapshot": "evidence/qwen-level2-group16-temp07/summary.json",
+    "sha256": "46d2d60296ba1ba96b0a8addd6ae1f056eb8d89db9cfa079a076921451510fcf",
+    "bytes": 2326
+  },
+  {
+    "original_path": "qwen-level2-group16-temp07/system-prompt.txt",
+    "snapshot": "evidence/qwen-level2-group16-temp07/system-prompt.txt",
+    "sha256": "6514875d6b6337afc5b07521f30cb12c5bccb25ec1234b8a3168aa37119585cf",
+    "bytes": 2934
+  },
+  {
+    "original_path": "qwen-level2-output/rollouts.jsonl",
+    "snapshot": "evidence/qwen-level2-output/rollouts.jsonl",
+    "sha256": "7c78d1ffb8dda4c5a98aa82d6b9e7ddb9a0bb2bc05450f4166b9aa60964998a0",
+    "bytes": 1207
+  },
+  {
+    "original_path": "qwen-level2-output/summary.json",
+    "snapshot": "evidence/qwen-level2-output/summary.json",
+    "sha256": "f9e2fa4bbcad44c0694cb93be5fbb123315d54cde8d6dc517707348af0ef9aa1",
+    "bytes": 2133
+  },
+  {
+    "original_path": "qwen-level3-output/rollouts.jsonl",
+    "snapshot": "evidence/qwen-level3-output/rollouts.jsonl",
+    "sha256": "038308542d475f21f22a2734087923a4e7abd811569751956a7c936c3ea94158",
+    "bytes": 1941
+  },
+  {
+    "original_path": "qwen-level3-output/summary.json",
+    "snapshot": "evidence/qwen-level3-output/summary.json",
+    "sha256": "d2ba57fde27d5a7f3bb3bcce06f477fcbf59eced39cd0b66d76cbf6ac79cadfb",
+    "bytes": 2238
+  },
+  {
+    "original_path": "qwen-nohistory-reproduction/rollouts.jsonl",
+    "snapshot": "evidence/qwen-nohistory-reproduction/rollouts.jsonl",
+    "sha256": "ad7c44ef12d3d3fa93e3e7104a8deca034fb9096a0f2ccc44496c026fbc119ec",
+    "bytes": 74762
+  },
+  {
+    "original_path": "qwen-nohistory-reproduction/summary.json",
+    "snapshot": "evidence/qwen-nohistory-reproduction/summary.json",
+    "sha256": "6f8cba7a54ac00513e2a2806e642fb3cb559e84c312bf25ace8ffaa01e2753b9",
+    "bytes": 4540
+  },
+  {
+    "original_path": "qwen-numeric-prompt-experiment/rollouts.jsonl",
+    "snapshot": "evidence/qwen-numeric-prompt-experiment/rollouts.jsonl",
+    "sha256": "02f46398e49e025dd0f39abe0b9f76324a331a6bed22586f2fb5925160c34ffb",
+    "bytes": 29911
+  },
+  {
+    "original_path": "qwen-numeric-prompt-experiment/summary.json",
+    "snapshot": "evidence/qwen-numeric-prompt-experiment/summary.json",
+    "sha256": "f208ecbfa3e3bdac32a1e80e5605da8f98771de7b3655859718eed360e7ddbf8",
+    "bytes": 9621
+  },
+  {
+    "original_path": "qwen-partial-state-probe/branches.jsonl",
+    "snapshot": "evidence/qwen-partial-state-probe/branches.jsonl",
+    "sha256": "947257c7542c53d8756d4a51965a136eef2d6ec2ff79b07529d22f1f5f2f4bc1",
+    "bytes": 51569
+  },
+  {
+    "original_path": "qwen-partial-state-probe/states.json",
+    "snapshot": "evidence/qwen-partial-state-probe/states.json",
+    "sha256": "c23b080d67ff10add100615e817b6521d005dc33d2fbd92ea778736fb050b3eb",
+    "bytes": 4453
+  },
+  {
+    "original_path": "qwen-partial-state-probe/summary.json",
+    "snapshot": "evidence/qwen-partial-state-probe/summary.json",
+    "sha256": "2f5942b730f39512e3414cb62827655637538d8af8ef858844ee5906a20d31ee",
+    "bytes": 5722
+  },
+  {
+    "original_path": "qwen-prompt-comparison/comparison.json",
+    "snapshot": "evidence/qwen-prompt-comparison/comparison.json",
+    "sha256": "b49780bf9f8f06e1c3a6ebbf318d17507b29125075e359cb4c1cf2c084b0cfc6",
+    "bytes": 961
+  },
+  {
+    "original_path": "qwen-prompt-comparison/conditional_tool/level2/rollouts.jsonl",
+    "snapshot": "evidence/qwen-prompt-comparison/conditional_tool/level2/rollouts.jsonl",
+    "sha256": "f41cb9a07e819b1d0b4430d47013e7ce930a4b4480eed9f6461021d374404594",
+    "bytes": 1619
+  },
+  {
+    "original_path": "qwen-prompt-comparison/conditional_tool/level2/summary.json",
+    "snapshot": "evidence/qwen-prompt-comparison/conditional_tool/level2/summary.json",
+    "sha256": "f9e2fa4bbcad44c0694cb93be5fbb123315d54cde8d6dc517707348af0ef9aa1",
+    "bytes": 2133
+  },
+  {
+    "original_path": "qwen-prompt-comparison/conditional_tool/level3/rollouts.jsonl",
+    "snapshot": "evidence/qwen-prompt-comparison/conditional_tool/level3/rollouts.jsonl",
+    "sha256": "08ca7dbfe4fded12f41e6bcd99860f920254426a877beff91dd5f569b8cc24ea",
+    "bytes": 2264
+  },
+  {
+    "original_path": "qwen-prompt-comparison/conditional_tool/level3/summary.json",
+    "snapshot": "evidence/qwen-prompt-comparison/conditional_tool/level3/summary.json",
+    "sha256": "d2ba57fde27d5a7f3bb3bcce06f477fcbf59eced39cd0b66d76cbf6ac79cadfb",
+    "bytes": 2238
+  },
+  {
+    "original_path": "qwen-prompt-comparison/original/level2/rollouts.jsonl",
+    "snapshot": "evidence/qwen-prompt-comparison/original/level2/rollouts.jsonl",
+    "sha256": "7c78d1ffb8dda4c5a98aa82d6b9e7ddb9a0bb2bc05450f4166b9aa60964998a0",
+    "bytes": 1207
+  },
+  {
+    "original_path": "qwen-prompt-comparison/original/level2/summary.json",
+    "snapshot": "evidence/qwen-prompt-comparison/original/level2/summary.json",
+    "sha256": "f9e2fa4bbcad44c0694cb93be5fbb123315d54cde8d6dc517707348af0ef9aa1",
+    "bytes": 2133
+  },
+  {
+    "original_path": "qwen-prompt-comparison/original/level3/rollouts.jsonl",
+    "snapshot": "evidence/qwen-prompt-comparison/original/level3/rollouts.jsonl",
+    "sha256": "038308542d475f21f22a2734087923a4e7abd811569751956a7c936c3ea94158",
+    "bytes": 1941
+  },
+  {
+    "original_path": "qwen-prompt-comparison/original/level3/summary.json",
+    "snapshot": "evidence/qwen-prompt-comparison/original/level3/summary.json",
+    "sha256": "d2ba57fde27d5a7f3bb3bcce06f477fcbf59eced39cd0b66d76cbf6ac79cadfb",
+    "bytes": 2238
+  },
+  {
+    "original_path": "qwen-prompt-comparison/system-prompts.json",
+    "snapshot": "evidence/qwen-prompt-comparison/system-prompts.json",
+    "sha256": "ed9e88ae0775381878b1ae73eabd92fd6c6fc28f3b018ff6223643afd417344e",
+    "bytes": 6473
+  },
+  {
+    "original_path": "qwen-transition-experiment/rollouts.jsonl",
+    "snapshot": "evidence/qwen-transition-experiment/rollouts.jsonl",
+    "sha256": "c43f1b7f4fb2a4244ef3cf835fa34d36fe74496a3acacaedb4f53b07d599e88c",
+    "bytes": 101714
+  },
+  {
+    "original_path": "qwen-transition-experiment/summary.json",
+    "snapshot": "evidence/qwen-transition-experiment/summary.json",
+    "sha256": "1ae32744d54b4db6574036048b48bf8f715fb68e500921265bd40eb5c0bafc07",
+    "bytes": 10055
+  },
+  {
+    "original_path": "benchmarks/capability-v1/dataset.json",
+    "snapshot": "evidence/benchmarks/capability-v1/dataset.json",
+    "sha256": "c7712fe925f53c0f6f65d699800ec3122b0604601af08b232935473931bc5586",
+    "bytes": 45402
+  },
+  {
+    "original_path": "capability-runs/base-before/summary.json",
+    "snapshot": "evidence/capability-runs/base-before/summary.json",
+    "sha256": "de360a8bfef4ad900afb32046e05f0159d047826127f917984ecc03e6de9de57",
+    "bytes": 13768
+  },
+  {
+    "original_path": "capability-runs/base-before/samples.jsonl",
+    "snapshot": "evidence/capability-runs/base-before/samples.jsonl",
+    "sha256": "d2aa2dd0ed64bc772c3ea92c62b980ce13ed15480b078c6d9c1156e124914392",
+    "bytes": 339331
+  },
+  {
+    "original_path": "/Users/boli/Documents/Codex/2026-11-15/create-a-scheduled-task-called-weekday/outputs/capability-failure-analysis/report.md",
+    "snapshot": "evidence/failure-analysis/report.md",
+    "sha256": "9067ae3e7fbb0a2791ee3479a9728bafe31fd40a06b582de51cbc2225aa2262a",
+    "bytes": 46093
+  },
+  {
+    "original_path": "/Users/boli/Documents/Codex/2026-11-15/create-a-scheduled-task-called-weekday/outputs/capability-failure-analysis/metrics.json",
+    "snapshot": "evidence/failure-analysis/metrics.json",
+    "sha256": "f87d5ccf20b35b0471e44fbb4136d7b0ba0ab8ae1d8a7a46a7afec3ad6c9fee4",
+    "bytes": 6092
+  },
+  {
+    "original_path": "/Users/boli/Documents/Codex/2026-11-15/create-a-scheduled-task-called-weekday/outputs/capability-failure-analysis/audit.csv",
+    "snapshot": "evidence/failure-analysis/audit.csv",
+    "sha256": "2bdad717460e392dd374dd726a4dc33880cf1c770c1f9a1d70068e46ff79e34a",
+    "bytes": 137395
+  },
+  {
+    "original_path": "/Users/boli/Documents/Codex/2026-11-15/create-a-scheduled-task-called-weekday/outputs/capability-failure-analysis/audit.jsonl",
+    "snapshot": "evidence/failure-analysis/audit.jsonl",
+    "sha256": "706f315a418fcc72a109a8404c7f3b9882c47871dee4efa64f95f48eb235da28",
+    "bytes": 491753
+  },
+  {
+    "original_path": "/Users/boli/Documents/Codex/2026-11-15/create-a-scheduled-task-called-weekday/outputs/capability-failure-analysis/analysis-method.py",
+    "snapshot": "evidence/failure-analysis/analysis-method.py",
+    "sha256": "fb076635f3ae17cfcc93de8b358c903903b11e95965e6e3221f37052d821706b",
+    "bytes": 11895
+  },
+  {
+    "original_path": "src/__init__.py",
+    "snapshot": "evidence/source-snapshot/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "original_path": "src/benchmark.py",
+    "snapshot": "evidence/source-snapshot/benchmark.py",
+    "sha256": "fe493b25563051275b16fc9c04c45e1179c872317ee1983172073190082734ba",
+    "bytes": 1887
+  },
+  {
+    "original_path": "src/capability_benchmark.py",
+    "snapshot": "evidence/source-snapshot/capability_benchmark.py",
+    "sha256": "b5b3b82ce73d182c8d5f0308ee6141be9dcb399feda9f310e8f1fc24ed788b19",
+    "bytes": 13002
+  },
+  {
+    "original_path": "src/environment.py",
+    "snapshot": "evidence/source-snapshot/environment.py",
+    "sha256": "b6f913131dcd6edfa465dd66507749a06679a01ea731a1406408611aa5d668f2",
+    "bytes": 6864
+  },
+  {
+    "original_path": "src/episode_evaluation.py",
+    "snapshot": "evidence/source-snapshot/episode_evaluation.py",
+    "sha256": "2f121e7e3411e605f1f77f51e107acb3e6e03eb70a522097585891f6bbd326ac",
+    "bytes": 4000
+  },
+  {
+    "original_path": "src/evaluation.py",
+    "snapshot": "evidence/source-snapshot/evaluation.py",
+    "sha256": "78a96a19e609748ecea232360a152382248040c7476f8cff00e7fd1b9a198b81",
+    "bytes": 4738
+  },
+  {
+    "original_path": "src/mock_agent.py",
+    "snapshot": "evidence/source-snapshot/mock_agent.py",
+    "sha256": "8919ddf5299e3bc98f4fbfe77ebf8f3e9705aff354827e37423f1a9417526357",
+    "bytes": 1169
+  },
+  {
+    "original_path": "src/qwen_agent.py",
+    "snapshot": "evidence/source-snapshot/qwen_agent.py",
+    "sha256": "8cff1375fd12601b9e9ca4ed895145a865fc3d64981a4e7b78f0e2883faf30f7",
+    "bytes": 3091
+  },
+  {
+    "original_path": "src/qwen_description_experiment.py",
+    "snapshot": "evidence/source-snapshot/qwen_description_experiment.py",
+    "sha256": "df28941531bc7e66b6a82c94afabeccae2c156328f8d68537e02f481529f89fd",
+    "bytes": 3188
+  },
+  {
+    "original_path": "src/qwen_diagnostic_probe.py",
+    "snapshot": "evidence/source-snapshot/qwen_diagnostic_probe.py",
+    "sha256": "2f60f86a2b6eafdaf7a151171e0a077bb464375e585f3ef5eb1639f7cd494ab3",
+    "bytes": 3572
+  },
+  {
+    "original_path": "src/qwen_episodes.py",
+    "snapshot": "evidence/source-snapshot/qwen_episodes.py",
+    "sha256": "7e5d4c72dea67258bcb772a981354dd371cc57b666c9a5abcfe4f1a510ff6453",
+    "bytes": 3643
+  },
+  {
+    "original_path": "src/qwen_evaluation.py",
+    "snapshot": "evidence/source-snapshot/qwen_evaluation.py",
+    "sha256": "0d85a915590dbc97ed63fe0919855d1fe6865bf302031f97f7d6a51a78222a97",
+    "bytes": 1547
+  },
+  {
+    "original_path": "src/qwen_fewshot_experiment.py",
+    "snapshot": "evidence/source-snapshot/qwen_fewshot_experiment.py",
+    "sha256": "bb76416cc056f06fce1dfcc640e19e593d7047c03a8590154227326dd9b1f57c",
+    "bytes": 1459
+  },
+  {
+    "original_path": "src/qwen_finalization_experiment.py",
+    "snapshot": "evidence/source-snapshot/qwen_finalization_experiment.py",
+    "sha256": "7b7c097f80e613190ab97eb1eddbb5874183e3fbd543c9d84c47f3bb91ce3d0c",
+    "bytes": 5598
+  },
+  {
+    "original_path": "src/qwen_group_probe.py",
+    "snapshot": "evidence/source-snapshot/qwen_group_probe.py",
+    "sha256": "ba1d87ad36ca649d8a7bea5d0e4a92f44ddd204bc52bac161fb06781161d85a7",
+    "bytes": 1317
+  },
+  {
+    "original_path": "src/qwen_nohistory_reproduction.py",
+    "snapshot": "evidence/source-snapshot/qwen_nohistory_reproduction.py",
+    "sha256": "206d0edcec68ca0816505c740b493ec20712993955a008a7a6869162f6817b6e",
+    "bytes": 3479
+  },
+  {
+    "original_path": "src/qwen_numeric_prompt_experiment.py",
+    "snapshot": "evidence/source-snapshot/qwen_numeric_prompt_experiment.py",
+    "sha256": "0ee02fb95234bb9903287e100a80b0c81aea0cf83b398d224ee5cc0ac8066f66",
+    "bytes": 4182
+  },
+  {
+    "original_path": "src/qwen_partial_probe.py",
+    "snapshot": "evidence/source-snapshot/qwen_partial_probe.py",
+    "sha256": "6a8ef7656681f4758fae2bbd537726d465eaeb0c11d2e14791bbb81f1118e978",
+    "bytes": 3616
+  },
+  {
+    "original_path": "src/qwen_prompt_comparison.py",
+    "snapshot": "evidence/source-snapshot/qwen_prompt_comparison.py",
+    "sha256": "f986748d289c118a5e136bcf884f5209c68db6a28816599747053278970d6520",
+    "bytes": 2582
+  },
+  {
+    "original_path": "src/qwen_transition_experiment.py",
+    "snapshot": "evidence/source-snapshot/qwen_transition_experiment.py",
+    "sha256": "e38ce57164bab2bc141802d8158db860751a315a5a2aff21888dc10525c6c5e0",
+    "bytes": 6247
+  },
+  {
+    "original_path": "src/scenarios.py",
+    "snapshot": "evidence/source-snapshot/scenarios.py",
+    "sha256": "b7ad9b550e3921635bcf8f8cc03aa1669c51b80e8aedde3d55ba094541c0658d",
+    "bytes": 6158
+  },
+  {
+    "original_path": "src/tools.py",
+    "snapshot": "evidence/source-snapshot/tools.py",
+    "sha256": "27845aa8067c2d9b36dc4aa62c0be1ea47298f6b6f1b9f15455b51f0f4c9ebfc",
+    "bytes": 1282
+  },
+  {
+    "original_path": "src/verifier.py",
+    "snapshot": "evidence/source-snapshot/verifier.py",
+    "sha256": "bbf9e7dd5f51c877a5fc79193f678d546e125f53ebf7fead2c0fb1d4b6dca996",
+    "bytes": 1277
+  }
+]

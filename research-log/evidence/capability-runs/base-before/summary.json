@@ -1,0 +1,409 @@
+{
+  "groups": {
+    "train/extraction": {
+      "successes": 4,
+      "attempts": 112,
+      "success_rate": 0.03571428571428571,
+      "mixed_instance_fraction": 0.2857142857142857,
+      "next_action_correct_rate": 0.03571428571428571,
+      "failures": {
+        "wrong_final_answer": 41,
+        "unnecessary_call": 17,
+        "invalid_json": 41,
+        "invalid_arguments": 6,
+        "invalid_format": 2,
+        "unknown_tool": 1
+      },
+      "format_failures": 43
+    },
+    "train/comparison": {
+      "successes": 2,
+      "attempts": 112,
+      "success_rate": 0.017857142857142856,
+      "mixed_instance_fraction": 0.2857142857142857,
+      "next_action_correct_rate": 0.017857142857142856,
+      "failures": {
+        "wrong_final_answer": 24,
+        "invalid_json": 84,
+        "invalid_arguments": 2
+      },
+      "format_failures": 84
+    },
+    "train/selection": {
+      "successes": 4,
+      "attempts": 112,
+      "success_rate": 0.03571428571428571,
+      "mixed_instance_fraction": 0.42857142857142855,
+      "next_action_correct_rate": 0.03571428571428571,
+      "failures": {
+        "unnecessary_call": 18,
+        "unknown_tool": 40,
+        "invalid_json": 43,
+        "invalid_arguments": 7
+      },
+      "format_failures": 43
+    },
+    "train/multistep": {
+      "successes": 0,
+      "attempts": 112,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.0,
+      "failures": {
+        "invalid_json": 82,
+        "wrong_final_answer": 14,
+        "missing_requirements": 10,
+        "invalid_format": 5,
+        "unknown_tool": 1
+      },
+      "format_failures": 87
+    },
+    "train/overall": {
+      "successes": 10,
+      "attempts": 448,
+      "success_rate": 0.022321428571428572,
+      "mixed_instance_fraction": 0.25,
+      "next_action_correct_rate": 0.022321428571428572,
+      "failures": {
+        "wrong_final_answer": 79,
+        "unnecessary_call": 35,
+        "invalid_json": 250,
+        "invalid_arguments": 15,
+        "invalid_format": 7,
+        "unknown_tool": 42,
+        "missing_requirements": 10
+      },
+      "format_failures": 257
+    },
+    "test/extraction": {
+      "successes": 3,
+      "attempts": 48,
+      "success_rate": 0.0625,
+      "mixed_instance_fraction": 0.3333333333333333,
+      "next_action_correct_rate": 0.0625,
+      "failures": {
+        "invalid_json": 41,
+        "wrong_final_answer": 3,
+        "invalid_format": 1
+      },
+      "format_failures": 42
+    },
+    "test/comparison": {
+      "successes": 1,
+      "attempts": 48,
+      "success_rate": 0.020833333333333332,
+      "mixed_instance_fraction": 0.3333333333333333,
+      "next_action_correct_rate": 0.020833333333333332,
+      "failures": {
+        "wrong_final_answer": 6,
+        "invalid_json": 41
+      },
+      "format_failures": 41
+    },
+    "test/selection": {
+      "successes": 2,
+      "attempts": 48,
+      "success_rate": 0.041666666666666664,
+      "mixed_instance_fraction": 0.3333333333333333,
+      "next_action_correct_rate": 0.041666666666666664,
+      "failures": {
+        "unnecessary_call": 9,
+        "unknown_tool": 13,
+        "invalid_json": 23,
+        "invalid_format": 1
+      },
+      "format_failures": 24
+    },
+    "test/multistep": {
+      "successes": 0,
+      "attempts": 48,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.0,
+      "failures": {
+        "wrong_final_answer": 7,
+        "invalid_json": 35,
+        "invalid_format": 2,
+        "unknown_tool": 1,
+        "unnecessary_call": 1,
+        "missing_requirements": 2
+      },
+      "format_failures": 37
+    },
+    "test/overall": {
+      "successes": 6,
+      "attempts": 192,
+      "success_rate": 0.03125,
+      "mixed_instance_fraction": 0.25,
+      "next_action_correct_rate": 0.03125,
+      "failures": {
+        "invalid_json": 140,
+        "wrong_final_answer": 16,
+        "invalid_format": 4,
+        "unnecessary_call": 10,
+        "unknown_tool": 14,
+        "missing_requirements": 2
+      },
+      "format_failures": 144
+    }
+  },
+  "instances": {
+    "capability-v1-42-extraction-0000": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0001": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0002": {
+      "successes": 1,
+      "attempts": 16,
+      "success_rate": 0.0625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-extraction-0003": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0004": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0005": {
+      "successes": 3,
+      "attempts": 16,
+      "success_rate": 0.1875,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-extraction-0006": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0007": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0008": {
+      "successes": 3,
+      "attempts": 16,
+      "success_rate": 0.1875,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-extraction-0009": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0000": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0001": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0002": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0003": {
+      "successes": 1,
+      "attempts": 16,
+      "success_rate": 0.0625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-comparison-0004": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0005": {
+      "successes": 1,
+      "attempts": 16,
+      "success_rate": 0.0625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-comparison-0006": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0007": {
+      "successes": 1,
+      "attempts": 16,
+      "success_rate": 0.0625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-comparison-0008": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0009": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-selection-0000": {
+      "successes": 2,
+      "attempts": 16,
+      "success_rate": 0.125,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0001": {
+      "successes": 2,
+      "attempts": 16,
+      "success_rate": 0.125,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0002": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-selection-0003": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-selection-0004": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-selection-0005": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-selection-0006": {
+      "successes": 1,
+      "attempts": 16,
+      "success_rate": 0.0625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0007": {
+      "successes": 1,
+      "attempts": 16,
+      "success_rate": 0.0625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0008": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-selection-0009": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0000": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0001": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0002": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0003": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0004": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0005": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0006": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0007": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0008": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0009": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    }
+  },
+  "dataset_sha256": "c7712fe925f53c0f6f65d699800ec3122b0604601af08b232935473931bc5586",
+  "version": "capability-v1",
+  "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+  "adapter": null,
+  "decoding": {
+    "max_tokens": 128,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "seed": 0
+  },
+  "samples_per_instance": 16,
+  "system_prompt": "Return exactly one JSON action per turn, without markdown, explanation, or tags. A tool action has exactly keys \"tool\" and \"arguments\". After the required tools, submit {\"final_answer\": value}, using a JSON number for amounts or ratios, or a lowercase name for comparisons. Date ranges include both endpoints. Preserve the requested scope. Do not duplicate calls. Tool observations contain id and result. calculate_roas requires revenue and spend objects with observation_id referencing earlier get_revenue and get_ad_spend observations for the same scope, not raw numbers. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"campaign\": {\"type\": \"string\", \"enum\": [\"brand\", \"prospecting\"], \"description\": \"Optional; omit to sum all campaigns.\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"campaign\": {\"type\": \"string\", \"enum\": [\"brand\", \"prospecting\"], \"description\": \"Optional; omit to sum all campaigns.\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"campaign\": {\"type\": \"string\", \"enum\": [\"brand\", \"prospecting\"], \"description\": \"Optional; omit to sum all campaigns.\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"calculate_roas\", \"description\": \"Revenue divided by spend as a ratio.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"revenue\": {\"type\": \"object\", \"properties\": {\"observation_id\": {\"type\": \"integer\"}}, \"required\": [\"observation_id\"], \"additionalProperties\": false}, \"spend\": {\"type\": \"object\", \"properties\": {\"observation_id\": {\"type\": \"integer\"}}, \"required\": [\"observation_id\"], \"additionalProperties\": false}}, \"required\": [\"revenue\", \"spend\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}",
+  "versions": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.30.7",
+    "transformers": "5.23.0"
+  }
+}

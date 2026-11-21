@@ -1,0 +1,179 @@
+{
+  "summary": {
+    "extraction": {
+      "attempts": 160,
+      "successes": 7,
+      "failures": 153,
+      "verifier_failures": {
+        "wrong_final_answer": 44,
+        "unnecessary_call": 17,
+        "invalid_json": 82,
+        "invalid_arguments": 6,
+        "invalid_format": 3,
+        "unknown_tool": 1
+      },
+      "primary_causes": {
+        "unclear/mixed": 66,
+        "tool/action": 26,
+        "formatting/schema only (confirmed lower bound)": 61
+      },
+      "primary_percent_of_failures": {
+        "unclear/mixed": 43.13725490196079,
+        "tool/action": 16.99346405228758,
+        "formatting/schema only (confirmed lower bound)": 39.869281045751634
+      },
+      "json_format_failures": 85,
+      "json_format_proven_only": 50,
+      "oracle_success_lower_bound": 68,
+      "flags": {
+        "incorrect date scope": 23,
+        "format verifier failure NOT proven formatting-only": 35,
+        "optional campaign advertised but rejected by fixture schema": 6,
+        "ROAS material in irrelevant task": 1,
+        "advertised tool rejected as unknown by fixture environment": 1
+      }
+    },
+    "comparison": {
+      "attempts": 160,
+      "successes": 3,
+      "failures": 157,
+      "verifier_failures": {
+        "wrong_final_answer": 30,
+        "invalid_json": 125,
+        "invalid_arguments": 2
+      },
+      "primary_causes": {
+        "unclear/mixed": 118,
+        "reasoning": 11,
+        "context": 24,
+        "tool/action": 2,
+        "formatting/schema only (confirmed lower bound)": 2
+      },
+      "primary_percent_of_failures": {
+        "unclear/mixed": 75.1592356687898,
+        "reasoning": 7.006369426751593,
+        "context": 15.286624203821656,
+        "tool/action": 1.2738853503184713,
+        "formatting/schema only (confirmed lower bound)": 1.2738853503184713
+      },
+      "json_format_failures": 125,
+      "json_format_proven_only": 0,
+      "oracle_success_lower_bound": 5,
+      "flags": {
+        "format verifier failure NOT proven formatting-only": 125,
+        "ROAS material in irrelevant task": 16,
+        "optional campaign advertised but rejected by fixture schema": 2,
+        "incorrect date scope": 2
+      }
+    },
+    "selection": {
+      "attempts": 160,
+      "successes": 6,
+      "failures": 154,
+      "verifier_failures": {
+        "unnecessary_call": 27,
+        "unknown_tool": 53,
+        "invalid_json": 66,
+        "invalid_arguments": 7,
+        "invalid_format": 1
+      },
+      "primary_causes": {
+        "tool/action": 88,
+        "unclear/mixed": 66
+      },
+      "primary_percent_of_failures": {
+        "tool/action": 57.142857142857146,
+        "unclear/mixed": 42.857142857142854
+      },
+      "json_format_failures": 67,
+      "json_format_proven_only": 0,
+      "oracle_success_lower_bound": 6,
+      "flags": {
+        "incorrect date scope": 22,
+        "wrong requested metric/tool": 71,
+        "ROAS material in irrelevant task": 118,
+        "advertised tool rejected as unknown by fixture environment": 53,
+        "format verifier failure NOT proven formatting-only": 67,
+        "optional campaign advertised but rejected by fixture schema": 6
+      }
+    },
+    "multistep": {
+      "attempts": 160,
+      "successes": 0,
+      "failures": 160,
+      "verifier_failures": {
+        "invalid_json": 117,
+        "wrong_final_answer": 21,
+        "invalid_format": 7,
+        "missing_requirements": 12,
+        "unknown_tool": 2,
+        "unnecessary_call": 1
+      },
+      "primary_causes": {
+        "unclear/mixed": 119,
+        "tool/action": 41
+      },
+      "primary_percent_of_failures": {
+        "unclear/mixed": 74.375,
+        "tool/action": 25.625
+      },
+      "json_format_failures": 124,
+      "json_format_proven_only": 0,
+      "oracle_success_lower_bound": 0,
+      "flags": {
+        "format verifier failure NOT proven formatting-only": 124,
+        "premature final answer with no observations": 35,
+        "ROAS material in irrelevant task": 25,
+        "incorrect date scope": 5,
+        "advertised tool rejected as unknown by fixture environment": 2,
+        "optional campaign advertised but rejected by fixture schema": 1
+      }
+    },
+    "overall": {
+      "attempts": 640,
+      "successes": 16,
+      "failures": 624,
+      "verifier_failures": {
+        "wrong_final_answer": 95,
+        "unnecessary_call": 45,
+        "invalid_json": 390,
+        "invalid_arguments": 15,
+        "invalid_format": 11,
+        "unknown_tool": 56,
+        "missing_requirements": 12
+      },
+      "primary_causes": {
+        "unclear/mixed": 369,
+        "tool/action": 157,
+        "formatting/schema only (confirmed lower bound)": 63,
+        "reasoning": 11,
+        "context": 24
+      },
+      "primary_percent_of_failures": {
+        "unclear/mixed": 59.13461538461539,
+        "tool/action": 25.16025641025641,
+        "formatting/schema only (confirmed lower bound)": 10.096153846153847,
+        "reasoning": 1.7628205128205128,
+        "context": 3.8461538461538463
+      },
+      "json_format_failures": 401,
+      "json_format_proven_only": 50,
+      "oracle_success_lower_bound": 79,
+      "flags": {
+        "incorrect date scope": 52,
+        "format verifier failure NOT proven formatting-only": 351,
+        "optional campaign advertised but rejected by fixture schema": 15,
+        "ROAS material in irrelevant task": 160,
+        "advertised tool rejected as unknown by fixture environment": 56,
+        "wrong requested metric/tool": 71,
+        "premature final answer with no observations": 35
+      }
+    }
+  },
+  "source_sha256": {
+    "/Users/boli/development/agent-grpo-lab/benchmarks/capability-v1/dataset.json": "c7712fe925f53c0f6f65d699800ec3122b0604601af08b232935473931bc5586",
+    "/Users/boli/development/agent-grpo-lab/capability-runs/base-before/samples.jsonl": "d2aa2dd0ed64bc772c3ea92c62b980ce13ed15480b078c6d9c1156e124914392",
+    "/Users/boli/development/agent-grpo-lab/capability-runs/base-before/summary.json": "de360a8bfef4ad900afb32046e05f0159d047826127f917984ecc03e6de9de57"
+  },
+  "replay_mismatches": []
+}

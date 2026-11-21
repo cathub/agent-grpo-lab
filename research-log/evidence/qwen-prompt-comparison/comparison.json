@@ -1,0 +1,44 @@
+{
+  "original": {
+    "2": {
+      "task_count": 3,
+      "first_tool_execution_count": 0,
+      "first_tool_execution_rate": 0.0,
+      "success_rate": 0.0,
+      "failure_categories": {
+        "invalid_json": 1,
+        "wrong_final_answer": 2
+      }
+    },
+    "3": {
+      "task_count": 3,
+      "first_tool_execution_count": 0,
+      "first_tool_execution_rate": 0.0,
+      "success_rate": 0.0,
+      "failure_categories": {
+        "invalid_json": 3
+      }
+    }
+  },
+  "conditional_tool": {
+    "2": {
+      "task_count": 3,
+      "first_tool_execution_count": 0,
+      "first_tool_execution_rate": 0.0,
+      "success_rate": 0.0,
+      "failure_categories": {
+        "invalid_json": 1,
+        "wrong_final_answer": 2
+      }
+    },
+    "3": {
+      "task_count": 3,
+      "first_tool_execution_count": 0,
+      "first_tool_execution_rate": 0.0,
+      "success_rate": 0.0,
+      "failure_categories": {
+        "invalid_json": 3
+      }
+    }
+  }
+}

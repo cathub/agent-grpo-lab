@@ -1,0 +1,152 @@
+[
+  {
+    "task_id": "l2-train-platform",
+    "level": 2,
+    "split": "train",
+    "sample_id": 5,
+    "reward": 0.0,
+    "success": false,
+    "failure_category": "unnecessary_call",
+    "tool_calls": 2,
+    "trajectory_length": 2,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"google\",\"start_date\":\"2025-02-01\",\"end_date\":\"2025-02-03\"}}",
+        "observation": {
+          "id": 1,
+          "result": 24,
+          "done": false,
+          "status": null
+        }
+      },
+      {
+        "raw_output": "{\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"google\",\"start_date\":\"2025-02-01\",\"end_date\":\"2025-02-03\"}}",
+        "observation": {
+          "done": true,
+          "status": "unnecessary_call"
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "l2-train-campaign",
+    "level": 2,
+    "split": "train",
+    "sample_id": 3,
+    "reward": 0.0,
+    "success": false,
+    "failure_category": "unnecessary_call",
+    "tool_calls": 2,
+    "trajectory_length": 2,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"google\",\"start_date\":\"2025-02-01\",\"end_date\":\"2025-02-03\",\"campaign\":\"brand\"}}",
+        "observation": {
+          "id": 1,
+          "result": 129,
+          "done": false,
+          "status": null
+        }
+      },
+      {
+        "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"google\",\"start_date\":\"2025-02-01\",\"end_date\":\"2025-02-03\",\"campaign\":\"brand\"}}",
+        "observation": {
+          "done": true,
+          "status": "unnecessary_call"
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "l2-train-campaign",
+    "level": 2,
+    "split": "train",
+    "sample_id": 8,
+    "reward": 0.0,
+    "success": false,
+    "failure_category": "invalid_json",
+    "tool_calls": 1,
+    "trajectory_length": 2,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"google\",\"start_date\":\"2025-02-01\",\"end_date\":\"2025-02-03\",\"campaign\":\"brand\"}}",
+        "observation": {
+          "id": 1,
+          "result": 129,
+          "done": false,
+          "status": null
+        }
+      },
+      {
+        "raw_output": "{\"tool\":\"calculate_roas\",\"arguments\":{\"revenue\":{\"observation_id\":1,\"spend\":{\"observation_id\":1},\"required\":\"revenue\"}}",
+        "observation": {
+          "done": true,
+          "status": "invalid_json"
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "l2-train-campaign",
+    "level": 2,
+    "split": "train",
+    "sample_id": 14,
+    "reward": 0.0,
+    "success": false,
+    "failure_category": "invalid_observation_reference",
+    "tool_calls": 2,
+    "trajectory_length": 2,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"google\",\"start_date\":\"2025-02-01\",\"end_date\":\"2025-02-03\",\"campaign\":\"brand\"}}",
+        "observation": {
+          "id": 1,
+          "result": 129,
+          "done": false,
+          "status": null
+        }
+      },
+      {
+        "raw_output": "{\"tool\":\"calculate_roas\",\"arguments\":{\"revenue\":{\"observation_id\":1},\"spend\":{\"observation_id\":1}}}",
+        "observation": {
+          "done": true,
+          "status": "invalid_observation_reference"
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "l2-train-campaign",
+    "level": 2,
+    "split": "train",
+    "sample_id": 16,
+    "reward": 0.0,
+    "success": false,
+    "failure_category": "invalid_observation_reference",
+    "tool_calls": 2,
+    "trajectory_length": 2,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"google\",\"start_date\":\"2025-02-01\",\"end_date\":\"2025-02-03\",\"campaign\":\"brand\"}}",
+        "observation": {
+          "id": 1,
+          "result": 129,
+          "done": false,
+          "status": null
+        }
+      },
+      {
+        "raw_output": "{\"tool\":\"calculate_roas\",\"arguments\":{\"revenue\":{\"observation_id\":1}, \"spend\":{\"observation_id\":1}}}",
+        "observation": {
+          "done": true,
+          "status": "invalid_observation_reference"
+        }
+      }
+    ]
+  }
+]

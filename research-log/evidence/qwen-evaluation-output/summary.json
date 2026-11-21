@@ -1,0 +1,119 @@
+{
+  "failure_category_counts": {
+    "wrong_arguments": 2
+  },
+  "informative_group_count": 0,
+  "informative_group_ratio": 0.0,
+  "metadata": {
+    "dataset_version": "day1-v1/l1-train",
+    "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+    "sampling_parameters": {
+      "max_tokens": 128,
+      "samples_per_prompt": 1,
+      "seed": 0,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "verifier_version": "day1-v1"
+  },
+  "prompt_group_count": 10,
+  "prompt_groups": {
+    "task-01": {
+      "informative": false,
+      "mean_reward": 1.0,
+      "prompt": "Get spend for google from 2025-01-01 through 2025-01-01.",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "success_count": 1,
+      "success_rate": 1.0
+    },
+    "task-02": {
+      "informative": false,
+      "mean_reward": 1.0,
+      "prompt": "Get spend for google from 2025-01-02 through 2025-01-02.",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "success_count": 1,
+      "success_rate": 1.0
+    },
+    "task-03": {
+      "informative": false,
+      "mean_reward": 1.0,
+      "prompt": "Get spend for meta from 2025-01-01 through 2025-01-01.",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "success_count": 1,
+      "success_rate": 1.0
+    },
+    "task-04": {
+      "informative": false,
+      "mean_reward": 0.0,
+      "prompt": "Get spend for meta from 2025-01-02 through 2025-01-02.",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "success_count": 0,
+      "success_rate": 0.0
+    },
+    "task-05": {
+      "informative": false,
+      "mean_reward": 1.0,
+      "prompt": "Get conversions for google from 2025-01-01 through 2025-01-01.",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "success_count": 1,
+      "success_rate": 1.0
+    },
+    "task-06": {
+      "informative": false,
+      "mean_reward": 1.0,
+      "prompt": "Get conversions for google from 2025-01-02 through 2025-01-02.",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "success_count": 1,
+      "success_rate": 1.0
+    },
+    "task-07": {
+      "informative": false,
+      "mean_reward": 1.0,
+      "prompt": "Get conversions for meta from 2025-01-01 through 2025-01-01.",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "success_count": 1,
+      "success_rate": 1.0
+    },
+    "task-08": {
+      "informative": false,
+      "mean_reward": 0.0,
+      "prompt": "Get conversions for meta from 2025-01-02 through 2025-01-02.",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "success_count": 0,
+      "success_rate": 0.0
+    },
+    "task-09": {
+      "informative": false,
+      "mean_reward": 1.0,
+      "prompt": "Compute ROAS for revenue $0 and spend $50.",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "success_count": 1,
+      "success_rate": 1.0
+    },
+    "task-10": {
+      "informative": false,
+      "mean_reward": 1.0,
+      "prompt": "Compute ROAS for revenue $90 and spend $60.",
+      "reward_variance": 0.0,
+      "sample_count": 1,
+      "success_count": 1,
+      "success_rate": 1.0
+    }
+  },
+  "reward_distribution": {
+    "0": 2,
+    "1": 8
+  },
+  "rollout_count": 10,
+  "success_count": 8,
+  "task_success_rate": 0.8
+}
