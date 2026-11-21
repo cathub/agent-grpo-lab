@@ -27,3 +27,7 @@ Aggregate success 72→88/640 is not a universal improvement: all 88 v1.2 succes
 ## Addendum: v1.3 decision rule
 
 V1.3 has one real multi-step lookup/observation, unlike v1/v1.1/v1.2; its continuation fails, so prior zero-progression observations remain historically correct. Fewer gratuitous calls are not final-answer success: extraction is still zero. Exact pooled binomial intervals are nominal under IID assumptions; task-bootstrap and per-instance variability are separate. Action Bias remains a mechanistic hypothesis. No training or public push occurred.
+
+## Addendum: v1.4 post-observation diagnostic
+
+V1.3 was subsequently published as `25a7f1a` during v1.4 preservation; the prior “no push” statement remains an accurate historical observation. V1.4's0→61/96 is a new post-observation diagnostic, not a replacement benchmark score or end-to-end multi-step success. The16float samples/arm conflict with unchanged integer-only system wording; compatible subset0→45/80 is separate. Native observations are actual id/result/done/status objects; user-context distractors do not demonstrate arbitrary nested/multi-metric return understanding. Comparison/sum remain0/32 despite complete context. Two mixed scalar states do not establish a broad GRPO target. No output repair, training or v1.4 push.

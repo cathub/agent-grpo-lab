@@ -1,0 +1,802 @@
+[
+  {
+    "condition": "A",
+    "task_id": "capability-v1-42-extraction-0000",
+    "category": "extraction",
+    "split": "train",
+    "sample_id": 1,
+    "seed": 500000,
+    "reward": 0,
+    "status": "invalid_format",
+    "next_action_correct": false,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\n  \"platform\": \"meta\",\n  \"start_date\": \"2142-12-29\",\n  \"end_date\": \"2142-12-31\",\n  \"final_answer\": \"260\"\n}",
+        "observation": {
+          "done": true,
+          "status": "invalid_format"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+        },
+        {
+          "role": "user",
+          "content": "Extract the advertising spend in USD for meta. Date range: 2142-12-29 through 2142-12-31. Observation: {\"id\": 1, \"result\": 260}"
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "A",
+    "task_id": "capability-v1-42-extraction-0000",
+    "category": "extraction",
+    "split": "train",
+    "sample_id": 2,
+    "seed": 500001,
+    "reward": 0,
+    "status": "unnecessary_call",
+    "next_action_correct": false,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"meta\",\"start_date\":\"2142-12-29\",\"end_date\":\"2142-12-31\"}}",
+        "observation": {
+          "done": true,
+          "status": "unnecessary_call"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+        },
+        {
+          "role": "user",
+          "content": "Extract the advertising spend in USD for meta. Date range: 2142-12-29 through 2142-12-31. Observation: {\"id\": 1, \"result\": 260}"
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "A",
+    "task_id": "capability-v1-42-extraction-0000",
+    "category": "extraction",
+    "split": "train",
+    "sample_id": 3,
+    "seed": 500002,
+    "reward": 0,
+    "status": "unnecessary_call",
+    "next_action_correct": false,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"meta\",\"start_date\":\"2142-12-29\",\"end_date\":\"2142-12-31\"}}",
+        "observation": {
+          "done": true,
+          "status": "unnecessary_call"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+        },
+        {
+          "role": "user",
+          "content": "Extract the advertising spend in USD for meta. Date range: 2142-12-29 through 2142-12-31. Observation: {\"id\": 1, \"result\": 260}"
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "A",
+    "task_id": "capability-v1-42-extraction-0000",
+    "category": "extraction",
+    "split": "train",
+    "sample_id": 4,
+    "seed": 500003,
+    "reward": 0,
+    "status": "unnecessary_call",
+    "next_action_correct": false,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"meta\",\"start_date\":\"2021-12-31\",\"end_date\":\"2021-12-31\"}}",
+        "observation": {
+          "done": true,
+          "status": "unnecessary_call"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+        },
+        {
+          "role": "user",
+          "content": "Extract the advertising spend in USD for meta. Date range: 2142-12-29 through 2142-12-31. Observation: {\"id\": 1, \"result\": 260}"
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "A",
+    "task_id": "capability-v1-42-comparison-0000",
+    "category": "comparison",
+    "split": "train",
+    "sample_id": 1,
+    "seed": 501000,
+    "reward": 0,
+    "status": "invalid_format",
+    "next_action_correct": false,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2143-02-07\",\"end_date\":\"2143-02-09\"},\"result\":{\"platform\":\"tiktok\",\"ad Spend\":521,\"ad spend\":521}}",
+        "observation": {
+          "done": true,
+          "status": "invalid_format"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+        },
+        {
+          "role": "user",
+          "content": "Which platform has the highest advertising spend in USD from 2143-02-07 through 2143-02-09? Retrieved totals: tiktok=521; google=551; meta=332."
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "A",
+    "task_id": "capability-v1-42-comparison-0000",
+    "category": "comparison",
+    "split": "train",
+    "sample_id": 2,
+    "seed": 501001,
+    "reward": 0,
+    "status": "unnecessary_call",
+    "next_action_correct": false,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\n\"tool\": \"get_ad_spend\",\n\"arguments\": {\n\"platform\": \"tiktok\",\n\"start_date\": \"2143-02-07\",\n\"end_date\": \"2143-02-09\"\n}\n}",
+        "observation": {
+          "done": true,
+          "status": "unnecessary_call"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+        },
+        {
+          "role": "user",
+          "content": "Which platform has the highest advertising spend in USD from 2143-02-07 through 2143-02-09? Retrieved totals: tiktok=521; google=551; meta=332."
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "A",
+    "task_id": "capability-v1-42-comparison-0000",
+    "category": "comparison",
+    "split": "train",
+    "sample_id": 3,
+    "seed": 501002,
+    "reward": 0,
+    "status": "invalid_format",
+    "next_action_correct": false,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2143-02-07\",\"end_date\":\"2143-02-09\"},\"final_answer\":2143}",
+        "observation": {
+          "done": true,
+          "status": "invalid_format"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+        },
+        {
+          "role": "user",
+          "content": "Which platform has the highest advertising spend in USD from 2143-02-07 through 2143-02-09? Retrieved totals: tiktok=521; google=551; meta=332."
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "A",
+    "task_id": "capability-v1-42-comparison-0000",
+    "category": "comparison",
+    "split": "train",
+    "sample_id": 4,
+    "seed": 501003,
+    "reward": 0,
+    "status": "unnecessary_call",
+    "next_action_correct": false,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}",
+        "observation": {
+          "done": true,
+          "status": "unnecessary_call"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+        },
+        {
+          "role": "user",
+          "content": "Which platform has the highest advertising spend in USD from 2143-02-07 through 2143-02-09? Retrieved totals: tiktok=521; google=551; meta=332."
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "A",
+    "task_id": "capability-v1-42-selection-0000",
+    "category": "selection",
+    "split": "train",
+    "sample_id": 1,
+    "seed": 502000,
+    "reward": 0,
+    "status": "unnecessary_call",
+    "next_action_correct": false,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_conversions\",\"arguments\":{\"platform\": \"meta\", \"start_date\": \"2143-03-19\", \"end_date\": \"2143-03-21\"}}",
+        "observation": {
+          "done": true,
+          "status": "unnecessary_call"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+        },
+        {
+          "role": "user",
+          "content": "Retrieve advertising spend in USD for meta from 2143-03-19 through 2143-03-21. No value for this metric has been retrieved. Return only the next tool action. Available unrelated information: {\"platform\": \"meta\", \"metric\": \"get_conversions\", \"result\": 675}"
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "A",
+    "task_id": "capability-v1-42-selection-0000",
+    "category": "selection",
+    "split": "train",
+    "sample_id": 2,
+    "seed": 502001,
+    "reward": 1,
+    "status": "success",
+    "next_action_correct": true,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"meta\",\"start_date\":\"2143-03-19\",\"end_date\":\"2143-03-21\"}}",
+        "observation": {
+          "id": 1,
+          "result": 697,
+          "done": true,
+          "status": "success"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+        },
+        {
+          "role": "user",
+          "content": "Retrieve advertising spend in USD for meta from 2143-03-19 through 2143-03-21. No value for this metric has been retrieved. Return only the next tool action. Available unrelated information: {\"platform\": \"meta\", \"metric\": \"get_conversions\", \"result\": 675}"
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "A",
+    "task_id": "capability-v1-42-selection-0000",
+    "category": "selection",
+    "split": "train",
+    "sample_id": 3,
+    "seed": 502002,
+    "reward": 0,
+    "status": "unnecessary_call",
+    "next_action_correct": false,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"meta\",\"start_date\":\"2143-03-19\",\"end_date\":\"2143-03-21\"}}",
+        "observation": {
+          "done": true,
+          "status": "unnecessary_call"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+        },
+        {
+          "role": "user",
+          "content": "Retrieve advertising spend in USD for meta from 2143-03-19 through 2143-03-21. No value for this metric has been retrieved. Return only the next tool action. Available unrelated information: {\"platform\": \"meta\", \"metric\": \"get_conversions\", \"result\": 675}"
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "A",
+    "task_id": "capability-v1-42-selection-0000",
+    "category": "selection",
+    "split": "train",
+    "sample_id": 4,
+    "seed": 502003,
+    "reward": 1,
+    "status": "success",
+    "next_action_correct": true,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"meta\",\"start_date\":\"2143-03-19\",\"end_date\":\"2143-03-21\"}}",
+        "observation": {
+          "id": 1,
+          "result": 697,
+          "done": true,
+          "status": "success"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}"
+        },
+        {
+          "role": "user",
+          "content": "Retrieve advertising spend in USD for meta from 2143-03-19 through 2143-03-21. No value for this metric has been retrieved. Return only the next tool action. Available unrelated information: {\"platform\": \"meta\", \"metric\": \"get_conversions\", \"result\": 675}"
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "B",
+    "task_id": "capability-v1-42-extraction-0000",
+    "category": "extraction",
+    "split": "train",
+    "sample_id": 1,
+    "seed": 500000,
+    "reward": 1,
+    "status": "success",
+    "next_action_correct": true,
+    "final_answer_correct": true,
+    "trajectory": [
+      {
+        "raw_output": "{\"final_answer\": 260}",
+        "observation": {
+          "done": true,
+          "status": "success"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}} Unrelated synthetic finalization demonstration. Tool observation: {\"id\":1,\"result\":83,\"done\":false,\"status\":null} Assistant final action: {\"final_answer\":83}"
+        },
+        {
+          "role": "user",
+          "content": "Extract the advertising spend in USD for meta. Date range: 2142-12-29 through 2142-12-31. Observation: {\"id\": 1, \"result\": 260}"
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "B",
+    "task_id": "capability-v1-42-extraction-0000",
+    "category": "extraction",
+    "split": "train",
+    "sample_id": 2,
+    "seed": 500001,
+    "reward": 1,
+    "status": "success",
+    "next_action_correct": true,
+    "final_answer_correct": true,
+    "trajectory": [
+      {
+        "raw_output": "{\"final_answer\": 260}",
+        "observation": {
+          "done": true,
+          "status": "success"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}} Unrelated synthetic finalization demonstration. Tool observation: {\"id\":1,\"result\":83,\"done\":false,\"status\":null} Assistant final action: {\"final_answer\":83}"
+        },
+        {
+          "role": "user",
+          "content": "Extract the advertising spend in USD for meta. Date range: 2142-12-29 through 2142-12-31. Observation: {\"id\": 1, \"result\": 260}"
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "B",
+    "task_id": "capability-v1-42-extraction-0000",
+    "category": "extraction",
+    "split": "train",
+    "sample_id": 3,
+    "seed": 500002,
+    "reward": 1,
+    "status": "success",
+    "next_action_correct": true,
+    "final_answer_correct": true,
+    "trajectory": [
+      {
+        "raw_output": "{\"final_answer\": 260}",
+        "observation": {
+          "done": true,
+          "status": "success"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}} Unrelated synthetic finalization demonstration. Tool observation: {\"id\":1,\"result\":83,\"done\":false,\"status\":null} Assistant final action: {\"final_answer\":83}"
+        },
+        {
+          "role": "user",
+          "content": "Extract the advertising spend in USD for meta. Date range: 2142-12-29 through 2142-12-31. Observation: {\"id\": 1, \"result\": 260}"
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "B",
+    "task_id": "capability-v1-42-extraction-0000",
+    "category": "extraction",
+    "split": "train",
+    "sample_id": 4,
+    "seed": 500003,
+    "reward": 1,
+    "status": "success",
+    "next_action_correct": true,
+    "final_answer_correct": true,
+    "trajectory": [
+      {
+        "raw_output": "{\"final_answer\": 260}",
+        "observation": {
+          "done": true,
+          "status": "success"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}} Unrelated synthetic finalization demonstration. Tool observation: {\"id\":1,\"result\":83,\"done\":false,\"status\":null} Assistant final action: {\"final_answer\":83}"
+        },
+        {
+          "role": "user",
+          "content": "Extract the advertising spend in USD for meta. Date range: 2142-12-29 through 2142-12-31. Observation: {\"id\": 1, \"result\": 260}"
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "B",
+    "task_id": "capability-v1-42-comparison-0000",
+    "category": "comparison",
+    "split": "train",
+    "sample_id": 1,
+    "seed": 501000,
+    "reward": 0,
+    "status": "wrong_final_answer",
+    "next_action_correct": false,
+    "final_answer_correct": false,
+    "trajectory": [
+      {
+        "raw_output": "{\"final_answer\":551}",
+        "observation": {
+          "done": true,
+          "status": "wrong_final_answer"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}} Unrelated synthetic finalization demonstration. Tool observation: {\"id\":1,\"result\":83,\"done\":false,\"status\":null} Assistant final action: {\"final_answer\":83}"
+        },
+        {
+          "role": "user",
+          "content": "Which platform has the highest advertising spend in USD from 2143-02-07 through 2143-02-09? Retrieved totals: tiktok=521; google=551; meta=332."
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "B",
+    "task_id": "capability-v1-42-comparison-0000",
+    "category": "comparison",
+    "split": "train",
+    "sample_id": 2,
+    "seed": 501001,
+    "reward": 0,
+    "status": "wrong_final_answer",
+    "next_action_correct": false,
+    "final_answer_correct": false,
+    "trajectory": [
+      {
+        "raw_output": "{\"final_answer\":561}",
+        "observation": {
+          "done": true,
+          "status": "wrong_final_answer"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}} Unrelated synthetic finalization demonstration. Tool observation: {\"id\":1,\"result\":83,\"done\":false,\"status\":null} Assistant final action: {\"final_answer\":83}"
+        },
+        {
+          "role": "user",
+          "content": "Which platform has the highest advertising spend in USD from 2143-02-07 through 2143-02-09? Retrieved totals: tiktok=521; google=551; meta=332."
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "B",
+    "task_id": "capability-v1-42-comparison-0000",
+    "category": "comparison",
+    "split": "train",
+    "sample_id": 3,
+    "seed": 501002,
+    "reward": 0,
+    "status": "wrong_final_answer",
+    "next_action_correct": false,
+    "final_answer_correct": false,
+    "trajectory": [
+      {
+        "raw_output": "{\"final_answer\":551}",
+        "observation": {
+          "done": true,
+          "status": "wrong_final_answer"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}} Unrelated synthetic finalization demonstration. Tool observation: {\"id\":1,\"result\":83,\"done\":false,\"status\":null} Assistant final action: {\"final_answer\":83}"
+        },
+        {
+          "role": "user",
+          "content": "Which platform has the highest advertising spend in USD from 2143-02-07 through 2143-02-09? Retrieved totals: tiktok=521; google=551; meta=332."
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "B",
+    "task_id": "capability-v1-42-comparison-0000",
+    "category": "comparison",
+    "split": "train",
+    "sample_id": 4,
+    "seed": 501003,
+    "reward": 0,
+    "status": "wrong_final_answer",
+    "next_action_correct": false,
+    "final_answer_correct": false,
+    "trajectory": [
+      {
+        "raw_output": "{\"final_answer\":332}",
+        "observation": {
+          "done": true,
+          "status": "wrong_final_answer"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}} Unrelated synthetic finalization demonstration. Tool observation: {\"id\":1,\"result\":83,\"done\":false,\"status\":null} Assistant final action: {\"final_answer\":83}"
+        },
+        {
+          "role": "user",
+          "content": "Which platform has the highest advertising spend in USD from 2143-02-07 through 2143-02-09? Retrieved totals: tiktok=521; google=551; meta=332."
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "B",
+    "task_id": "capability-v1-42-selection-0000",
+    "category": "selection",
+    "split": "train",
+    "sample_id": 1,
+    "seed": 502000,
+    "reward": 0,
+    "status": "unnecessary_call",
+    "next_action_correct": false,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_conversions\",\"arguments\":{\"platform\": \"meta\", \"start_date\": \"2143-03-19\", \"end_date\": \"2143-03-21\"}}",
+        "observation": {
+          "done": true,
+          "status": "unnecessary_call"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}} Unrelated synthetic finalization demonstration. Tool observation: {\"id\":1,\"result\":83,\"done\":false,\"status\":null} Assistant final action: {\"final_answer\":83}"
+        },
+        {
+          "role": "user",
+          "content": "Retrieve advertising spend in USD for meta from 2143-03-19 through 2143-03-21. No value for this metric has been retrieved. Return only the next tool action. Available unrelated information: {\"platform\": \"meta\", \"metric\": \"get_conversions\", \"result\": 675}"
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "B",
+    "task_id": "capability-v1-42-selection-0000",
+    "category": "selection",
+    "split": "train",
+    "sample_id": 2,
+    "seed": 502001,
+    "reward": 1,
+    "status": "success",
+    "next_action_correct": true,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"meta\",\"start_date\":\"2143-03-19\",\"end_date\":\"2143-03-21\"}}",
+        "observation": {
+          "id": 1,
+          "result": 697,
+          "done": true,
+          "status": "success"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}} Unrelated synthetic finalization demonstration. Tool observation: {\"id\":1,\"result\":83,\"done\":false,\"status\":null} Assistant final action: {\"final_answer\":83}"
+        },
+        {
+          "role": "user",
+          "content": "Retrieve advertising spend in USD for meta from 2143-03-19 through 2143-03-21. No value for this metric has been retrieved. Return only the next tool action. Available unrelated information: {\"platform\": \"meta\", \"metric\": \"get_conversions\", \"result\": 675}"
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "B",
+    "task_id": "capability-v1-42-selection-0000",
+    "category": "selection",
+    "split": "train",
+    "sample_id": 3,
+    "seed": 502002,
+    "reward": 0,
+    "status": "unnecessary_call",
+    "next_action_correct": false,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"meta\",\"start_date\":\"2143-03-19\",\"end_date\":\"2143-03-21\"}}",
+        "observation": {
+          "done": true,
+          "status": "unnecessary_call"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}} Unrelated synthetic finalization demonstration. Tool observation: {\"id\":1,\"result\":83,\"done\":false,\"status\":null} Assistant final action: {\"final_answer\":83}"
+        },
+        {
+          "role": "user",
+          "content": "Retrieve advertising spend in USD for meta from 2143-03-19 through 2143-03-21. No value for this metric has been retrieved. Return only the next tool action. Available unrelated information: {\"platform\": \"meta\", \"metric\": \"get_conversions\", \"result\": 675}"
+        }
+      ]
+    ]
+  },
+  {
+    "condition": "B",
+    "task_id": "capability-v1-42-selection-0000",
+    "category": "selection",
+    "split": "train",
+    "sample_id": 4,
+    "seed": 502003,
+    "reward": 1,
+    "status": "success",
+    "next_action_correct": true,
+    "final_answer_correct": null,
+    "trajectory": [
+      {
+        "raw_output": "{\"tool\":\"get_ad_spend\",\"arguments\":{\"platform\":\"meta\",\"start_date\":\"2143-03-19\",\"end_date\":\"2143-03-21\"}}",
+        "observation": {
+          "id": 1,
+          "result": 697,
+          "done": true,
+          "status": "success"
+        }
+      }
+    ],
+    "input_messages_per_turn": [
+      [
+        {
+          "role": "system",
+          "content": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}} Unrelated synthetic finalization demonstration. Tool observation: {\"id\":1,\"result\":83,\"done\":false,\"status\":null} Assistant final action: {\"final_answer\":83}"
+        },
+        {
+          "role": "user",
+          "content": "Retrieve advertising spend in USD for meta from 2143-03-19 through 2143-03-21. No value for this metric has been retrieved. Return only the next tool action. Available unrelated information: {\"platform\": \"meta\", \"metric\": \"get_conversions\", \"result\": 675}"
+        }
+      ]
+    ]
+  }
+]

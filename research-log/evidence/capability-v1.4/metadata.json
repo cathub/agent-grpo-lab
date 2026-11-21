@@ -1,0 +1,839 @@
+{
+  "configuration": {
+    "version": "capability-v1.4-diagnostic",
+    "generation_seed": 1414,
+    "samples_per_instance": 8,
+    "seed_base": 610000,
+    "guard_samples_per_task": 4,
+    "guard_categories": [
+      "extraction",
+      "comparison",
+      "selection"
+    ],
+    "conditions": {
+      "A": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}",
+      "B": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}} Unrelated synthetic finalization demonstration. Tool observation: {\"id\":1,\"result\":83,\"done\":false,\"status\":null} Assistant final action: {\"final_answer\":83}"
+    },
+    "demonstration": " Unrelated synthetic finalization demonstration. Tool observation: {\"id\":1,\"result\":83,\"done\":false,\"status\":null} Assistant final action: {\"final_answer\":83}",
+    "decoding": {
+      "max_tokens": 128,
+      "temperature": 0.7,
+      "top_p": 1.0,
+      "seed": 0
+    },
+    "instances": [
+      {
+        "id": "v14-integer-0",
+        "split": "train",
+        "family": "integer",
+        "category": "multistep",
+        "prompt": "What was the total advertising spend in USD for meta from 2026-03-01 through 2026-03-03?",
+        "expected": 205,
+        "required": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "meta",
+              "start_date": "2026-03-01",
+              "end_date": "2026-03-03"
+            }
+          ]
+        ],
+        "values": {
+          "meta": {
+            "get_ad_spend": 205,
+            "get_conversions": 590,
+            "get_revenue": 195
+          },
+          "tiktok": {
+            "get_ad_spend": 873,
+            "get_conversions": 347,
+            "get_revenue": 566
+          },
+          "google": {
+            "get_ad_spend": 882,
+            "get_conversions": 481,
+            "get_revenue": 466
+          }
+        },
+        "start": "2026-03-01",
+        "end": "2026-03-03",
+        "expected_output_schema": {
+          "type": "object",
+          "required": [
+            "final_answer"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "final_answer": {
+              "type": "integer"
+            }
+          }
+        },
+        "prompt_type_mismatch": false,
+        "executed_history": [
+          {
+            "raw_output": "{\"tool\": \"get_ad_spend\", \"arguments\": {\"platform\": \"meta\", \"start_date\": \"2026-03-01\", \"end_date\": \"2026-03-03\"}}",
+            "observation": {
+              "id": 1,
+              "result": 205,
+              "done": false,
+              "status": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "v14-integer-1",
+        "split": "validation",
+        "family": "integer",
+        "category": "multistep",
+        "prompt": "What was the total conversions for tiktok from 2026-03-06 through 2026-03-08?",
+        "expected": 488,
+        "required": [
+          [
+            "get_conversions",
+            {
+              "platform": "tiktok",
+              "start_date": "2026-03-06",
+              "end_date": "2026-03-08"
+            }
+          ]
+        ],
+        "values": {
+          "tiktok": {
+            "get_ad_spend": 877,
+            "get_conversions": 488,
+            "get_revenue": 113
+          },
+          "google": {
+            "get_ad_spend": 927,
+            "get_conversions": 232,
+            "get_revenue": 799
+          },
+          "meta": {
+            "get_ad_spend": 682,
+            "get_conversions": 377,
+            "get_revenue": 145
+          }
+        },
+        "start": "2026-03-06",
+        "end": "2026-03-08",
+        "expected_output_schema": {
+          "type": "object",
+          "required": [
+            "final_answer"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "final_answer": {
+              "type": "integer"
+            }
+          }
+        },
+        "prompt_type_mismatch": false,
+        "executed_history": [
+          {
+            "raw_output": "{\"tool\": \"get_conversions\", \"arguments\": {\"platform\": \"tiktok\", \"start_date\": \"2026-03-06\", \"end_date\": \"2026-03-08\"}}",
+            "observation": {
+              "id": 1,
+              "result": 488,
+              "done": false,
+              "status": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "v14-float-0",
+        "split": "train",
+        "family": "float",
+        "category": "multistep",
+        "prompt": "What was the total revenue in USD for tiktok from 2026-03-11 through 2026-03-13?",
+        "expected": 784.375,
+        "required": [
+          [
+            "get_revenue",
+            {
+              "platform": "tiktok",
+              "start_date": "2026-03-11",
+              "end_date": "2026-03-13"
+            }
+          ]
+        ],
+        "values": {
+          "tiktok": {
+            "get_ad_spend": 745,
+            "get_conversions": 420,
+            "get_revenue": 784.375
+          },
+          "meta": {
+            "get_ad_spend": 486,
+            "get_conversions": 398,
+            "get_revenue": 600
+          },
+          "google": {
+            "get_ad_spend": 110,
+            "get_conversions": 600,
+            "get_revenue": 314
+          }
+        },
+        "start": "2026-03-11",
+        "end": "2026-03-13",
+        "expected_output_schema": {
+          "type": "object",
+          "required": [
+            "final_answer"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "final_answer": {
+              "type": "number"
+            }
+          }
+        },
+        "prompt_type_mismatch": true,
+        "executed_history": [
+          {
+            "raw_output": "{\"tool\": \"get_revenue\", \"arguments\": {\"platform\": \"tiktok\", \"start_date\": \"2026-03-11\", \"end_date\": \"2026-03-13\"}}",
+            "observation": {
+              "id": 1,
+              "result": 784.375,
+              "done": false,
+              "status": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "v14-float-1",
+        "split": "validation",
+        "family": "float",
+        "category": "multistep",
+        "prompt": "What was the total advertising spend in USD for tiktok from 2026-03-16 through 2026-03-18?",
+        "expected": 818.375,
+        "required": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "tiktok",
+              "start_date": "2026-03-16",
+              "end_date": "2026-03-18"
+            }
+          ]
+        ],
+        "values": {
+          "tiktok": {
+            "get_ad_spend": 818.375,
+            "get_conversions": 312,
+            "get_revenue": 359
+          },
+          "meta": {
+            "get_ad_spend": 194,
+            "get_conversions": 202,
+            "get_revenue": 668
+          },
+          "google": {
+            "get_ad_spend": 265,
+            "get_conversions": 531,
+            "get_revenue": 734
+          }
+        },
+        "start": "2026-03-16",
+        "end": "2026-03-18",
+        "expected_output_schema": {
+          "type": "object",
+          "required": [
+            "final_answer"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "final_answer": {
+              "type": "number"
+            }
+          }
+        },
+        "prompt_type_mismatch": true,
+        "executed_history": [
+          {
+            "raw_output": "{\"tool\": \"get_ad_spend\", \"arguments\": {\"platform\": \"tiktok\", \"start_date\": \"2026-03-16\", \"end_date\": \"2026-03-18\"}}",
+            "observation": {
+              "id": 1,
+              "result": 818.375,
+              "done": false,
+              "status": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "v14-comparison-0",
+        "split": "train",
+        "family": "comparison",
+        "category": "multistep",
+        "prompt": "Which had more total conversions, meta or google, from 2026-03-21 through 2026-03-23?",
+        "expected": "meta",
+        "required": [
+          [
+            "get_conversions",
+            {
+              "platform": "meta",
+              "start_date": "2026-03-21",
+              "end_date": "2026-03-23"
+            }
+          ],
+          [
+            "get_conversions",
+            {
+              "platform": "google",
+              "start_date": "2026-03-21",
+              "end_date": "2026-03-23"
+            }
+          ]
+        ],
+        "values": {
+          "meta": {
+            "get_ad_spend": 934,
+            "get_conversions": 791,
+            "get_revenue": 831
+          },
+          "google": {
+            "get_ad_spend": 876,
+            "get_conversions": 775,
+            "get_revenue": 303
+          },
+          "tiktok": {
+            "get_ad_spend": 275,
+            "get_conversions": 480,
+            "get_revenue": 739
+          }
+        },
+        "start": "2026-03-21",
+        "end": "2026-03-23",
+        "expected_output_schema": {
+          "type": "object",
+          "required": [
+            "final_answer"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "final_answer": {
+              "type": "string"
+            }
+          }
+        },
+        "prompt_type_mismatch": false,
+        "executed_history": [
+          {
+            "raw_output": "{\"tool\": \"get_conversions\", \"arguments\": {\"platform\": \"meta\", \"start_date\": \"2026-03-21\", \"end_date\": \"2026-03-23\"}}",
+            "observation": {
+              "id": 1,
+              "result": 791,
+              "done": false,
+              "status": null
+            }
+          },
+          {
+            "raw_output": "{\"tool\": \"get_conversions\", \"arguments\": {\"platform\": \"google\", \"start_date\": \"2026-03-21\", \"end_date\": \"2026-03-23\"}}",
+            "observation": {
+              "id": 2,
+              "result": 775,
+              "done": false,
+              "status": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "v14-comparison-1",
+        "split": "validation",
+        "family": "comparison",
+        "category": "multistep",
+        "prompt": "Which had more total conversions, meta or tiktok, from 2026-03-26 through 2026-03-28?",
+        "expected": "tiktok",
+        "required": [
+          [
+            "get_conversions",
+            {
+              "platform": "meta",
+              "start_date": "2026-03-26",
+              "end_date": "2026-03-28"
+            }
+          ],
+          [
+            "get_conversions",
+            {
+              "platform": "tiktok",
+              "start_date": "2026-03-26",
+              "end_date": "2026-03-28"
+            }
+          ]
+        ],
+        "values": {
+          "meta": {
+            "get_ad_spend": 272,
+            "get_conversions": 163,
+            "get_revenue": 269
+          },
+          "tiktok": {
+            "get_ad_spend": 473,
+            "get_conversions": 232,
+            "get_revenue": 112
+          },
+          "google": {
+            "get_ad_spend": 115,
+            "get_conversions": 804,
+            "get_revenue": 162
+          }
+        },
+        "start": "2026-03-26",
+        "end": "2026-03-28",
+        "expected_output_schema": {
+          "type": "object",
+          "required": [
+            "final_answer"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "final_answer": {
+              "type": "string"
+            }
+          }
+        },
+        "prompt_type_mismatch": false,
+        "executed_history": [
+          {
+            "raw_output": "{\"tool\": \"get_conversions\", \"arguments\": {\"platform\": \"meta\", \"start_date\": \"2026-03-26\", \"end_date\": \"2026-03-28\"}}",
+            "observation": {
+              "id": 1,
+              "result": 163,
+              "done": false,
+              "status": null
+            }
+          },
+          {
+            "raw_output": "{\"tool\": \"get_conversions\", \"arguments\": {\"platform\": \"tiktok\", \"start_date\": \"2026-03-26\", \"end_date\": \"2026-03-28\"}}",
+            "observation": {
+              "id": 2,
+              "result": 232,
+              "done": false,
+              "status": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "v14-native_fields-0",
+        "split": "train",
+        "family": "native_fields",
+        "category": "multistep",
+        "prompt": "What was the total advertising spend in USD for tiktok from 2026-03-31 through 2026-04-02?",
+        "expected": 307,
+        "required": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "tiktok",
+              "start_date": "2026-03-31",
+              "end_date": "2026-04-02"
+            }
+          ]
+        ],
+        "values": {
+          "tiktok": {
+            "get_ad_spend": 307,
+            "get_conversions": 860,
+            "get_revenue": 231
+          },
+          "google": {
+            "get_ad_spend": 736,
+            "get_conversions": 797,
+            "get_revenue": 202
+          },
+          "meta": {
+            "get_ad_spend": 871,
+            "get_conversions": 185,
+            "get_revenue": 814
+          }
+        },
+        "start": "2026-03-31",
+        "end": "2026-04-02",
+        "expected_output_schema": {
+          "type": "object",
+          "required": [
+            "final_answer"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "final_answer": {
+              "type": "integer"
+            }
+          }
+        },
+        "prompt_type_mismatch": false,
+        "executed_history": [
+          {
+            "raw_output": "{\"tool\": \"get_ad_spend\", \"arguments\": {\"platform\": \"tiktok\", \"start_date\": \"2026-03-31\", \"end_date\": \"2026-04-02\"}}",
+            "observation": {
+              "id": 1,
+              "result": 307,
+              "done": false,
+              "status": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "v14-native_fields-1",
+        "split": "validation",
+        "family": "native_fields",
+        "category": "multistep",
+        "prompt": "What was the total conversions for tiktok from 2026-04-05 through 2026-04-07?",
+        "expected": 224,
+        "required": [
+          [
+            "get_conversions",
+            {
+              "platform": "tiktok",
+              "start_date": "2026-04-05",
+              "end_date": "2026-04-07"
+            }
+          ]
+        ],
+        "values": {
+          "tiktok": {
+            "get_ad_spend": 130,
+            "get_conversions": 224,
+            "get_revenue": 781
+          },
+          "meta": {
+            "get_ad_spend": 615,
+            "get_conversions": 167,
+            "get_revenue": 585
+          },
+          "google": {
+            "get_ad_spend": 274,
+            "get_conversions": 393,
+            "get_revenue": 406
+          }
+        },
+        "start": "2026-04-05",
+        "end": "2026-04-07",
+        "expected_output_schema": {
+          "type": "object",
+          "required": [
+            "final_answer"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "final_answer": {
+              "type": "integer"
+            }
+          }
+        },
+        "prompt_type_mismatch": false,
+        "executed_history": [
+          {
+            "raw_output": "{\"tool\": \"get_conversions\", \"arguments\": {\"platform\": \"tiktok\", \"start_date\": \"2026-04-05\", \"end_date\": \"2026-04-07\"}}",
+            "observation": {
+              "id": 1,
+              "result": 224,
+              "done": false,
+              "status": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "v14-distractors-0",
+        "split": "train",
+        "family": "distractors",
+        "category": "multistep",
+        "prompt": "What was the total revenue in USD for google from 2026-04-10 through 2026-04-12? Unrelated planning metadata: {\"budget_cap\": 1709, \"record_batch\": 318}",
+        "expected": 640,
+        "required": [
+          [
+            "get_revenue",
+            {
+              "platform": "google",
+              "start_date": "2026-04-10",
+              "end_date": "2026-04-12"
+            }
+          ]
+        ],
+        "values": {
+          "google": {
+            "get_ad_spend": 486,
+            "get_conversions": 396,
+            "get_revenue": 640
+          },
+          "meta": {
+            "get_ad_spend": 283,
+            "get_conversions": 168,
+            "get_revenue": 111
+          },
+          "tiktok": {
+            "get_ad_spend": 610,
+            "get_conversions": 554,
+            "get_revenue": 346
+          }
+        },
+        "start": "2026-04-10",
+        "end": "2026-04-12",
+        "expected_output_schema": {
+          "type": "object",
+          "required": [
+            "final_answer"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "final_answer": {
+              "type": "integer"
+            }
+          }
+        },
+        "prompt_type_mismatch": false,
+        "executed_history": [
+          {
+            "raw_output": "{\"tool\": \"get_revenue\", \"arguments\": {\"platform\": \"google\", \"start_date\": \"2026-04-10\", \"end_date\": \"2026-04-12\"}}",
+            "observation": {
+              "id": 1,
+              "result": 640,
+              "done": false,
+              "status": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "v14-distractors-1",
+        "split": "validation",
+        "family": "distractors",
+        "category": "multistep",
+        "prompt": "What was the total advertising spend in USD for meta from 2026-04-15 through 2026-04-17? Unrelated planning metadata: {\"budget_cap\": 1710, \"record_batch\": 319}",
+        "expected": 605,
+        "required": [
+          [
+            "get_ad_spend",
+            {
+              "platform": "meta",
+              "start_date": "2026-04-15",
+              "end_date": "2026-04-17"
+            }
+          ]
+        ],
+        "values": {
+          "meta": {
+            "get_ad_spend": 605,
+            "get_conversions": 312,
+            "get_revenue": 387
+          },
+          "google": {
+            "get_ad_spend": 730,
+            "get_conversions": 299,
+            "get_revenue": 407
+          },
+          "tiktok": {
+            "get_ad_spend": 745,
+            "get_conversions": 360,
+            "get_revenue": 218
+          }
+        },
+        "start": "2026-04-15",
+        "end": "2026-04-17",
+        "expected_output_schema": {
+          "type": "object",
+          "required": [
+            "final_answer"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "final_answer": {
+              "type": "integer"
+            }
+          }
+        },
+        "prompt_type_mismatch": false,
+        "executed_history": [
+          {
+            "raw_output": "{\"tool\": \"get_ad_spend\", \"arguments\": {\"platform\": \"meta\", \"start_date\": \"2026-04-15\", \"end_date\": \"2026-04-17\"}}",
+            "observation": {
+              "id": 1,
+              "result": 605,
+              "done": false,
+              "status": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "v14-sum-0",
+        "split": "train",
+        "family": "sum",
+        "category": "multistep",
+        "prompt": "What is the combined revenue in USD for tiktok and meta from 2026-04-20 through 2026-04-22?",
+        "expected": 935,
+        "required": [
+          [
+            "get_revenue",
+            {
+              "platform": "tiktok",
+              "start_date": "2026-04-20",
+              "end_date": "2026-04-22"
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "meta",
+              "start_date": "2026-04-20",
+              "end_date": "2026-04-22"
+            }
+          ]
+        ],
+        "values": {
+          "tiktok": {
+            "get_ad_spend": 434,
+            "get_conversions": 567,
+            "get_revenue": 335
+          },
+          "meta": {
+            "get_ad_spend": 708,
+            "get_conversions": 847,
+            "get_revenue": 600
+          },
+          "google": {
+            "get_ad_spend": 555,
+            "get_conversions": 587,
+            "get_revenue": 196
+          }
+        },
+        "start": "2026-04-20",
+        "end": "2026-04-22",
+        "expected_output_schema": {
+          "type": "object",
+          "required": [
+            "final_answer"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "final_answer": {
+              "type": "integer"
+            }
+          }
+        },
+        "prompt_type_mismatch": false,
+        "executed_history": [
+          {
+            "raw_output": "{\"tool\": \"get_revenue\", \"arguments\": {\"platform\": \"tiktok\", \"start_date\": \"2026-04-20\", \"end_date\": \"2026-04-22\"}}",
+            "observation": {
+              "id": 1,
+              "result": 335,
+              "done": false,
+              "status": null
+            }
+          },
+          {
+            "raw_output": "{\"tool\": \"get_revenue\", \"arguments\": {\"platform\": \"meta\", \"start_date\": \"2026-04-20\", \"end_date\": \"2026-04-22\"}}",
+            "observation": {
+              "id": 2,
+              "result": 600,
+              "done": false,
+              "status": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "v14-sum-1",
+        "split": "validation",
+        "family": "sum",
+        "category": "multistep",
+        "prompt": "What is the combined revenue in USD for tiktok and google from 2026-04-25 through 2026-04-27?",
+        "expected": 1195,
+        "required": [
+          [
+            "get_revenue",
+            {
+              "platform": "tiktok",
+              "start_date": "2026-04-25",
+              "end_date": "2026-04-27"
+            }
+          ],
+          [
+            "get_revenue",
+            {
+              "platform": "google",
+              "start_date": "2026-04-25",
+              "end_date": "2026-04-27"
+            }
+          ]
+        ],
+        "values": {
+          "tiktok": {
+            "get_ad_spend": 249,
+            "get_conversions": 760,
+            "get_revenue": 743
+          },
+          "google": {
+            "get_ad_spend": 389,
+            "get_conversions": 259,
+            "get_revenue": 452
+          },
+          "meta": {
+            "get_ad_spend": 673,
+            "get_conversions": 597,
+            "get_revenue": 585
+          }
+        },
+        "start": "2026-04-25",
+        "end": "2026-04-27",
+        "expected_output_schema": {
+          "type": "object",
+          "required": [
+            "final_answer"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "final_answer": {
+              "type": "integer"
+            }
+          }
+        },
+        "prompt_type_mismatch": false,
+        "executed_history": [
+          {
+            "raw_output": "{\"tool\": \"get_revenue\", \"arguments\": {\"platform\": \"tiktok\", \"start_date\": \"2026-04-25\", \"end_date\": \"2026-04-27\"}}",
+            "observation": {
+              "id": 1,
+              "result": 743,
+              "done": false,
+              "status": null
+            }
+          },
+          {
+            "raw_output": "{\"tool\": \"get_revenue\", \"arguments\": {\"platform\": \"google\", \"start_date\": \"2026-04-25\", \"end_date\": \"2026-04-27\"}}",
+            "observation": {
+              "id": 2,
+              "result": 452,
+              "done": false,
+              "status": null
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+  "checkpoint_revision": "a5339a4131f135d0fdc6a5c8b5bbed2753bbe0f3",
+  "versions": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.30.7",
+    "transformers": "5.23.0"
+  },
+  "started_utc": "2026-11-21T15:52:57.048588+00:00",
+  "finished_utc": "2026-11-21T15:55:56.400147+00:00",
+  "new_diagnostic_generations": 192,
+  "new_guard_rollouts": 24,
+  "full_benchmark_run": false
+}

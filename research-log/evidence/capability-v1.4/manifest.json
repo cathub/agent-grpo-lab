@@ -1,0 +1,50 @@
+[
+  {
+    "source": "capability-runs/v1.4-finalization/analysis.json",
+    "snapshot": "research-log/evidence/capability-v1.4/analysis.json",
+    "sha256": "b143f1b559338c642bb4cc447ce75dd1d9c77dd543995124be9ea0cfcaf2bbb4",
+    "bytes": 45470
+  },
+  {
+    "source": "capability-runs/v1.4-finalization/guard.json",
+    "snapshot": "research-log/evidence/capability-v1.4/guard.json",
+    "sha256": "eceb2fdf00008053720a89758b2edc953f98e9aeeeb3bcae19b50cd0955a843a",
+    "bytes": 118850
+  },
+  {
+    "source": "capability-runs/v1.4-finalization/metadata.json",
+    "snapshot": "research-log/evidence/capability-v1.4/metadata.json",
+    "sha256": "e13100e917fb6adaa18d5341c3d4a04bd4c8c4355f26d2633f1d70c3d2e20215",
+    "bytes": 31973
+  },
+  {
+    "source": "capability-runs/v1.4-finalization/paired.json",
+    "snapshot": "research-log/evidence/capability-v1.4/paired.json",
+    "sha256": "3f7d4a8e30d3037bb1876a0e5b25f3994caf8a3fdd2cbe5bff654ebde9e09bcb",
+    "bytes": 22905
+  },
+  {
+    "source": "v1.4 source and run audit",
+    "snapshot": "research-log/evidence/capability-v1.4/provenance.json",
+    "sha256": "f84b00a3e822bf563c4d73dc4f964f9b486772ff641cf103f6f9c53d1af1f9f5",
+    "bytes": 2574
+  },
+  {
+    "source": "capability-runs/v1.4-finalization/report.md",
+    "snapshot": "research-log/evidence/capability-v1.4/report.md",
+    "sha256": "6bdd2db098aca1fa5bc1ca1db464bb0c5f5c4cc69d1ebedac46b15d896d0e167",
+    "bytes": 101855
+  },
+  {
+    "source": "capability-runs/v1.4-finalization/representatives.json",
+    "snapshot": "research-log/evidence/capability-v1.4/representatives.json",
+    "sha256": "a76e32c6ff2df07601026e2396d551371826aaae0e42736c4e80d3685e7341c7",
+    "bytes": 100273
+  },
+  {
+    "source": "capability-runs/v1.4-finalization/samples.jsonl",
+    "snapshot": "research-log/evidence/capability-v1.4/samples.jsonl",
+    "sha256": "e78d7f933624ee1bb22867d19242583737386bcf29c94a9762911066773248eb",
+    "bytes": 1073423
+  }
+]

@@ -1,0 +1,1654 @@
+{
+  "groups": {
+    "all": {
+      "A": {
+        "n": 96,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.037696921623587565
+        ],
+        "semantic_correct": 2,
+        "semantic_rate": 0.020833333333333332,
+        "semantic_cp95": [
+          0.0025330467891848027,
+          0.07323683079498744
+        ],
+        "strict_json": 94,
+        "exact_final_wrapper": 2,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 92,
+        "exact_completed_call_repeats": 72,
+        "other_tool_field_outputs": 20,
+        "statuses": {
+          "unnecessary_call": 89,
+          "invalid_format": 3,
+          "wrong_final_answer": 2,
+          "invalid_json": 2
+        },
+        "semantic_correct_but_strict_failure": 2
+      },
+      "B": {
+        "n": 96,
+        "strict_successes": 61,
+        "strict_rate": 0.6354166666666666,
+        "strict_cp95": [
+          0.5309362032928975,
+          0.7312982058885626
+        ],
+        "semantic_correct": 61,
+        "semantic_rate": 0.6354166666666666,
+        "semantic_cp95": [
+          0.5309362032928975,
+          0.7312982058885626
+        ],
+        "strict_json": 93,
+        "exact_final_wrapper": 61,
+        "correct_type_inside_final_wrapper": 61,
+        "correct_candidate_type_including_observation_echo": 61,
+        "observation_shaped": 0,
+        "tool_field": 32,
+        "exact_completed_call_repeats": 16,
+        "other_tool_field_outputs": 16,
+        "statuses": {
+          "success": 61,
+          "invalid_json": 3,
+          "unnecessary_call": 32
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "reward_paired_task_bootstrap": {
+        "delta": 0.6354166666666666,
+        "ci95": [
+          0.6041666666666666,
+          0.6666666666666666
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 12,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "semantic_correct_paired_task_bootstrap": {
+        "delta": 0.6145833333333334,
+        "ci95": [
+          0.5833333333333334,
+          0.6458333333333334
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 12,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "strict_fixes": 61,
+      "strict_regressions": 0
+    },
+    "compatible": {
+      "A": {
+        "n": 80,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.0450640350676923
+        ],
+        "semantic_correct": 2,
+        "semantic_rate": 0.025,
+        "semantic_cp95": [
+          0.0030420861648095417,
+          0.08740715593059165
+        ],
+        "strict_json": 78,
+        "exact_final_wrapper": 2,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 76,
+        "exact_completed_call_repeats": 57,
+        "other_tool_field_outputs": 19,
+        "statuses": {
+          "unnecessary_call": 74,
+          "wrong_final_answer": 2,
+          "invalid_json": 2,
+          "invalid_format": 2
+        },
+        "semantic_correct_but_strict_failure": 2
+      },
+      "B": {
+        "n": 80,
+        "strict_successes": 45,
+        "strict_rate": 0.5625,
+        "strict_cp95": [
+          0.4469975713881661,
+          0.6732360465662208
+        ],
+        "semantic_correct": 45,
+        "semantic_rate": 0.5625,
+        "semantic_cp95": [
+          0.4469975713881661,
+          0.6732360465662208
+        ],
+        "strict_json": 77,
+        "exact_final_wrapper": 45,
+        "correct_type_inside_final_wrapper": 45,
+        "correct_candidate_type_including_observation_echo": 45,
+        "observation_shaped": 0,
+        "tool_field": 32,
+        "exact_completed_call_repeats": 16,
+        "other_tool_field_outputs": 16,
+        "statuses": {
+          "success": 45,
+          "invalid_json": 3,
+          "unnecessary_call": 32
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "reward_paired_task_bootstrap": {
+        "delta": 0.5625,
+        "ci95": [
+          0.525,
+          0.6
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 10,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "semantic_correct_paired_task_bootstrap": {
+        "delta": 0.5375,
+        "ci95": [
+          0.5,
+          0.575
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 10,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "strict_fixes": 45,
+      "strict_regressions": 0
+    },
+    "comparison": {
+      "A": {
+        "n": 16,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.2059072142078227
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.2059072142078227
+        ],
+        "strict_json": 16,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 16,
+        "exact_completed_call_repeats": 13,
+        "other_tool_field_outputs": 3,
+        "statuses": {
+          "unnecessary_call": 16
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "B": {
+        "n": 16,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.2059072142078227
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.2059072142078227
+        ],
+        "strict_json": 16,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 16,
+        "exact_completed_call_repeats": 4,
+        "other_tool_field_outputs": 12,
+        "statuses": {
+          "unnecessary_call": 16
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "reward_paired_task_bootstrap": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 2,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "semantic_correct_paired_task_bootstrap": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 2,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "strict_fixes": 0,
+      "strict_regressions": 0
+    },
+    "distractors": {
+      "A": {
+        "n": 16,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.2059072142078227
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.2059072142078227
+        ],
+        "strict_json": 15,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 15,
+        "exact_completed_call_repeats": 12,
+        "other_tool_field_outputs": 3,
+        "statuses": {
+          "unnecessary_call": 14,
+          "invalid_json": 1,
+          "invalid_format": 1
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "B": {
+        "n": 16,
+        "strict_successes": 16,
+        "strict_rate": 1.0,
+        "strict_cp95": [
+          0.7940927857921773,
+          1.0
+        ],
+        "semantic_correct": 16,
+        "semantic_rate": 1.0,
+        "semantic_cp95": [
+          0.7940927857921773,
+          1.0
+        ],
+        "strict_json": 16,
+        "exact_final_wrapper": 16,
+        "correct_type_inside_final_wrapper": 16,
+        "correct_candidate_type_including_observation_echo": 16,
+        "observation_shaped": 0,
+        "tool_field": 0,
+        "exact_completed_call_repeats": 0,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "success": 16
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "reward_paired_task_bootstrap": {
+        "delta": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 2,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "semantic_correct_paired_task_bootstrap": {
+        "delta": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 2,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "strict_fixes": 16,
+      "strict_regressions": 0
+    },
+    "float": {
+      "A": {
+        "n": 16,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.2059072142078227
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.2059072142078227
+        ],
+        "strict_json": 16,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 16,
+        "exact_completed_call_repeats": 15,
+        "other_tool_field_outputs": 1,
+        "statuses": {
+          "unnecessary_call": 15,
+          "invalid_format": 1
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "B": {
+        "n": 16,
+        "strict_successes": 16,
+        "strict_rate": 1.0,
+        "strict_cp95": [
+          0.7940927857921773,
+          1.0
+        ],
+        "semantic_correct": 16,
+        "semantic_rate": 1.0,
+        "semantic_cp95": [
+          0.7940927857921773,
+          1.0
+        ],
+        "strict_json": 16,
+        "exact_final_wrapper": 16,
+        "correct_type_inside_final_wrapper": 16,
+        "correct_candidate_type_including_observation_echo": 16,
+        "observation_shaped": 0,
+        "tool_field": 0,
+        "exact_completed_call_repeats": 0,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "success": 16
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "reward_paired_task_bootstrap": {
+        "delta": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 2,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "semantic_correct_paired_task_bootstrap": {
+        "delta": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 2,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "strict_fixes": 16,
+      "strict_regressions": 0
+    },
+    "integer": {
+      "A": {
+        "n": 16,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.2059072142078227
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.2059072142078227
+        ],
+        "strict_json": 16,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 16,
+        "exact_completed_call_repeats": 15,
+        "other_tool_field_outputs": 1,
+        "statuses": {
+          "unnecessary_call": 16
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "B": {
+        "n": 16,
+        "strict_successes": 15,
+        "strict_rate": 0.9375,
+        "strict_cp95": [
+          0.6976792615654679,
+          0.998418888277234
+        ],
+        "semantic_correct": 15,
+        "semantic_rate": 0.9375,
+        "semantic_cp95": [
+          0.6976792615654679,
+          0.998418888277234
+        ],
+        "strict_json": 15,
+        "exact_final_wrapper": 15,
+        "correct_type_inside_final_wrapper": 15,
+        "correct_candidate_type_including_observation_echo": 15,
+        "observation_shaped": 0,
+        "tool_field": 0,
+        "exact_completed_call_repeats": 0,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "success": 15,
+          "invalid_json": 1
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "reward_paired_task_bootstrap": {
+        "delta": 0.9375,
+        "ci95": [
+          0.875,
+          1.0
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 2,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "semantic_correct_paired_task_bootstrap": {
+        "delta": 0.9375,
+        "ci95": [
+          0.875,
+          1.0
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 2,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "strict_fixes": 15,
+      "strict_regressions": 0
+    },
+    "native_fields": {
+      "A": {
+        "n": 16,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.2059072142078227
+        ],
+        "semantic_correct": 2,
+        "semantic_rate": 0.125,
+        "semantic_cp95": [
+          0.015513603815413897,
+          0.38347623684926346
+        ],
+        "strict_json": 15,
+        "exact_final_wrapper": 2,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 13,
+        "exact_completed_call_repeats": 9,
+        "other_tool_field_outputs": 4,
+        "statuses": {
+          "unnecessary_call": 12,
+          "wrong_final_answer": 2,
+          "invalid_json": 1,
+          "invalid_format": 1
+        },
+        "semantic_correct_but_strict_failure": 2
+      },
+      "B": {
+        "n": 16,
+        "strict_successes": 14,
+        "strict_rate": 0.875,
+        "strict_cp95": [
+          0.616523763150737,
+          0.984486396184586
+        ],
+        "semantic_correct": 14,
+        "semantic_rate": 0.875,
+        "semantic_cp95": [
+          0.616523763150737,
+          0.984486396184586
+        ],
+        "strict_json": 14,
+        "exact_final_wrapper": 14,
+        "correct_type_inside_final_wrapper": 14,
+        "correct_candidate_type_including_observation_echo": 14,
+        "observation_shaped": 0,
+        "tool_field": 0,
+        "exact_completed_call_repeats": 0,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "success": 14,
+          "invalid_json": 2
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "reward_paired_task_bootstrap": {
+        "delta": 0.875,
+        "ci95": [
+          0.75,
+          1.0
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 2,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "semantic_correct_paired_task_bootstrap": {
+        "delta": 0.75,
+        "ci95": [
+          0.625,
+          0.875
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 2,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "strict_fixes": 14,
+      "strict_regressions": 0
+    },
+    "sum": {
+      "A": {
+        "n": 16,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.2059072142078227
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.2059072142078227
+        ],
+        "strict_json": 16,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 16,
+        "exact_completed_call_repeats": 8,
+        "other_tool_field_outputs": 8,
+        "statuses": {
+          "unnecessary_call": 16
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "B": {
+        "n": 16,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.2059072142078227
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.2059072142078227
+        ],
+        "strict_json": 16,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 16,
+        "exact_completed_call_repeats": 12,
+        "other_tool_field_outputs": 4,
+        "statuses": {
+          "unnecessary_call": 16
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "reward_paired_task_bootstrap": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 2,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "semantic_correct_paired_task_bootstrap": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "iterations": 5000,
+        "seed": 20261121,
+        "tasks": 2,
+        "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+      },
+      "strict_fixes": 0,
+      "strict_regressions": 0
+    }
+  },
+  "per_task": {
+    "v14-integer-0": {
+      "split": "train",
+      "family": "integer",
+      "expected": 205,
+      "A": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 8,
+        "exact_completed_call_repeats": 7,
+        "other_tool_field_outputs": 1,
+        "statuses": {
+          "unnecessary_call": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "B": {
+        "n": 8,
+        "strict_successes": 8,
+        "strict_rate": 1.0,
+        "strict_cp95": [
+          0.6305833524471842,
+          1.0
+        ],
+        "semantic_correct": 8,
+        "semantic_rate": 1.0,
+        "semantic_cp95": [
+          0.6305833524471842,
+          1.0
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 8,
+        "correct_type_inside_final_wrapper": 8,
+        "correct_candidate_type_including_observation_echo": 8,
+        "observation_shaped": 0,
+        "tool_field": 0,
+        "exact_completed_call_repeats": 0,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "success": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      }
+    },
+    "v14-integer-1": {
+      "split": "validation",
+      "family": "integer",
+      "expected": 488,
+      "A": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 8,
+        "exact_completed_call_repeats": 8,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "unnecessary_call": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "B": {
+        "n": 8,
+        "strict_successes": 7,
+        "strict_rate": 0.875,
+        "strict_cp95": [
+          0.47349032912479716,
+          0.9968402764687481
+        ],
+        "semantic_correct": 7,
+        "semantic_rate": 0.875,
+        "semantic_cp95": [
+          0.47349032912479716,
+          0.9968402764687481
+        ],
+        "strict_json": 7,
+        "exact_final_wrapper": 7,
+        "correct_type_inside_final_wrapper": 7,
+        "correct_candidate_type_including_observation_echo": 7,
+        "observation_shaped": 0,
+        "tool_field": 0,
+        "exact_completed_call_repeats": 0,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "success": 7,
+          "invalid_json": 1
+        },
+        "semantic_correct_but_strict_failure": 0
+      }
+    },
+    "v14-float-0": {
+      "split": "train",
+      "family": "float",
+      "expected": 784.375,
+      "A": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 8,
+        "exact_completed_call_repeats": 7,
+        "other_tool_field_outputs": 1,
+        "statuses": {
+          "unnecessary_call": 7,
+          "invalid_format": 1
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "B": {
+        "n": 8,
+        "strict_successes": 8,
+        "strict_rate": 1.0,
+        "strict_cp95": [
+          0.6305833524471842,
+          1.0
+        ],
+        "semantic_correct": 8,
+        "semantic_rate": 1.0,
+        "semantic_cp95": [
+          0.6305833524471842,
+          1.0
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 8,
+        "correct_type_inside_final_wrapper": 8,
+        "correct_candidate_type_including_observation_echo": 8,
+        "observation_shaped": 0,
+        "tool_field": 0,
+        "exact_completed_call_repeats": 0,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "success": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      }
+    },
+    "v14-float-1": {
+      "split": "validation",
+      "family": "float",
+      "expected": 818.375,
+      "A": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 8,
+        "exact_completed_call_repeats": 8,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "unnecessary_call": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "B": {
+        "n": 8,
+        "strict_successes": 8,
+        "strict_rate": 1.0,
+        "strict_cp95": [
+          0.6305833524471842,
+          1.0
+        ],
+        "semantic_correct": 8,
+        "semantic_rate": 1.0,
+        "semantic_cp95": [
+          0.6305833524471842,
+          1.0
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 8,
+        "correct_type_inside_final_wrapper": 8,
+        "correct_candidate_type_including_observation_echo": 8,
+        "observation_shaped": 0,
+        "tool_field": 0,
+        "exact_completed_call_repeats": 0,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "success": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      }
+    },
+    "v14-comparison-0": {
+      "split": "train",
+      "family": "comparison",
+      "expected": "meta",
+      "A": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 8,
+        "exact_completed_call_repeats": 6,
+        "other_tool_field_outputs": 2,
+        "statuses": {
+          "unnecessary_call": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "B": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 8,
+        "exact_completed_call_repeats": 0,
+        "other_tool_field_outputs": 8,
+        "statuses": {
+          "unnecessary_call": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      }
+    },
+    "v14-comparison-1": {
+      "split": "validation",
+      "family": "comparison",
+      "expected": "tiktok",
+      "A": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 8,
+        "exact_completed_call_repeats": 7,
+        "other_tool_field_outputs": 1,
+        "statuses": {
+          "unnecessary_call": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "B": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 8,
+        "exact_completed_call_repeats": 4,
+        "other_tool_field_outputs": 4,
+        "statuses": {
+          "unnecessary_call": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      }
+    },
+    "v14-native_fields-0": {
+      "split": "train",
+      "family": "native_fields",
+      "expected": 307,
+      "A": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 1,
+        "semantic_rate": 0.125,
+        "semantic_cp95": [
+          0.003159723531251902,
+          0.5265096708752066
+        ],
+        "strict_json": 7,
+        "exact_final_wrapper": 1,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 6,
+        "exact_completed_call_repeats": 3,
+        "other_tool_field_outputs": 3,
+        "statuses": {
+          "unnecessary_call": 6,
+          "wrong_final_answer": 1,
+          "invalid_json": 1
+        },
+        "semantic_correct_but_strict_failure": 1
+      },
+      "B": {
+        "n": 8,
+        "strict_successes": 8,
+        "strict_rate": 1.0,
+        "strict_cp95": [
+          0.6305833524471842,
+          1.0
+        ],
+        "semantic_correct": 8,
+        "semantic_rate": 1.0,
+        "semantic_cp95": [
+          0.6305833524471842,
+          1.0
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 8,
+        "correct_type_inside_final_wrapper": 8,
+        "correct_candidate_type_including_observation_echo": 8,
+        "observation_shaped": 0,
+        "tool_field": 0,
+        "exact_completed_call_repeats": 0,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "success": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      }
+    },
+    "v14-native_fields-1": {
+      "split": "validation",
+      "family": "native_fields",
+      "expected": 224,
+      "A": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 1,
+        "semantic_rate": 0.125,
+        "semantic_cp95": [
+          0.003159723531251902,
+          0.5265096708752066
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 1,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 7,
+        "exact_completed_call_repeats": 6,
+        "other_tool_field_outputs": 1,
+        "statuses": {
+          "unnecessary_call": 6,
+          "wrong_final_answer": 1,
+          "invalid_format": 1
+        },
+        "semantic_correct_but_strict_failure": 1
+      },
+      "B": {
+        "n": 8,
+        "strict_successes": 6,
+        "strict_rate": 0.75,
+        "strict_cp95": [
+          0.3491442055871776,
+          0.9681459737500557
+        ],
+        "semantic_correct": 6,
+        "semantic_rate": 0.75,
+        "semantic_cp95": [
+          0.3491442055871776,
+          0.9681459737500557
+        ],
+        "strict_json": 6,
+        "exact_final_wrapper": 6,
+        "correct_type_inside_final_wrapper": 6,
+        "correct_candidate_type_including_observation_echo": 6,
+        "observation_shaped": 0,
+        "tool_field": 0,
+        "exact_completed_call_repeats": 0,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "success": 6,
+          "invalid_json": 2
+        },
+        "semantic_correct_but_strict_failure": 0
+      }
+    },
+    "v14-distractors-0": {
+      "split": "train",
+      "family": "distractors",
+      "expected": 640,
+      "A": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "strict_json": 7,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 7,
+        "exact_completed_call_repeats": 7,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "unnecessary_call": 7,
+          "invalid_json": 1
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "B": {
+        "n": 8,
+        "strict_successes": 8,
+        "strict_rate": 1.0,
+        "strict_cp95": [
+          0.6305833524471842,
+          1.0
+        ],
+        "semantic_correct": 8,
+        "semantic_rate": 1.0,
+        "semantic_cp95": [
+          0.6305833524471842,
+          1.0
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 8,
+        "correct_type_inside_final_wrapper": 8,
+        "correct_candidate_type_including_observation_echo": 8,
+        "observation_shaped": 0,
+        "tool_field": 0,
+        "exact_completed_call_repeats": 0,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "success": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      }
+    },
+    "v14-distractors-1": {
+      "split": "validation",
+      "family": "distractors",
+      "expected": 605,
+      "A": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 8,
+        "exact_completed_call_repeats": 5,
+        "other_tool_field_outputs": 3,
+        "statuses": {
+          "unnecessary_call": 7,
+          "invalid_format": 1
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "B": {
+        "n": 8,
+        "strict_successes": 8,
+        "strict_rate": 1.0,
+        "strict_cp95": [
+          0.6305833524471842,
+          1.0
+        ],
+        "semantic_correct": 8,
+        "semantic_rate": 1.0,
+        "semantic_cp95": [
+          0.6305833524471842,
+          1.0
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 8,
+        "correct_type_inside_final_wrapper": 8,
+        "correct_candidate_type_including_observation_echo": 8,
+        "observation_shaped": 0,
+        "tool_field": 0,
+        "exact_completed_call_repeats": 0,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "success": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      }
+    },
+    "v14-sum-0": {
+      "split": "train",
+      "family": "sum",
+      "expected": 935,
+      "A": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 8,
+        "exact_completed_call_repeats": 1,
+        "other_tool_field_outputs": 7,
+        "statuses": {
+          "unnecessary_call": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "B": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 8,
+        "exact_completed_call_repeats": 4,
+        "other_tool_field_outputs": 4,
+        "statuses": {
+          "unnecessary_call": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      }
+    },
+    "v14-sum-1": {
+      "split": "validation",
+      "family": "sum",
+      "expected": 1195,
+      "A": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 8,
+        "exact_completed_call_repeats": 7,
+        "other_tool_field_outputs": 1,
+        "statuses": {
+          "unnecessary_call": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      },
+      "B": {
+        "n": 8,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "semantic_correct": 0,
+        "semantic_rate": 0.0,
+        "semantic_cp95": [
+          0.0,
+          0.3694166475528192
+        ],
+        "strict_json": 8,
+        "exact_final_wrapper": 0,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 8,
+        "exact_completed_call_repeats": 8,
+        "other_tool_field_outputs": 0,
+        "statuses": {
+          "unnecessary_call": 8
+        },
+        "semantic_correct_but_strict_failure": 0
+      }
+    }
+  },
+  "guard": {
+    "A": {
+      "extraction": {
+        "n": 4,
+        "successes": 0,
+        "statuses": {
+          "invalid_format": 1,
+          "unnecessary_call": 3
+        }
+      },
+      "comparison": {
+        "n": 4,
+        "successes": 0,
+        "statuses": {
+          "invalid_format": 2,
+          "unnecessary_call": 2
+        }
+      },
+      "selection": {
+        "n": 4,
+        "successes": 2,
+        "statuses": {
+          "unnecessary_call": 2,
+          "success": 2
+        }
+      }
+    },
+    "B": {
+      "extraction": {
+        "n": 4,
+        "successes": 4,
+        "statuses": {
+          "success": 4
+        }
+      },
+      "comparison": {
+        "n": 4,
+        "successes": 0,
+        "statuses": {
+          "wrong_final_answer": 4
+        }
+      },
+      "selection": {
+        "n": 4,
+        "successes": 2,
+        "statuses": {
+          "unnecessary_call": 2,
+          "success": 2
+        }
+      }
+    }
+  },
+  "missing_observations": 0,
+  "paired_samples": 96,
+  "rescoring_matches": 192,
+  "by_split": {
+    "train": {
+      "A": {
+        "n": 48,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.07397278534728022
+        ],
+        "semantic_correct": 1,
+        "semantic_rate": 0.020833333333333332,
+        "semantic_cp95": [
+          0.0005273152534231193,
+          0.11069616059315232
+        ],
+        "strict_json": 46,
+        "exact_final_wrapper": 1,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 45,
+        "exact_completed_call_repeats": 31,
+        "other_tool_field_outputs": 14,
+        "statuses": {
+          "unnecessary_call": 44,
+          "invalid_format": 1,
+          "wrong_final_answer": 1,
+          "invalid_json": 2
+        },
+        "semantic_correct_but_strict_failure": 1
+      },
+      "B": {
+        "n": 48,
+        "strict_successes": 32,
+        "strict_rate": 0.6666666666666666,
+        "strict_cp95": [
+          0.5158916795538191,
+          0.7960402644190006
+        ],
+        "semantic_correct": 32,
+        "semantic_rate": 0.6666666666666666,
+        "semantic_cp95": [
+          0.5158916795538191,
+          0.7960402644190006
+        ],
+        "strict_json": 48,
+        "exact_final_wrapper": 32,
+        "correct_type_inside_final_wrapper": 32,
+        "correct_candidate_type_including_observation_echo": 32,
+        "observation_shaped": 0,
+        "tool_field": 16,
+        "exact_completed_call_repeats": 4,
+        "other_tool_field_outputs": 12,
+        "statuses": {
+          "success": 32,
+          "unnecessary_call": 16
+        },
+        "semantic_correct_but_strict_failure": 0
+      }
+    },
+    "validation": {
+      "A": {
+        "n": 48,
+        "strict_successes": 0,
+        "strict_rate": 0.0,
+        "strict_cp95": [
+          0.0,
+          0.07397278534728022
+        ],
+        "semantic_correct": 1,
+        "semantic_rate": 0.020833333333333332,
+        "semantic_cp95": [
+          0.0005273152534231193,
+          0.11069616059315232
+        ],
+        "strict_json": 48,
+        "exact_final_wrapper": 1,
+        "correct_type_inside_final_wrapper": 0,
+        "correct_candidate_type_including_observation_echo": 0,
+        "observation_shaped": 0,
+        "tool_field": 47,
+        "exact_completed_call_repeats": 41,
+        "other_tool_field_outputs": 6,
+        "statuses": {
+          "unnecessary_call": 45,
+          "wrong_final_answer": 1,
+          "invalid_format": 2
+        },
+        "semantic_correct_but_strict_failure": 1
+      },
+      "B": {
+        "n": 48,
+        "strict_successes": 29,
+        "strict_rate": 0.6041666666666666,
+        "strict_cp95": [
+          0.45269580091067374,
+          0.742301027153591
+        ],
+        "semantic_correct": 29,
+        "semantic_rate": 0.6041666666666666,
+        "semantic_cp95": [
+          0.45269580091067374,
+          0.742301027153591
+        ],
+        "strict_json": 45,
+        "exact_final_wrapper": 29,
+        "correct_type_inside_final_wrapper": 29,
+        "correct_candidate_type_including_observation_echo": 29,
+        "observation_shaped": 0,
+        "tool_field": 16,
+        "exact_completed_call_repeats": 12,
+        "other_tool_field_outputs": 4,
+        "statuses": {
+          "success": 29,
+          "invalid_json": 3,
+          "unnecessary_call": 16
+        },
+        "semantic_correct_but_strict_failure": 0
+      }
+    }
+  },
+  "mixed_reward_states": {
+    "A": [],
+    "B": [
+      "v14-integer-1",
+      "v14-native_fields-1"
+    ]
+  },
+  "guard_pairs": [
+    {
+      "task_id": "capability-v1-42-extraction-0000",
+      "sample_id": 1,
+      "seed": 500000,
+      "A_reward": 0,
+      "B_reward": 1
+    },
+    {
+      "task_id": "capability-v1-42-extraction-0000",
+      "sample_id": 2,
+      "seed": 500001,
+      "A_reward": 0,
+      "B_reward": 1
+    },
+    {
+      "task_id": "capability-v1-42-extraction-0000",
+      "sample_id": 3,
+      "seed": 500002,
+      "A_reward": 0,
+      "B_reward": 1
+    },
+    {
+      "task_id": "capability-v1-42-extraction-0000",
+      "sample_id": 4,
+      "seed": 500003,
+      "A_reward": 0,
+      "B_reward": 1
+    },
+    {
+      "task_id": "capability-v1-42-comparison-0000",
+      "sample_id": 1,
+      "seed": 501000,
+      "A_reward": 0,
+      "B_reward": 0
+    },
+    {
+      "task_id": "capability-v1-42-comparison-0000",
+      "sample_id": 2,
+      "seed": 501001,
+      "A_reward": 0,
+      "B_reward": 0
+    },
+    {
+      "task_id": "capability-v1-42-comparison-0000",
+      "sample_id": 3,
+      "seed": 501002,
+      "A_reward": 0,
+      "B_reward": 0
+    },
+    {
+      "task_id": "capability-v1-42-comparison-0000",
+      "sample_id": 4,
+      "seed": 501003,
+      "A_reward": 0,
+      "B_reward": 0
+    },
+    {
+      "task_id": "capability-v1-42-selection-0000",
+      "sample_id": 1,
+      "seed": 502000,
+      "A_reward": 0,
+      "B_reward": 0
+    },
+    {
+      "task_id": "capability-v1-42-selection-0000",
+      "sample_id": 2,
+      "seed": 502001,
+      "A_reward": 1,
+      "B_reward": 1
+    },
+    {
+      "task_id": "capability-v1-42-selection-0000",
+      "sample_id": 3,
+      "seed": 502002,
+      "A_reward": 0,
+      "B_reward": 0
+    },
+    {
+      "task_id": "capability-v1-42-selection-0000",
+      "sample_id": 4,
+      "seed": 502003,
+      "A_reward": 1,
+      "B_reward": 1
+    }
+  ],
+  "uncertainty_note": "CP intervals are nominal conditional binomial summaries, not unseen-task guarantees. Paired bootstrap resamples the two tasks per family, pooling train/validation as development only; tiny strata give limited uncertainty estimates.",
+  "semantic_rule": "Only strict parsed JSON scalar, exact final_answer wrapper, or native observation-shaped result; numeric strings allowed for semantic diagnostic only. No fences/prose stripped, nested searches or scoring repairs.",
+  "scope": "12 synthetic train/validation states, one continuation each. Float stratum conflicts with unchanged integer-only instruction. Separate 3-task training guard. No end-to-end planning claims."
+}

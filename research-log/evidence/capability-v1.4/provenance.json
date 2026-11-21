@@ -1,0 +1,33 @@
+{
+  "parent_git_revision": "25a7f1a884fcdf81a4b338785fb7b1a1c353e08a",
+  "source_sha256": {
+    "src/capability_v14.py": "84801e36045a08c339ea1be7ec7cc189914f2dafb0d0cdd1d8915650ca321bd1",
+    "src/report_capability_v14.py": "447bc236f6f562c47482c704e53ff42d2f01faa7b309f00c85c781125acb6ad4",
+    "tests/test_capability_v14.py": "47e3879660686a5da1bd3712417c113717ae1ea5453f588272a5a31341399d88",
+    "benchmark-configs/capability-v1.4-diagnostic.json": "07226ecac1f0a090e2715364e524c02e597c78d7116369e89acf99b7f6429e64",
+    "benchmark-configs/capability-v1.4-prompt.diff": "afe4b0a2b2cc65d0657c80eb25306e1854981c9f54c2694375b122f97a422306",
+    "src/capability_v11.py": "eb37a08bc07e865c9facf94a22aa99ae130bdc6139f02eb61920364812d23f78",
+    "src/capability_v12.py": "3c76dcb48ed6fcc320a0afa12a15366c792d780b6762f6b2e8e52385327bb4f7",
+    "src/capability_uncertainty.py": "e67233618884b20bb62afc70febe1bd0067f61625ca6c4a8af80d71d3c940750",
+    "src/qwen_agent.py": "8cff1375fd12601b9e9ca4ed895145a865fc3d64981a4e7b78f0e2883faf30f7",
+    "src/environment.py": "b6f913131dcd6edfa465dd66507749a06679a01ea731a1406408611aa5d668f2",
+    "src/verifier.py": "bbf9e7dd5f51c877a5fc79193f678d546e125f53ebf7fead2c0fb1d4b6dca996",
+    "src/scenarios.py": "b7ad9b550e3921635bcf8f8cc03aa1669c51b80e8aedde3d55ba094541c0658d",
+    "src/tools.py": "27845aa8067c2d9b36dc4aa62c0be1ea47298f6b6f1b9f15455b51f0f4c9ebfc",
+    "research-log/evidence/source-snapshot/capability_benchmark.py": "b5b3b82ce73d182c8d5f0308ee6141be9dcb399feda9f310e8f1fc24ed788b19",
+    "research-log/evidence/benchmarks/capability-v1/dataset.json": "c7712fe925f53c0f6f65d699800ec3122b0604601af08b232935473931bc5586"
+  },
+  "commands": [
+    ".venv/bin/python -m unittest discover -s tests -q",
+    ".venv/bin/python -m src.capability_v14 --output capability-runs/v1.4-finalization",
+    ".venv/bin/python -m src.report_capability_v14 --output capability-runs/v1.4-finalization"
+  ],
+  "initial_launch": "Failed frozen-config equality before model inference or output creation; tuple/list canonicalization fixed in new generator only. Frozen config unchanged. No generated sample retried.",
+  "tests": 50,
+  "training": false,
+  "full_640_run": false,
+  "v14_push": false,
+  "v13_published_revision": "25a7f1a884fcdf81a4b338785fb7b1a1c353e08a",
+  "unrelated_preexisting_files": "Eight file contents/modes fingerprinted outside repo; must remain identical. None staged.",
+  "artifact_policy": "Small synthetic raw evidence intentionally preserved locally in this experiment commit, not weights or private source data."
+}
