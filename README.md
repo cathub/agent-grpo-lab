@@ -1,5 +1,60 @@
 # agent-grpo-lab
 
+## Local Qwen Level 1 baseline on macOS
+
+Use native arm64 Python 3.10+ on Apple Silicon, outside Rosetta. The default
+is `mlx-community/Qwen2.5-0.5B-Instruct-4bit`, a small quantized instruction
+model selected for an M1 with 8GB unified memory. Close large applications.
+The first inference downloads weights from Hugging Face; later runs use the
+local cache. No hosted inference API or GRPO training is used.
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-mlx.txt
+python -m src.qwen_evaluation --output-dir qwen-evaluation-output
+python -m unittest discover -v
+```
+
+The runner selects only the existing 10 Level 1 training tasks. The adapter
+uses the model tokenizer's chat template, tool JSON schemas, and single-call
+JSON instructions. Only prompts enter inference; reference answers remain
+with the unchanged `evaluate()` and `verify()`. Each task receives one raw
+completion with no repair, retries, or mock fallback. JSON is requested, not
+guaranteed; malformed responses are logged and scored as failures. The mock
+and Level 2/3 behavior remain unchanged.
+
+Defaults: 128 new tokens, temperature 0 (greedy), top-p 1, seed 0. Override
+with `--model`, `--max-tokens`, `--temperature`, `--top-p`, and `--seed`.
+The model argument also accepts a local MLX model directory. Optional MLX
+dependencies are unnecessary for the fake-backend unit tests.
+`summary.json` records model ID, generation settings, success rate, and
+failure categories. `rollouts.jsonl` records raw completions and verifier
+results. Reusing an output directory overwrites its logs. With one sample
+per task, prompt groups cannot be informative for GRPO.
+
+References: [model card](https://huggingface.co/mlx-community/Qwen2.5-0.5B-Instruct-4bit)
+and [MLX LM](https://github.com/ml-explore/mlx-lm).
+
+## Original benchmark
+
+### Multi-step Qwen baselines
+
+```sh
+.venv/bin/python -m src.qwen_episodes --level 2 --output-dir qwen-level2-output
+.venv/bin/python -m src.qwen_episodes --level 3 --output-dir qwen-level3-output
+```
+
+These commands select only the respective three training tasks and use the
+same model and deterministic generation defaults as Level 1. The independent
+session adapter reconstructs chat history from raw actions and environment
+observations, including observation IDs for chained ROAS calls. It does not
+receive labels or required-call sets. The unchanged environment controls
+termination and rewards. Outputs are never repaired or retried. Separate
+directories preserve the original Level 1 results. Each JSONL record includes
+the full trajectory. Average trajectory length equals model generations per
+task for completed runs; tool-call counts use the environment's attempt count.
+
 A small lab for learning LLM post-training with SFT and GRPO. Day 1
 implements a deterministic tool-calling benchmark with Python 3.9+ and
 the standard library. It does not run a model, train anything, or call an API.

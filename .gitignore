@@ -44,6 +44,9 @@ checkpoints/
 artifacts/
 outputs/
 evaluation-output/
+# Local Qwen baseline and experiment artifacts
+/qwen-*/
+/.tmp/
 rollouts.jsonl
 build/
 dist/
