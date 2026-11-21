@@ -11,3 +11,7 @@ Status: draft research outline, not published. No training occurred.
 7. **The GRPO decision is still open.** Only selection has informative training groups in v1.2. Broad reasoning claims remain blocked by benchmark shortcuts and absent multi-step progress. Test cheaper prompt/protocol hypotheses first, on training/validation only.
 
 Evidence: [regression journal](../research-log/experiments/011-v1.2-regression-analysis.md), [all 31 pairs](../research-log/evidence/v1.2-regression-analysis/regressions.json), [successful changes](../research-log/evidence/v1.2-regression-analysis/fixes.json). Do not turn this outline into a published article without a separate request.
+
+## v1.3 follow-up: fewer calls did not mean better answers
+
+VERIFIED: one decision-rule prepend reduced gratuitous calls153→91, but extraction stayed0/160. Selection fell88→72/160; overall73/640. Eighty-four failed extraction replies preserved the correct result inside an observation-shaped envelope. One multi-step lookup succeeded, then continuation failed. Action Bias attenuation is consistent with the direction of behavior, not a confirmed unique mechanism. Distinguish nominal binomial intervals from paired task-cluster uncertainty; do not treat640rollouts as640independenttasks. Evidence: [entry012](../research-log/experiments/012-benchmark-v1.3-decision.md). Draft only; no article publication.

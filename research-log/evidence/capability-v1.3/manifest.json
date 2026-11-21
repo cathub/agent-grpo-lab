@@ -1,0 +1,68 @@
+[
+  {
+    "source": "capability-runs/v1.3-decision/comparison.json",
+    "snapshot": "research-log/evidence/capability-v1.3/comparison.json",
+    "sha256": "ee1bbcd7fdaf90b7f1598fc1db3e9a5af208d863152f500652b0560b4a327804",
+    "bytes": 111398
+  },
+  {
+    "source": "capability-runs/v1.3-decision/comparison.md",
+    "snapshot": "research-log/evidence/capability-v1.3/comparison.md",
+    "sha256": "7815be12995ec5da277a23f0ee66d9633f4be806ff3d202427f3bea83d13ae51",
+    "bytes": 7299
+  },
+  {
+    "source": "capability-runs/v1.3-decision/envelope-audit.json",
+    "snapshot": "research-log/evidence/capability-v1.3/envelope-audit.json",
+    "sha256": "a71e03c7aef0d928e16fc15e84367bbf7117a48a75866b400c17d6444cd9da98",
+    "bytes": 28062
+  },
+  {
+    "source": "capability-runs/v1.3-decision/observation-continuation.json",
+    "snapshot": "research-log/evidence/capability-v1.3/observation-continuation.json",
+    "sha256": "4ceae0d256673f5fd2084e41178fe1290e68d5d4ec507255e571cde1bb005360",
+    "bytes": 9647
+  },
+  {
+    "source": "capability-runs/v1.3-decision/paired.json",
+    "snapshot": "research-log/evidence/capability-v1.3/paired.json",
+    "sha256": "067bd8227b78fab81367b96814380c773fe5141657d13aceb7d72081dd30911a",
+    "bytes": 325333
+  },
+  {
+    "source": "capability-runs/v1.3-decision/per-instance.csv",
+    "snapshot": "research-log/evidence/capability-v1.3/per-instance.csv",
+    "sha256": "208280fb9c086a68a56c648100f9f477eb786c3f435800c0e59e2e81838db188",
+    "bytes": 11873
+  },
+  {
+    "source": "capability-runs/v1.3-decision/pilot.json",
+    "snapshot": "research-log/evidence/capability-v1.3/pilot.json",
+    "sha256": "f958973d50049f07386f90f567cd15dc77978f9515d1e0c05e5eb7a73e159a8f",
+    "bytes": 209839
+  },
+  {
+    "source": "capability-runs/v1.3-decision/provenance.json",
+    "snapshot": "research-log/evidence/capability-v1.3/provenance.json",
+    "sha256": "42972042aeb52f002abd30f86977876ad44f2f05833a69923eaa246b63928720",
+    "bytes": 1857
+  },
+  {
+    "source": "capability-runs/v1.3-decision/representatives.json",
+    "snapshot": "research-log/evidence/capability-v1.3/representatives.json",
+    "sha256": "5db64f6f0f2e6fef074bea42509963f091637e69fdba10e94a7dff05e78257e5",
+    "bytes": 47538
+  },
+  {
+    "source": "capability-runs/v1.3-decision/samples.jsonl",
+    "snapshot": "research-log/evidence/capability-v1.3/samples.jsonl",
+    "sha256": "8bbbdd614e6e3a5e57521bfad9d857d3d07f1a10f390c2e2f0067d3065a656d1",
+    "bytes": 3002348
+  },
+  {
+    "source": "capability-runs/v1.3-decision/summary.json",
+    "snapshot": "research-log/evidence/capability-v1.3/summary.json",
+    "sha256": "593c24de765ad6e020c3cbf69d417331e14a15bb9567c1e0661b488e45bbe6b7",
+    "bytes": 14676
+  }
+]

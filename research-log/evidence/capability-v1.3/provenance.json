@@ -1,0 +1,29 @@
+{
+  "base_git_commit": "39898d1639df6871353f0f1ed447d40474491b61",
+  "host": "macOS-14.5-arm64-arm-64bit",
+  "python": "3.11.14",
+  "checkpoint_revision": "a5339a4131f135d0fdc6a5c8b5bbed2753bbe0f3",
+  "commands": [
+    ".venv/bin/python -m unittest discover -q",
+    ".venv/bin/python -m src.capability_v13 --output capability-runs/v1.3-decision",
+    ".venv/bin/python -m src.report_capability_v13"
+  ],
+  "source_sha256": {
+    "src/capability_v13.py": "28ff844f6d908c55278681e7018f741d57d6243a31422bd6827edfb5a409da59",
+    "src/report_capability_v13.py": "ed8e3dda93e7a15c7d101749d75919c41bf1d7ac1ac5b14e548410ed603f5a15",
+    "src/capability_uncertainty.py": "e67233618884b20bb62afc70febe1bd0067f61625ca6c4a8af80d71d3c940750",
+    "tests/test_capability_v13.py": "02f0919125ec83a4b4a32d57f6f4f567f68f715c3a8f0d350109bd99e48c8547",
+    "tests/test_capability_uncertainty.py": "6b543e375b205ae4da89fe3b0e5c568ac33adcef0dd772e65b6551ed3de6a8b7",
+    "benchmark-configs/capability-v1.3.json": "5b68be886c977a3ad61bf99a137752bdf6d1a3a9482a15bce38930bcfa713aee"
+  },
+  "preflight_tests_passed": 42,
+  "final_tests_passed": 44,
+  "pilot_new_v13_samples": 16,
+  "pilot_full_trajectory_matches": 16,
+  "prompt_revisions": 0,
+  "only_inserted_instruction": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available.",
+  "statistics_seed": 20261121,
+  "bootstrap_iterations": 5000,
+  "dataset_sha256": "c7712fe925f53c0f6f65d699800ec3122b0604601af08b232935473931bc5586",
+  "scorer_snapshot_sha256": "b5b3b82ce73d182c8d5f0308ee6141be9dcb399feda9f310e8f1fc24ed788b19"
+}

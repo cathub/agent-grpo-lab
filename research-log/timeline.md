@@ -19,3 +19,5 @@ Saved artifacts verify results and configurations, not most timestamps. See expe
 11. **2026-11-21 client date, VERIFIED artifacts:** [Benchmark v1.2 output protocol](experiments/010-benchmark-v1.2-protocol.md). Training-only paired pilot reproduced 16 v1.1 controls; frozen full run 72→88/640 but extraction/comparison regress to zero. Selection improves 50→88/160. No training; no test-set-driven revisions.
 
 12. **2026-11-21, read-only regression audit:** [Entry 011](experiments/011-v1.2-regression-analysis.md) classifies all 31 losses and 47 fixes; Action Bias remains a hypothesis. No inference/training. Publication review pauses push because pending ancestors contain large raw rollouts and machine-specific provenance paths requiring explicit release approval.
+
+13. **2026-11-21, VERIFIED v1.3 experiment:** [Entry 012](experiments/012-benchmark-v1.3-decision.md). Exact decision-rule prepend; 16-sample training pilot, then 640 frozen seeds. 73/640 versus v1.2 88/640; gratuitous calls 153→91, no extraction recovery, selection88→72/160, one first multi-step lookup then invalid-JSON continuation. Task-aware paired uncertainty recorded; no training or push.

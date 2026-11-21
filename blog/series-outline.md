@@ -16,3 +16,5 @@ This is an outline, not a claim that training occurred. Link evidence from resea
 10. **More explicit is not universally better.** V1.2 protocol wording improves selection but loses every direct-final-answer success. Present the paired pilot, 47 fixes/31 regressions and IGF decline. Separate better JSON from better task performance; do not claim training or numerical reasoning gains. See research-log/experiments/010-benchmark-v1.2-protocol.md.
 
 11. **When Better Tool Calling Made My Agent Worse at Answering Questions.** Draft: [research outline](when-better-tool-calling-made-answering-worse.md). Inspect 31 paired regressions, distinguish gratuitous calls from wrong required calls, and mark Action Bias as unconfirmed. Not published.
+
+12. **A decision boundary is not an output schema.** V1.3 reduces needless calls but often echoes observations instead of final answers; selection partially regresses. Report 73/640, task-level paired intervals, the single failed observation continuation, and why this does not establish general reasoning. See research-log/experiments/012-benchmark-v1.3-decision.md.

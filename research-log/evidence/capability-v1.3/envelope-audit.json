@@ -1,0 +1,1299 @@
+[
+  {
+    "task_id": "capability-v1-42-extraction-0000",
+    "sample_id": 1,
+    "seed": 500000,
+    "keys": [
+      "end_date",
+      "final_answer",
+      "platform",
+      "start_date"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0000",
+    "sample_id": 5,
+    "seed": 500004,
+    "keys": [
+      "end_date",
+      "final_answer",
+      "platform",
+      "start_date"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0000",
+    "sample_id": 8,
+    "seed": 500007,
+    "keys": [
+      "end_date",
+      "final_answer",
+      "platform",
+      "start_date"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0000",
+    "sample_id": 10,
+    "seed": 500009,
+    "keys": [
+      "final_answer",
+      "id"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0000",
+    "sample_id": 13,
+    "seed": 500012,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0001",
+    "sample_id": 1,
+    "seed": 500100,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0001",
+    "sample_id": 2,
+    "seed": 500101,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0001",
+    "sample_id": 3,
+    "seed": 500102,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0001",
+    "sample_id": 5,
+    "seed": 500104,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0001",
+    "sample_id": 6,
+    "seed": 500105,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0001",
+    "sample_id": 7,
+    "seed": 500106,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0001",
+    "sample_id": 8,
+    "seed": 500107,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0001",
+    "sample_id": 9,
+    "seed": 500108,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0001",
+    "sample_id": 11,
+    "seed": 500110,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0001",
+    "sample_id": 12,
+    "seed": 500111,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0001",
+    "sample_id": 13,
+    "seed": 500112,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0001",
+    "sample_id": 14,
+    "seed": 500113,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0001",
+    "sample_id": 15,
+    "seed": 500114,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0001",
+    "sample_id": 16,
+    "seed": 500115,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0002",
+    "sample_id": 7,
+    "seed": 500206,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0002",
+    "sample_id": 10,
+    "seed": 500209,
+    "keys": [
+      "arguments",
+      "final_answer",
+      "tool"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0002",
+    "sample_id": 11,
+    "seed": 500210,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0002",
+    "sample_id": 16,
+    "seed": 500215,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0003",
+    "sample_id": 1,
+    "seed": 500300,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0003",
+    "sample_id": 3,
+    "seed": 500302,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0003",
+    "sample_id": 5,
+    "seed": 500304,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0003",
+    "sample_id": 7,
+    "seed": 500306,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0003",
+    "sample_id": 8,
+    "seed": 500307,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0003",
+    "sample_id": 9,
+    "seed": 500308,
+    "keys": [
+      "end_date",
+      "platform",
+      "start_date"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0003",
+    "sample_id": 10,
+    "seed": 500309,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0003",
+    "sample_id": 11,
+    "seed": 500310,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0003",
+    "sample_id": 12,
+    "seed": 500311,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0003",
+    "sample_id": 13,
+    "seed": 500312,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0003",
+    "sample_id": 14,
+    "seed": 500313,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0003",
+    "sample_id": 15,
+    "seed": 500314,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0003",
+    "sample_id": 16,
+    "seed": 500315,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0004",
+    "sample_id": 2,
+    "seed": 500401,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0004",
+    "sample_id": 3,
+    "seed": 500402,
+    "keys": [
+      "end_date",
+      "platform",
+      "start_date"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0004",
+    "sample_id": 5,
+    "seed": 500404,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0004",
+    "sample_id": 6,
+    "seed": 500405,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0004",
+    "sample_id": 7,
+    "seed": 500406,
+    "keys": [
+      "end_date",
+      "final_answer",
+      "platform",
+      "start_date"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0004",
+    "sample_id": 8,
+    "seed": 500407,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0004",
+    "sample_id": 9,
+    "seed": 500408,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0004",
+    "sample_id": 10,
+    "seed": 500409,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0004",
+    "sample_id": 11,
+    "seed": 500410,
+    "keys": [
+      "end_date",
+      "platform",
+      "start_date"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0004",
+    "sample_id": 12,
+    "seed": 500411,
+    "keys": [
+      "end_date",
+      "platform",
+      "start_date"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0004",
+    "sample_id": 13,
+    "seed": 500412,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0004",
+    "sample_id": 14,
+    "seed": 500413,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0005",
+    "sample_id": 1,
+    "seed": 500500,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0005",
+    "sample_id": 2,
+    "seed": 500501,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0005",
+    "sample_id": 3,
+    "seed": 500502,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0005",
+    "sample_id": 4,
+    "seed": 500503,
+    "keys": [
+      "final_answer",
+      "id"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0005",
+    "sample_id": 6,
+    "seed": 500505,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0005",
+    "sample_id": 7,
+    "seed": 500506,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0005",
+    "sample_id": 8,
+    "seed": 500507,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0005",
+    "sample_id": 9,
+    "seed": 500508,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0005",
+    "sample_id": 10,
+    "seed": 500509,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0005",
+    "sample_id": 11,
+    "seed": 500510,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0005",
+    "sample_id": 13,
+    "seed": 500512,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0005",
+    "sample_id": 14,
+    "seed": 500513,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0005",
+    "sample_id": 15,
+    "seed": 500514,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0005",
+    "sample_id": 16,
+    "seed": 500515,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0006",
+    "sample_id": 3,
+    "seed": 500602,
+    "keys": [
+      "end_date",
+      "platform",
+      "start_date"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0006",
+    "sample_id": 4,
+    "seed": 500603,
+    "keys": [
+      "arguments",
+      "end_date",
+      "platform",
+      "start_date",
+      "tool"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0006",
+    "sample_id": 5,
+    "seed": 500604,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0006",
+    "sample_id": 6,
+    "seed": 500605,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0006",
+    "sample_id": 7,
+    "seed": 500606,
+    "keys": [
+      "end_date",
+      "platform",
+      "start_date",
+      "tool"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0006",
+    "sample_id": 8,
+    "seed": 500607,
+    "keys": [
+      "arguments",
+      "final_answer",
+      "tool"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0006",
+    "sample_id": 11,
+    "seed": 500610,
+    "keys": [
+      "end_date",
+      "final_answer",
+      "platform",
+      "start_date"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0006",
+    "sample_id": 14,
+    "seed": 500613,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0007",
+    "sample_id": 1,
+    "seed": 500700,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0007",
+    "sample_id": 2,
+    "seed": 500701,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0007",
+    "sample_id": 3,
+    "seed": 500702,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0007",
+    "sample_id": 4,
+    "seed": 500703,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0007",
+    "sample_id": 5,
+    "seed": 500704,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0007",
+    "sample_id": 6,
+    "seed": 500705,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0007",
+    "sample_id": 7,
+    "seed": 500706,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0007",
+    "sample_id": 8,
+    "seed": 500707,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0007",
+    "sample_id": 9,
+    "seed": 500708,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0007",
+    "sample_id": 10,
+    "seed": 500709,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0007",
+    "sample_id": 11,
+    "seed": 500710,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0007",
+    "sample_id": 12,
+    "seed": 500711,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0007",
+    "sample_id": 13,
+    "seed": 500712,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0007",
+    "sample_id": 15,
+    "seed": 500714,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0007",
+    "sample_id": 16,
+    "seed": 500715,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0008",
+    "sample_id": 1,
+    "seed": 500800,
+    "keys": [
+      "end_date",
+      "platform",
+      "start_date"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0008",
+    "sample_id": 3,
+    "seed": 500802,
+    "keys": [
+      "end_date",
+      "platform",
+      "start_date"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0008",
+    "sample_id": 7,
+    "seed": 500806,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0008",
+    "sample_id": 10,
+    "seed": 500809,
+    "keys": [
+      "end_date",
+      "platform",
+      "start_date"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0008",
+    "sample_id": 14,
+    "seed": 500813,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 1,
+    "seed": 500900,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 2,
+    "seed": 500901,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 3,
+    "seed": 500902,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 4,
+    "seed": 500903,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 5,
+    "seed": 500904,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": false,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 6,
+    "seed": 500905,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 7,
+    "seed": 500906,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 8,
+    "seed": 500907,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 9,
+    "seed": 500908,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 10,
+    "seed": 500909,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 11,
+    "seed": 500910,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 12,
+    "seed": 500911,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 13,
+    "seed": 500912,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 14,
+    "seed": 500913,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 15,
+    "seed": 500914,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  },
+  {
+    "task_id": "capability-v1-42-extraction-0009",
+    "sample_id": 16,
+    "seed": 500915,
+    "keys": [
+      "id",
+      "result"
+    ],
+    "result_equals_expected_integer": true,
+    "original_status": "invalid_format",
+    "original_reward": 0
+  }
+]

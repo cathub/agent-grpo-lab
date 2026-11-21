@@ -1,0 +1,409 @@
+{
+  "groups": {
+    "train/extraction": {
+      "successes": 0,
+      "attempts": 112,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.0,
+      "failures": {
+        "invalid_format": 62,
+        "unnecessary_call": 35,
+        "wrong_final_answer": 15
+      },
+      "format_failures": 62
+    },
+    "train/comparison": {
+      "successes": 0,
+      "attempts": 112,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.0,
+      "failures": {
+        "invalid_format": 64,
+        "unnecessary_call": 39,
+        "invalid_json": 8,
+        "wrong_final_answer": 1
+      },
+      "format_failures": 72
+    },
+    "train/selection": {
+      "successes": 55,
+      "attempts": 112,
+      "success_rate": 0.49107142857142855,
+      "mixed_instance_fraction": 1.0,
+      "next_action_correct_rate": 0.49107142857142855,
+      "failures": {
+        "unnecessary_call": 56,
+        "invalid_arguments": 1
+      },
+      "format_failures": 0
+    },
+    "train/multistep": {
+      "successes": 0,
+      "attempts": 112,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.008928571428571428,
+      "failures": {
+        "invalid_json": 55,
+        "invalid_format": 40,
+        "missing_requirements": 3,
+        "wrong_final_answer": 2,
+        "unnecessary_call": 12
+      },
+      "format_failures": 95
+    },
+    "train/overall": {
+      "successes": 55,
+      "attempts": 448,
+      "success_rate": 0.12276785714285714,
+      "mixed_instance_fraction": 0.25,
+      "next_action_correct_rate": 0.125,
+      "failures": {
+        "invalid_format": 166,
+        "unnecessary_call": 142,
+        "wrong_final_answer": 18,
+        "invalid_json": 63,
+        "invalid_arguments": 1,
+        "missing_requirements": 3
+      },
+      "format_failures": 229
+    },
+    "test/extraction": {
+      "successes": 0,
+      "attempts": 48,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.0,
+      "failures": {
+        "invalid_format": 44,
+        "wrong_final_answer": 3,
+        "unnecessary_call": 1
+      },
+      "format_failures": 44
+    },
+    "test/comparison": {
+      "successes": 1,
+      "attempts": 48,
+      "success_rate": 0.020833333333333332,
+      "mixed_instance_fraction": 0.3333333333333333,
+      "next_action_correct_rate": 0.020833333333333332,
+      "failures": {
+        "unnecessary_call": 16,
+        "invalid_format": 24,
+        "invalid_json": 5,
+        "wrong_final_answer": 2
+      },
+      "format_failures": 29
+    },
+    "test/selection": {
+      "successes": 17,
+      "attempts": 48,
+      "success_rate": 0.3541666666666667,
+      "mixed_instance_fraction": 0.6666666666666666,
+      "next_action_correct_rate": 0.3541666666666667,
+      "failures": {
+        "unnecessary_call": 31
+      },
+      "format_failures": 0
+    },
+    "test/multistep": {
+      "successes": 0,
+      "attempts": 48,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.0,
+      "failures": {
+        "unnecessary_call": 4,
+        "invalid_format": 18,
+        "invalid_json": 26
+      },
+      "format_failures": 44
+    },
+    "test/overall": {
+      "successes": 18,
+      "attempts": 192,
+      "success_rate": 0.09375,
+      "mixed_instance_fraction": 0.25,
+      "next_action_correct_rate": 0.09375,
+      "failures": {
+        "invalid_format": 86,
+        "wrong_final_answer": 5,
+        "unnecessary_call": 52,
+        "invalid_json": 31
+      },
+      "format_failures": 117
+    }
+  },
+  "instances": {
+    "capability-v1-42-extraction-0000": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0001": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0002": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0003": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0004": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0005": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0006": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0007": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0008": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0009": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0000": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0001": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0002": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0003": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0004": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0005": {
+      "successes": 1,
+      "attempts": 16,
+      "success_rate": 0.0625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-comparison-0006": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0007": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0008": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0009": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-selection-0000": {
+      "successes": 6,
+      "attempts": 16,
+      "success_rate": 0.375,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0001": {
+      "successes": 11,
+      "attempts": 16,
+      "success_rate": 0.6875,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0002": {
+      "successes": 10,
+      "attempts": 16,
+      "success_rate": 0.625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0003": {
+      "successes": 6,
+      "attempts": 16,
+      "success_rate": 0.375,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0004": {
+      "successes": 2,
+      "attempts": 16,
+      "success_rate": 0.125,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0005": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-selection-0006": {
+      "successes": 7,
+      "attempts": 16,
+      "success_rate": 0.4375,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0007": {
+      "successes": 14,
+      "attempts": 16,
+      "success_rate": 0.875,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0008": {
+      "successes": 10,
+      "attempts": 16,
+      "success_rate": 0.625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0009": {
+      "successes": 6,
+      "attempts": 16,
+      "success_rate": 0.375,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-multistep-0000": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0001": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0002": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0003": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0004": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0005": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0006": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0007": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0008": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0009": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    }
+  },
+  "configuration": {
+    "version": "capability-v1.3",
+    "dataset": "research-log/evidence/benchmarks/capability-v1/dataset.json",
+    "dataset_sha256": "c7712fe925f53c0f6f65d699800ec3122b0604601af08b232935473931bc5586",
+    "scorer_snapshot_sha256": "b5b3b82ce73d182c8d5f0308ee6141be9dcb399feda9f310e8f1fc24ed788b19",
+    "system_prompt": "Before calling a tool, determine whether the information already provided is sufficient to answer the user's question. If the information is sufficient, return the final answer directly using the required JSON schema. Otherwise, call the appropriate available tool to obtain the missing information. Do not call tools merely because tools are available. Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}",
+    "decoding": {
+      "max_tokens": 128,
+      "temperature": 0.7,
+      "top_p": 1.0,
+      "seed": 0
+    },
+    "samples_per_instance": 16,
+    "sampling_seed_base": 500000,
+    "pilot": "first train task/category; first four frozen seeds; exactly 16 new v1.3 samples; saved v1.1/v1.2 controls"
+  },
+  "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+  "versions": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.30.7",
+    "transformers": "5.23.0"
+  },
+  "checkpoint_revision": "a5339a4131f135d0fdc6a5c8b5bbed2753bbe0f3",
+  "started_utc": "2026-11-21T15:19:47.482409+00:00",
+  "finished_utc": "2026-11-21T15:29:30.370630+00:00",
+  "pilot_new_samples": 16,
+  "prompt_revisions": 0,
+  "note": "Exact single prepend; no test tuning, repairs, task changes or training."
+}

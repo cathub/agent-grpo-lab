@@ -23,3 +23,7 @@ The later v1.1 configuration removes the advertised ROAS/campaign mismatch, but 
 ## Addendum: v1.2 prompt alignment
 
 Aggregate success 72→88/640 is not a universal improvement: all 88 v1.2 successes are selection, with extraction/comparison regressions and zero multi-step progress. JSON/schema errors decline 385→283 but unnecessary calls increase 61→231. Only selection has mixed training groups. Explicit instructions are not equivalent to model compliance; causal attribution to individual wording choices remains unverified. No historical scores changed.
+
+## Addendum: v1.3 decision rule
+
+V1.3 has one real multi-step lookup/observation, unlike v1/v1.1/v1.2; its continuation fails, so prior zero-progression observations remain historically correct. Fewer gratuitous calls are not final-answer success: extraction is still zero. Exact pooled binomial intervals are nominal under IID assumptions; task-bootstrap and per-instance variability are separate. Action Bias remains a mechanistic hypothesis. No training or public push occurred.

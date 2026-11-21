@@ -1,0 +1,3305 @@
+{
+  "arms": {
+    "v1.1": {
+      "all/extraction": {
+        "attempts": 160,
+        "successes": 20,
+        "success_rate": 0.125,
+        "binomial_cp95_nominal": [
+          0.07805281139122192,
+          0.18643318962962702
+        ],
+        "tasks": 10,
+        "task_success_rates": {
+          "capability-v1-42-extraction-0000": 0.0625,
+          "capability-v1-42-extraction-0001": 0.0,
+          "capability-v1-42-extraction-0002": 0.125,
+          "capability-v1-42-extraction-0003": 0.0625,
+          "capability-v1-42-extraction-0004": 0.0625,
+          "capability-v1-42-extraction-0005": 0.25,
+          "capability-v1-42-extraction-0006": 0.1875,
+          "capability-v1-42-extraction-0007": 0.25,
+          "capability-v1-42-extraction-0008": 0.25,
+          "capability-v1-42-extraction-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.25,
+        "between_task_sd": 0.10206207261596575,
+        "mixed_tasks": 8,
+        "IGF": 0.8,
+        "failures": {
+          "wrong_final_answer": 85,
+          "unnecessary_call": 14,
+          "invalid_json": 41
+        },
+        "json_schema_failures": 41,
+        "strict_json_first_outputs": 119,
+        "protocol_valid_first_outputs": 36,
+        "parsed_first_tool_fields": 14,
+        "correct_first_action_count": 20,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 14,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "all/comparison": {
+        "attempts": 160,
+        "successes": 2,
+        "success_rate": 0.0125,
+        "binomial_cp95_nominal": [
+          0.0015174091031877252,
+          0.04442303443091157
+        ],
+        "tasks": 10,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0000": 0.0,
+          "capability-v1-42-comparison-0001": 0.0,
+          "capability-v1-42-comparison-0002": 0.0,
+          "capability-v1-42-comparison-0003": 0.0,
+          "capability-v1-42-comparison-0004": 0.0,
+          "capability-v1-42-comparison-0005": 0.0,
+          "capability-v1-42-comparison-0006": 0.0,
+          "capability-v1-42-comparison-0007": 0.125,
+          "capability-v1-42-comparison-0008": 0.0,
+          "capability-v1-42-comparison-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.125,
+        "between_task_sd": 0.03952847075210474,
+        "mixed_tasks": 1,
+        "IGF": 0.1,
+        "failures": {
+          "wrong_final_answer": 30,
+          "invalid_json": 120,
+          "invalid_format": 2,
+          "unnecessary_call": 6
+        },
+        "json_schema_failures": 122,
+        "strict_json_first_outputs": 40,
+        "protocol_valid_first_outputs": 15,
+        "parsed_first_tool_fields": 8,
+        "correct_first_action_count": 2,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 6,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "all/selection": {
+        "attempts": 160,
+        "successes": 50,
+        "success_rate": 0.3125,
+        "binomial_cp95_nominal": [
+          0.24165379202984966,
+          0.3904457590586118
+        ],
+        "tasks": 10,
+        "task_success_rates": {
+          "capability-v1-42-selection-0000": 0.5,
+          "capability-v1-42-selection-0001": 0.125,
+          "capability-v1-42-selection-0002": 0.3125,
+          "capability-v1-42-selection-0003": 0.3125,
+          "capability-v1-42-selection-0004": 0.125,
+          "capability-v1-42-selection-0005": 0.0625,
+          "capability-v1-42-selection-0006": 0.625,
+          "capability-v1-42-selection-0007": 0.1875,
+          "capability-v1-42-selection-0008": 0.25,
+          "capability-v1-42-selection-0009": 0.625
+        },
+        "task_rate_min": 0.0625,
+        "task_rate_max": 0.625,
+        "between_task_sd": 0.20623947784607635,
+        "mixed_tasks": 10,
+        "IGF": 1.0,
+        "failures": {
+          "unnecessary_call": 39,
+          "invalid_format": 68,
+          "invalid_arguments": 2,
+          "invalid_json": 1
+        },
+        "json_schema_failures": 69,
+        "strict_json_first_outputs": 159,
+        "protocol_valid_first_outputs": 89,
+        "parsed_first_tool_fields": 94,
+        "correct_first_action_count": 50,
+        "required_tool_name_matches": 82,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 39,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 50,
+        "lookup_observations": 50,
+        "later_model_turns": 0
+      },
+      "all/multistep": {
+        "attempts": 160,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.022791749455466526
+        ],
+        "tasks": 10,
+        "task_success_rates": {
+          "capability-v1-42-multistep-0000": 0.0,
+          "capability-v1-42-multistep-0001": 0.0,
+          "capability-v1-42-multistep-0002": 0.0,
+          "capability-v1-42-multistep-0003": 0.0,
+          "capability-v1-42-multistep-0004": 0.0,
+          "capability-v1-42-multistep-0005": 0.0,
+          "capability-v1-42-multistep-0006": 0.0,
+          "capability-v1-42-multistep-0007": 0.0,
+          "capability-v1-42-multistep-0008": 0.0,
+          "capability-v1-42-multistep-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_json": 91,
+          "invalid_format": 62,
+          "wrong_final_answer": 4,
+          "unnecessary_call": 2,
+          "missing_requirements": 1
+        },
+        "json_schema_failures": 153,
+        "strict_json_first_outputs": 69,
+        "protocol_valid_first_outputs": 5,
+        "parsed_first_tool_fields": 61,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 57,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 2,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "all/overall": {
+        "attempts": 640,
+        "successes": 72,
+        "success_rate": 0.1125,
+        "binomial_cp95_nominal": [
+          0.08907200683655525,
+          0.1395700828859669
+        ],
+        "tasks": 40,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0000": 0.0,
+          "capability-v1-42-comparison-0001": 0.0,
+          "capability-v1-42-comparison-0002": 0.0,
+          "capability-v1-42-comparison-0003": 0.0,
+          "capability-v1-42-comparison-0004": 0.0,
+          "capability-v1-42-comparison-0005": 0.0,
+          "capability-v1-42-comparison-0006": 0.0,
+          "capability-v1-42-comparison-0007": 0.125,
+          "capability-v1-42-comparison-0008": 0.0,
+          "capability-v1-42-comparison-0009": 0.0,
+          "capability-v1-42-extraction-0000": 0.0625,
+          "capability-v1-42-extraction-0001": 0.0,
+          "capability-v1-42-extraction-0002": 0.125,
+          "capability-v1-42-extraction-0003": 0.0625,
+          "capability-v1-42-extraction-0004": 0.0625,
+          "capability-v1-42-extraction-0005": 0.25,
+          "capability-v1-42-extraction-0006": 0.1875,
+          "capability-v1-42-extraction-0007": 0.25,
+          "capability-v1-42-extraction-0008": 0.25,
+          "capability-v1-42-extraction-0009": 0.0,
+          "capability-v1-42-multistep-0000": 0.0,
+          "capability-v1-42-multistep-0001": 0.0,
+          "capability-v1-42-multistep-0002": 0.0,
+          "capability-v1-42-multistep-0003": 0.0,
+          "capability-v1-42-multistep-0004": 0.0,
+          "capability-v1-42-multistep-0005": 0.0,
+          "capability-v1-42-multistep-0006": 0.0,
+          "capability-v1-42-multistep-0007": 0.0,
+          "capability-v1-42-multistep-0008": 0.0,
+          "capability-v1-42-multistep-0009": 0.0,
+          "capability-v1-42-selection-0000": 0.5,
+          "capability-v1-42-selection-0001": 0.125,
+          "capability-v1-42-selection-0002": 0.3125,
+          "capability-v1-42-selection-0003": 0.3125,
+          "capability-v1-42-selection-0004": 0.125,
+          "capability-v1-42-selection-0005": 0.0625,
+          "capability-v1-42-selection-0006": 0.625,
+          "capability-v1-42-selection-0007": 0.1875,
+          "capability-v1-42-selection-0008": 0.25,
+          "capability-v1-42-selection-0009": 0.625
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.625,
+        "between_task_sd": 0.1693691159447242,
+        "mixed_tasks": 19,
+        "IGF": 0.475,
+        "failures": {
+          "wrong_final_answer": 119,
+          "unnecessary_call": 61,
+          "invalid_json": 253,
+          "invalid_format": 132,
+          "invalid_arguments": 2,
+          "missing_requirements": 1
+        },
+        "json_schema_failures": 385,
+        "strict_json_first_outputs": 387,
+        "protocol_valid_first_outputs": 145,
+        "parsed_first_tool_fields": 177,
+        "correct_first_action_count": 72,
+        "required_tool_name_matches": 139,
+        "gratuitous_calls": 20,
+        "incorrect_required_calls": 41,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 50,
+        "lookup_observations": 50,
+        "later_model_turns": 0
+      },
+      "train/extraction": {
+        "attempts": 112,
+        "successes": 16,
+        "success_rate": 0.14285714285714285,
+        "binomial_cp95_nominal": [
+          0.08391576145842752,
+          0.2216016854870182
+        ],
+        "tasks": 7,
+        "task_success_rates": {
+          "capability-v1-42-extraction-0000": 0.0625,
+          "capability-v1-42-extraction-0002": 0.125,
+          "capability-v1-42-extraction-0003": 0.0625,
+          "capability-v1-42-extraction-0004": 0.0625,
+          "capability-v1-42-extraction-0006": 0.1875,
+          "capability-v1-42-extraction-0007": 0.25,
+          "capability-v1-42-extraction-0008": 0.25
+        },
+        "task_rate_min": 0.0625,
+        "task_rate_max": 0.25,
+        "between_task_sd": 0.08625819491779427,
+        "mixed_tasks": 7,
+        "IGF": 1.0,
+        "failures": {
+          "wrong_final_answer": 69,
+          "unnecessary_call": 14,
+          "invalid_json": 13
+        },
+        "json_schema_failures": 13,
+        "strict_json_first_outputs": 99,
+        "protocol_valid_first_outputs": 32,
+        "parsed_first_tool_fields": 14,
+        "correct_first_action_count": 16,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 14,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "train/comparison": {
+        "attempts": 112,
+        "successes": 2,
+        "success_rate": 0.017857142857142856,
+        "binomial_cp95_nominal": [
+          0.0021699463849359844,
+          0.06301894718796802
+        ],
+        "tasks": 7,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0000": 0.0,
+          "capability-v1-42-comparison-0002": 0.0,
+          "capability-v1-42-comparison-0003": 0.0,
+          "capability-v1-42-comparison-0004": 0.0,
+          "capability-v1-42-comparison-0006": 0.0,
+          "capability-v1-42-comparison-0007": 0.125,
+          "capability-v1-42-comparison-0008": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.125,
+        "between_task_sd": 0.04724555912615341,
+        "mixed_tasks": 1,
+        "IGF": 0.14285714285714285,
+        "failures": {
+          "wrong_final_answer": 21,
+          "invalid_json": 82,
+          "invalid_format": 1,
+          "unnecessary_call": 6
+        },
+        "json_schema_failures": 83,
+        "strict_json_first_outputs": 30,
+        "protocol_valid_first_outputs": 13,
+        "parsed_first_tool_fields": 7,
+        "correct_first_action_count": 2,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 6,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "train/selection": {
+        "attempts": 112,
+        "successes": 37,
+        "success_rate": 0.33035714285714285,
+        "binomial_cp95_nominal": [
+          0.2443818965720796,
+          0.4255557086411027
+        ],
+        "tasks": 7,
+        "task_success_rates": {
+          "capability-v1-42-selection-0000": 0.5,
+          "capability-v1-42-selection-0002": 0.3125,
+          "capability-v1-42-selection-0003": 0.3125,
+          "capability-v1-42-selection-0004": 0.125,
+          "capability-v1-42-selection-0006": 0.625,
+          "capability-v1-42-selection-0007": 0.1875,
+          "capability-v1-42-selection-0008": 0.25
+        },
+        "task_rate_min": 0.125,
+        "task_rate_max": 0.625,
+        "between_task_sd": 0.17572130260863705,
+        "mixed_tasks": 7,
+        "IGF": 1.0,
+        "failures": {
+          "unnecessary_call": 26,
+          "invalid_format": 47,
+          "invalid_arguments": 1,
+          "invalid_json": 1
+        },
+        "json_schema_failures": 48,
+        "strict_json_first_outputs": 111,
+        "protocol_valid_first_outputs": 63,
+        "parsed_first_tool_fields": 65,
+        "correct_first_action_count": 37,
+        "required_tool_name_matches": 56,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 26,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 37,
+        "lookup_observations": 37,
+        "later_model_turns": 0
+      },
+      "train/multistep": {
+        "attempts": 112,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.0323999259313599
+        ],
+        "tasks": 7,
+        "task_success_rates": {
+          "capability-v1-42-multistep-0000": 0.0,
+          "capability-v1-42-multistep-0002": 0.0,
+          "capability-v1-42-multistep-0003": 0.0,
+          "capability-v1-42-multistep-0004": 0.0,
+          "capability-v1-42-multistep-0006": 0.0,
+          "capability-v1-42-multistep-0007": 0.0,
+          "capability-v1-42-multistep-0008": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_json": 62,
+          "invalid_format": 47,
+          "unnecessary_call": 1,
+          "wrong_final_answer": 1,
+          "missing_requirements": 1
+        },
+        "json_schema_failures": 109,
+        "strict_json_first_outputs": 50,
+        "protocol_valid_first_outputs": 2,
+        "parsed_first_tool_fields": 45,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 43,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 1,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "train/overall": {
+        "attempts": 448,
+        "successes": 55,
+        "success_rate": 0.12276785714285714,
+        "binomial_cp95_nominal": [
+          0.0938395933728455,
+          0.15678592228971228
+        ],
+        "tasks": 28,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0000": 0.0,
+          "capability-v1-42-comparison-0002": 0.0,
+          "capability-v1-42-comparison-0003": 0.0,
+          "capability-v1-42-comparison-0004": 0.0,
+          "capability-v1-42-comparison-0006": 0.0,
+          "capability-v1-42-comparison-0007": 0.125,
+          "capability-v1-42-comparison-0008": 0.0,
+          "capability-v1-42-extraction-0000": 0.0625,
+          "capability-v1-42-extraction-0002": 0.125,
+          "capability-v1-42-extraction-0003": 0.0625,
+          "capability-v1-42-extraction-0004": 0.0625,
+          "capability-v1-42-extraction-0006": 0.1875,
+          "capability-v1-42-extraction-0007": 0.25,
+          "capability-v1-42-extraction-0008": 0.25,
+          "capability-v1-42-multistep-0000": 0.0,
+          "capability-v1-42-multistep-0002": 0.0,
+          "capability-v1-42-multistep-0003": 0.0,
+          "capability-v1-42-multistep-0004": 0.0,
+          "capability-v1-42-multistep-0006": 0.0,
+          "capability-v1-42-multistep-0007": 0.0,
+          "capability-v1-42-multistep-0008": 0.0,
+          "capability-v1-42-selection-0000": 0.5,
+          "capability-v1-42-selection-0002": 0.3125,
+          "capability-v1-42-selection-0003": 0.3125,
+          "capability-v1-42-selection-0004": 0.125,
+          "capability-v1-42-selection-0006": 0.625,
+          "capability-v1-42-selection-0007": 0.1875,
+          "capability-v1-42-selection-0008": 0.25
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.625,
+        "between_task_sd": 0.1644665046469756,
+        "mixed_tasks": 15,
+        "IGF": 0.5357142857142857,
+        "failures": {
+          "wrong_final_answer": 91,
+          "unnecessary_call": 47,
+          "invalid_json": 158,
+          "invalid_format": 95,
+          "invalid_arguments": 1,
+          "missing_requirements": 1
+        },
+        "json_schema_failures": 253,
+        "strict_json_first_outputs": 290,
+        "protocol_valid_first_outputs": 110,
+        "parsed_first_tool_fields": 131,
+        "correct_first_action_count": 55,
+        "required_tool_name_matches": 99,
+        "gratuitous_calls": 20,
+        "incorrect_required_calls": 27,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 37,
+        "lookup_observations": 37,
+        "later_model_turns": 0
+      },
+      "test/extraction": {
+        "attempts": 48,
+        "successes": 4,
+        "success_rate": 0.08333333333333333,
+        "binomial_cp95_nominal": [
+          0.02317349513676175,
+          0.19982801419938062
+        ],
+        "tasks": 3,
+        "task_success_rates": {
+          "capability-v1-42-extraction-0001": 0.0,
+          "capability-v1-42-extraction-0005": 0.25,
+          "capability-v1-42-extraction-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.25,
+        "between_task_sd": 0.14433756729740646,
+        "mixed_tasks": 1,
+        "IGF": 0.3333333333333333,
+        "failures": {
+          "invalid_json": 28,
+          "wrong_final_answer": 16
+        },
+        "json_schema_failures": 28,
+        "strict_json_first_outputs": 20,
+        "protocol_valid_first_outputs": 4,
+        "parsed_first_tool_fields": 0,
+        "correct_first_action_count": 4,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "test/comparison": {
+        "attempts": 48,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.07397278534728022
+        ],
+        "tasks": 3,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0001": 0.0,
+          "capability-v1-42-comparison-0005": 0.0,
+          "capability-v1-42-comparison-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_json": 38,
+          "wrong_final_answer": 9,
+          "invalid_format": 1
+        },
+        "json_schema_failures": 39,
+        "strict_json_first_outputs": 10,
+        "protocol_valid_first_outputs": 2,
+        "parsed_first_tool_fields": 1,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "test/selection": {
+        "attempts": 48,
+        "successes": 13,
+        "success_rate": 0.2708333333333333,
+        "binomial_cp95_nominal": [
+          0.1527818686082107,
+          0.41845636532618846
+        ],
+        "tasks": 3,
+        "task_success_rates": {
+          "capability-v1-42-selection-0001": 0.125,
+          "capability-v1-42-selection-0005": 0.0625,
+          "capability-v1-42-selection-0009": 0.625
+        },
+        "task_rate_min": 0.0625,
+        "task_rate_max": 0.625,
+        "between_task_sd": 0.30830517889476544,
+        "mixed_tasks": 3,
+        "IGF": 1.0,
+        "failures": {
+          "invalid_format": 21,
+          "unnecessary_call": 13,
+          "invalid_arguments": 1
+        },
+        "json_schema_failures": 21,
+        "strict_json_first_outputs": 48,
+        "protocol_valid_first_outputs": 26,
+        "parsed_first_tool_fields": 29,
+        "correct_first_action_count": 13,
+        "required_tool_name_matches": 26,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 13,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 13,
+        "lookup_observations": 13,
+        "later_model_turns": 0
+      },
+      "test/multistep": {
+        "attempts": 48,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.07397278534728022
+        ],
+        "tasks": 3,
+        "task_success_rates": {
+          "capability-v1-42-multistep-0001": 0.0,
+          "capability-v1-42-multistep-0005": 0.0,
+          "capability-v1-42-multistep-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "wrong_final_answer": 3,
+          "invalid_format": 15,
+          "invalid_json": 29,
+          "unnecessary_call": 1
+        },
+        "json_schema_failures": 44,
+        "strict_json_first_outputs": 19,
+        "protocol_valid_first_outputs": 3,
+        "parsed_first_tool_fields": 16,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 14,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 1,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "test/overall": {
+        "attempts": 192,
+        "successes": 17,
+        "success_rate": 0.08854166666666667,
+        "binomial_cp95_nominal": [
+          0.052426661207588626,
+          0.13797840160913694
+        ],
+        "tasks": 12,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0001": 0.0,
+          "capability-v1-42-comparison-0005": 0.0,
+          "capability-v1-42-comparison-0009": 0.0,
+          "capability-v1-42-extraction-0001": 0.0,
+          "capability-v1-42-extraction-0005": 0.25,
+          "capability-v1-42-extraction-0009": 0.0,
+          "capability-v1-42-multistep-0001": 0.0,
+          "capability-v1-42-multistep-0005": 0.0,
+          "capability-v1-42-multistep-0009": 0.0,
+          "capability-v1-42-selection-0001": 0.125,
+          "capability-v1-42-selection-0005": 0.0625,
+          "capability-v1-42-selection-0009": 0.625
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.625,
+        "between_task_sd": 0.18551665672990775,
+        "mixed_tasks": 4,
+        "IGF": 0.3333333333333333,
+        "failures": {
+          "invalid_json": 95,
+          "wrong_final_answer": 28,
+          "invalid_format": 37,
+          "unnecessary_call": 14,
+          "invalid_arguments": 1
+        },
+        "json_schema_failures": 132,
+        "strict_json_first_outputs": 97,
+        "protocol_valid_first_outputs": 35,
+        "parsed_first_tool_fields": 46,
+        "correct_first_action_count": 17,
+        "required_tool_name_matches": 40,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 14,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 13,
+        "lookup_observations": 13,
+        "later_model_turns": 0
+      }
+    },
+    "v1.2": {
+      "all/extraction": {
+        "attempts": 160,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.022791749455466526
+        ],
+        "tasks": 10,
+        "task_success_rates": {
+          "capability-v1-42-extraction-0000": 0.0,
+          "capability-v1-42-extraction-0001": 0.0,
+          "capability-v1-42-extraction-0002": 0.0,
+          "capability-v1-42-extraction-0003": 0.0,
+          "capability-v1-42-extraction-0004": 0.0,
+          "capability-v1-42-extraction-0005": 0.0,
+          "capability-v1-42-extraction-0006": 0.0,
+          "capability-v1-42-extraction-0007": 0.0,
+          "capability-v1-42-extraction-0008": 0.0,
+          "capability-v1-42-extraction-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_format": 30,
+          "unnecessary_call": 97,
+          "wrong_final_answer": 33
+        },
+        "json_schema_failures": 30,
+        "strict_json_first_outputs": 160,
+        "protocol_valid_first_outputs": 97,
+        "parsed_first_tool_fields": 109,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 97,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "all/comparison": {
+        "attempts": 160,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.022791749455466526
+        ],
+        "tasks": 10,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0000": 0.0,
+          "capability-v1-42-comparison-0001": 0.0,
+          "capability-v1-42-comparison-0002": 0.0,
+          "capability-v1-42-comparison-0003": 0.0,
+          "capability-v1-42-comparison-0004": 0.0,
+          "capability-v1-42-comparison-0005": 0.0,
+          "capability-v1-42-comparison-0006": 0.0,
+          "capability-v1-42-comparison-0007": 0.0,
+          "capability-v1-42-comparison-0008": 0.0,
+          "capability-v1-42-comparison-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_format": 89,
+          "unnecessary_call": 56,
+          "wrong_final_answer": 1,
+          "invalid_json": 11,
+          "invalid_arguments": 3
+        },
+        "json_schema_failures": 100,
+        "strict_json_first_outputs": 149,
+        "protocol_valid_first_outputs": 56,
+        "parsed_first_tool_fields": 147,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 56,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "all/selection": {
+        "attempts": 160,
+        "successes": 88,
+        "success_rate": 0.55,
+        "binomial_cp95_nominal": [
+          0.4694788371635392,
+          0.6286345856664555
+        ],
+        "tasks": 10,
+        "task_success_rates": {
+          "capability-v1-42-selection-0000": 0.625,
+          "capability-v1-42-selection-0001": 0.625,
+          "capability-v1-42-selection-0002": 0.625,
+          "capability-v1-42-selection-0003": 0.625,
+          "capability-v1-42-selection-0004": 0.1875,
+          "capability-v1-42-selection-0005": 0.0,
+          "capability-v1-42-selection-0006": 0.625,
+          "capability-v1-42-selection-0007": 0.8125,
+          "capability-v1-42-selection-0008": 0.5625,
+          "capability-v1-42-selection-0009": 0.8125
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.8125,
+        "between_task_sd": 0.2581988897471611,
+        "mixed_tasks": 9,
+        "IGF": 0.9,
+        "failures": {
+          "unnecessary_call": 68,
+          "invalid_format": 2,
+          "invalid_arguments": 1,
+          "invalid_json": 1
+        },
+        "json_schema_failures": 3,
+        "strict_json_first_outputs": 159,
+        "protocol_valid_first_outputs": 156,
+        "parsed_first_tool_fields": 159,
+        "correct_first_action_count": 88,
+        "required_tool_name_matches": 144,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 68,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 88,
+        "lookup_observations": 88,
+        "later_model_turns": 0
+      },
+      "all/multistep": {
+        "attempts": 160,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.022791749455466526
+        ],
+        "tasks": 10,
+        "task_success_rates": {
+          "capability-v1-42-multistep-0000": 0.0,
+          "capability-v1-42-multistep-0001": 0.0,
+          "capability-v1-42-multistep-0002": 0.0,
+          "capability-v1-42-multistep-0003": 0.0,
+          "capability-v1-42-multistep-0004": 0.0,
+          "capability-v1-42-multistep-0005": 0.0,
+          "capability-v1-42-multistep-0006": 0.0,
+          "capability-v1-42-multistep-0007": 0.0,
+          "capability-v1-42-multistep-0008": 0.0,
+          "capability-v1-42-multistep-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_format": 68,
+          "invalid_json": 82,
+          "unnecessary_call": 10
+        },
+        "json_schema_failures": 150,
+        "strict_json_first_outputs": 78,
+        "protocol_valid_first_outputs": 10,
+        "parsed_first_tool_fields": 78,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 70,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 10,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "all/overall": {
+        "attempts": 640,
+        "successes": 88,
+        "success_rate": 0.1375,
+        "binomial_cp95_nominal": [
+          0.11176071425910816,
+          0.1666354447535014
+        ],
+        "tasks": 40,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0000": 0.0,
+          "capability-v1-42-comparison-0001": 0.0,
+          "capability-v1-42-comparison-0002": 0.0,
+          "capability-v1-42-comparison-0003": 0.0,
+          "capability-v1-42-comparison-0004": 0.0,
+          "capability-v1-42-comparison-0005": 0.0,
+          "capability-v1-42-comparison-0006": 0.0,
+          "capability-v1-42-comparison-0007": 0.0,
+          "capability-v1-42-comparison-0008": 0.0,
+          "capability-v1-42-comparison-0009": 0.0,
+          "capability-v1-42-extraction-0000": 0.0,
+          "capability-v1-42-extraction-0001": 0.0,
+          "capability-v1-42-extraction-0002": 0.0,
+          "capability-v1-42-extraction-0003": 0.0,
+          "capability-v1-42-extraction-0004": 0.0,
+          "capability-v1-42-extraction-0005": 0.0,
+          "capability-v1-42-extraction-0006": 0.0,
+          "capability-v1-42-extraction-0007": 0.0,
+          "capability-v1-42-extraction-0008": 0.0,
+          "capability-v1-42-extraction-0009": 0.0,
+          "capability-v1-42-multistep-0000": 0.0,
+          "capability-v1-42-multistep-0001": 0.0,
+          "capability-v1-42-multistep-0002": 0.0,
+          "capability-v1-42-multistep-0003": 0.0,
+          "capability-v1-42-multistep-0004": 0.0,
+          "capability-v1-42-multistep-0005": 0.0,
+          "capability-v1-42-multistep-0006": 0.0,
+          "capability-v1-42-multistep-0007": 0.0,
+          "capability-v1-42-multistep-0008": 0.0,
+          "capability-v1-42-multistep-0009": 0.0,
+          "capability-v1-42-selection-0000": 0.625,
+          "capability-v1-42-selection-0001": 0.625,
+          "capability-v1-42-selection-0002": 0.625,
+          "capability-v1-42-selection-0003": 0.625,
+          "capability-v1-42-selection-0004": 0.1875,
+          "capability-v1-42-selection-0005": 0.0,
+          "capability-v1-42-selection-0006": 0.625,
+          "capability-v1-42-selection-0007": 0.8125,
+          "capability-v1-42-selection-0008": 0.5625,
+          "capability-v1-42-selection-0009": 0.8125
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.8125,
+        "between_task_sd": 0.2712152140048421,
+        "mixed_tasks": 9,
+        "IGF": 0.225,
+        "failures": {
+          "invalid_format": 189,
+          "unnecessary_call": 231,
+          "wrong_final_answer": 34,
+          "invalid_json": 94,
+          "invalid_arguments": 4
+        },
+        "json_schema_failures": 283,
+        "strict_json_first_outputs": 546,
+        "protocol_valid_first_outputs": 319,
+        "parsed_first_tool_fields": 493,
+        "correct_first_action_count": 88,
+        "required_tool_name_matches": 214,
+        "gratuitous_calls": 153,
+        "incorrect_required_calls": 78,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 88,
+        "lookup_observations": 88,
+        "later_model_turns": 0
+      },
+      "train/extraction": {
+        "attempts": 112,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.0323999259313599
+        ],
+        "tasks": 7,
+        "task_success_rates": {
+          "capability-v1-42-extraction-0000": 0.0,
+          "capability-v1-42-extraction-0002": 0.0,
+          "capability-v1-42-extraction-0003": 0.0,
+          "capability-v1-42-extraction-0004": 0.0,
+          "capability-v1-42-extraction-0006": 0.0,
+          "capability-v1-42-extraction-0007": 0.0,
+          "capability-v1-42-extraction-0008": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_format": 16,
+          "unnecessary_call": 75,
+          "wrong_final_answer": 21
+        },
+        "json_schema_failures": 16,
+        "strict_json_first_outputs": 112,
+        "protocol_valid_first_outputs": 75,
+        "parsed_first_tool_fields": 85,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 75,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "train/comparison": {
+        "attempts": 112,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.0323999259313599
+        ],
+        "tasks": 7,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0000": 0.0,
+          "capability-v1-42-comparison-0002": 0.0,
+          "capability-v1-42-comparison-0003": 0.0,
+          "capability-v1-42-comparison-0004": 0.0,
+          "capability-v1-42-comparison-0006": 0.0,
+          "capability-v1-42-comparison-0007": 0.0,
+          "capability-v1-42-comparison-0008": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_format": 60,
+          "unnecessary_call": 43,
+          "invalid_json": 7,
+          "invalid_arguments": 2
+        },
+        "json_schema_failures": 67,
+        "strict_json_first_outputs": 105,
+        "protocol_valid_first_outputs": 43,
+        "parsed_first_tool_fields": 104,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 43,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "train/selection": {
+        "attempts": 112,
+        "successes": 65,
+        "success_rate": 0.5803571428571429,
+        "binomial_cp95_nominal": [
+          0.48339936091510805,
+          0.6729580660038645
+        ],
+        "tasks": 7,
+        "task_success_rates": {
+          "capability-v1-42-selection-0000": 0.625,
+          "capability-v1-42-selection-0002": 0.625,
+          "capability-v1-42-selection-0003": 0.625,
+          "capability-v1-42-selection-0004": 0.1875,
+          "capability-v1-42-selection-0006": 0.625,
+          "capability-v1-42-selection-0007": 0.8125,
+          "capability-v1-42-selection-0008": 0.5625
+        },
+        "task_rate_min": 0.1875,
+        "task_rate_max": 0.8125,
+        "between_task_sd": 0.18996396901467796,
+        "mixed_tasks": 7,
+        "IGF": 1.0,
+        "failures": {
+          "unnecessary_call": 44,
+          "invalid_format": 1,
+          "invalid_arguments": 1,
+          "invalid_json": 1
+        },
+        "json_schema_failures": 2,
+        "strict_json_first_outputs": 111,
+        "protocol_valid_first_outputs": 109,
+        "parsed_first_tool_fields": 111,
+        "correct_first_action_count": 65,
+        "required_tool_name_matches": 98,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 44,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 65,
+        "lookup_observations": 65,
+        "later_model_turns": 0
+      },
+      "train/multistep": {
+        "attempts": 112,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.0323999259313599
+        ],
+        "tasks": 7,
+        "task_success_rates": {
+          "capability-v1-42-multistep-0000": 0.0,
+          "capability-v1-42-multistep-0002": 0.0,
+          "capability-v1-42-multistep-0003": 0.0,
+          "capability-v1-42-multistep-0004": 0.0,
+          "capability-v1-42-multistep-0006": 0.0,
+          "capability-v1-42-multistep-0007": 0.0,
+          "capability-v1-42-multistep-0008": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_format": 42,
+          "invalid_json": 64,
+          "unnecessary_call": 6
+        },
+        "json_schema_failures": 106,
+        "strict_json_first_outputs": 48,
+        "protocol_valid_first_outputs": 6,
+        "parsed_first_tool_fields": 48,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 45,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 6,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "train/overall": {
+        "attempts": 448,
+        "successes": 65,
+        "success_rate": 0.14508928571428573,
+        "binomial_cp95_nominal": [
+          0.11379504727280698,
+          0.1811576997116563
+        ],
+        "tasks": 28,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0000": 0.0,
+          "capability-v1-42-comparison-0002": 0.0,
+          "capability-v1-42-comparison-0003": 0.0,
+          "capability-v1-42-comparison-0004": 0.0,
+          "capability-v1-42-comparison-0006": 0.0,
+          "capability-v1-42-comparison-0007": 0.0,
+          "capability-v1-42-comparison-0008": 0.0,
+          "capability-v1-42-extraction-0000": 0.0,
+          "capability-v1-42-extraction-0002": 0.0,
+          "capability-v1-42-extraction-0003": 0.0,
+          "capability-v1-42-extraction-0004": 0.0,
+          "capability-v1-42-extraction-0006": 0.0,
+          "capability-v1-42-extraction-0007": 0.0,
+          "capability-v1-42-extraction-0008": 0.0,
+          "capability-v1-42-multistep-0000": 0.0,
+          "capability-v1-42-multistep-0002": 0.0,
+          "capability-v1-42-multistep-0003": 0.0,
+          "capability-v1-42-multistep-0004": 0.0,
+          "capability-v1-42-multistep-0006": 0.0,
+          "capability-v1-42-multistep-0007": 0.0,
+          "capability-v1-42-multistep-0008": 0.0,
+          "capability-v1-42-selection-0000": 0.625,
+          "capability-v1-42-selection-0002": 0.625,
+          "capability-v1-42-selection-0003": 0.625,
+          "capability-v1-42-selection-0004": 0.1875,
+          "capability-v1-42-selection-0006": 0.625,
+          "capability-v1-42-selection-0007": 0.8125,
+          "capability-v1-42-selection-0008": 0.5625
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.8125,
+        "between_task_sd": 0.2711288833054012,
+        "mixed_tasks": 7,
+        "IGF": 0.25,
+        "failures": {
+          "invalid_format": 119,
+          "unnecessary_call": 168,
+          "wrong_final_answer": 21,
+          "invalid_json": 72,
+          "invalid_arguments": 3
+        },
+        "json_schema_failures": 191,
+        "strict_json_first_outputs": 376,
+        "protocol_valid_first_outputs": 233,
+        "parsed_first_tool_fields": 348,
+        "correct_first_action_count": 65,
+        "required_tool_name_matches": 143,
+        "gratuitous_calls": 118,
+        "incorrect_required_calls": 50,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 65,
+        "lookup_observations": 65,
+        "later_model_turns": 0
+      },
+      "test/extraction": {
+        "attempts": 48,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.07397278534728022
+        ],
+        "tasks": 3,
+        "task_success_rates": {
+          "capability-v1-42-extraction-0001": 0.0,
+          "capability-v1-42-extraction-0005": 0.0,
+          "capability-v1-42-extraction-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_format": 14,
+          "wrong_final_answer": 12,
+          "unnecessary_call": 22
+        },
+        "json_schema_failures": 14,
+        "strict_json_first_outputs": 48,
+        "protocol_valid_first_outputs": 22,
+        "parsed_first_tool_fields": 24,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 22,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "test/comparison": {
+        "attempts": 48,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.07397278534728022
+        ],
+        "tasks": 3,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0001": 0.0,
+          "capability-v1-42-comparison-0005": 0.0,
+          "capability-v1-42-comparison-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_format": 29,
+          "unnecessary_call": 13,
+          "wrong_final_answer": 1,
+          "invalid_json": 4,
+          "invalid_arguments": 1
+        },
+        "json_schema_failures": 33,
+        "strict_json_first_outputs": 44,
+        "protocol_valid_first_outputs": 13,
+        "parsed_first_tool_fields": 43,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 13,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "test/selection": {
+        "attempts": 48,
+        "successes": 23,
+        "success_rate": 0.4791666666666667,
+        "binomial_cp95_nominal": [
+          0.3328663362136607,
+          0.6281298322583453
+        ],
+        "tasks": 3,
+        "task_success_rates": {
+          "capability-v1-42-selection-0001": 0.625,
+          "capability-v1-42-selection-0005": 0.0,
+          "capability-v1-42-selection-0009": 0.8125
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.8125,
+        "between_task_sd": 0.42542870534712784,
+        "mixed_tasks": 2,
+        "IGF": 0.6666666666666666,
+        "failures": {
+          "unnecessary_call": 24,
+          "invalid_format": 1
+        },
+        "json_schema_failures": 1,
+        "strict_json_first_outputs": 48,
+        "protocol_valid_first_outputs": 47,
+        "parsed_first_tool_fields": 48,
+        "correct_first_action_count": 23,
+        "required_tool_name_matches": 46,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 24,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 23,
+        "lookup_observations": 23,
+        "later_model_turns": 0
+      },
+      "test/multistep": {
+        "attempts": 48,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.07397278534728022
+        ],
+        "tasks": 3,
+        "task_success_rates": {
+          "capability-v1-42-multistep-0001": 0.0,
+          "capability-v1-42-multistep-0005": 0.0,
+          "capability-v1-42-multistep-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "unnecessary_call": 4,
+          "invalid_format": 26,
+          "invalid_json": 18
+        },
+        "json_schema_failures": 44,
+        "strict_json_first_outputs": 30,
+        "protocol_valid_first_outputs": 4,
+        "parsed_first_tool_fields": 30,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 25,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 4,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "test/overall": {
+        "attempts": 192,
+        "successes": 23,
+        "success_rate": 0.11979166666666667,
+        "binomial_cp95_nominal": [
+          0.07747404631409219,
+          0.17430844118518274
+        ],
+        "tasks": 12,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0001": 0.0,
+          "capability-v1-42-comparison-0005": 0.0,
+          "capability-v1-42-comparison-0009": 0.0,
+          "capability-v1-42-extraction-0001": 0.0,
+          "capability-v1-42-extraction-0005": 0.0,
+          "capability-v1-42-extraction-0009": 0.0,
+          "capability-v1-42-multistep-0001": 0.0,
+          "capability-v1-42-multistep-0005": 0.0,
+          "capability-v1-42-multistep-0009": 0.0,
+          "capability-v1-42-selection-0001": 0.625,
+          "capability-v1-42-selection-0005": 0.0,
+          "capability-v1-42-selection-0009": 0.8125
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.8125,
+        "between_task_sd": 0.282614534974385,
+        "mixed_tasks": 2,
+        "IGF": 0.16666666666666666,
+        "failures": {
+          "invalid_format": 70,
+          "wrong_final_answer": 13,
+          "unnecessary_call": 63,
+          "invalid_json": 22,
+          "invalid_arguments": 1
+        },
+        "json_schema_failures": 92,
+        "strict_json_first_outputs": 170,
+        "protocol_valid_first_outputs": 86,
+        "parsed_first_tool_fields": 145,
+        "correct_first_action_count": 23,
+        "required_tool_name_matches": 71,
+        "gratuitous_calls": 35,
+        "incorrect_required_calls": 28,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 23,
+        "lookup_observations": 23,
+        "later_model_turns": 0
+      }
+    },
+    "v1.3": {
+      "all/extraction": {
+        "attempts": 160,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.022791749455466526
+        ],
+        "tasks": 10,
+        "task_success_rates": {
+          "capability-v1-42-extraction-0000": 0.0,
+          "capability-v1-42-extraction-0001": 0.0,
+          "capability-v1-42-extraction-0002": 0.0,
+          "capability-v1-42-extraction-0003": 0.0,
+          "capability-v1-42-extraction-0004": 0.0,
+          "capability-v1-42-extraction-0005": 0.0,
+          "capability-v1-42-extraction-0006": 0.0,
+          "capability-v1-42-extraction-0007": 0.0,
+          "capability-v1-42-extraction-0008": 0.0,
+          "capability-v1-42-extraction-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_format": 106,
+          "unnecessary_call": 36,
+          "wrong_final_answer": 18
+        },
+        "json_schema_failures": 106,
+        "strict_json_first_outputs": 160,
+        "protocol_valid_first_outputs": 36,
+        "parsed_first_tool_fields": 40,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 36,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "all/comparison": {
+        "attempts": 160,
+        "successes": 1,
+        "success_rate": 0.00625,
+        "binomial_cp95_nominal": [
+          0.00015822378119882121,
+          0.03432932968414143
+        ],
+        "tasks": 10,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0000": 0.0,
+          "capability-v1-42-comparison-0001": 0.0,
+          "capability-v1-42-comparison-0002": 0.0,
+          "capability-v1-42-comparison-0003": 0.0,
+          "capability-v1-42-comparison-0004": 0.0,
+          "capability-v1-42-comparison-0005": 0.0625,
+          "capability-v1-42-comparison-0006": 0.0,
+          "capability-v1-42-comparison-0007": 0.0,
+          "capability-v1-42-comparison-0008": 0.0,
+          "capability-v1-42-comparison-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0625,
+        "between_task_sd": 0.01976423537605237,
+        "mixed_tasks": 1,
+        "IGF": 0.1,
+        "failures": {
+          "invalid_format": 88,
+          "unnecessary_call": 55,
+          "invalid_json": 13,
+          "wrong_final_answer": 3
+        },
+        "json_schema_failures": 101,
+        "strict_json_first_outputs": 147,
+        "protocol_valid_first_outputs": 55,
+        "parsed_first_tool_fields": 137,
+        "correct_first_action_count": 1,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 55,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "all/selection": {
+        "attempts": 160,
+        "successes": 72,
+        "success_rate": 0.45,
+        "binomial_cp95_nominal": [
+          0.37136541433354675,
+          0.5305211628364652
+        ],
+        "tasks": 10,
+        "task_success_rates": {
+          "capability-v1-42-selection-0000": 0.375,
+          "capability-v1-42-selection-0001": 0.6875,
+          "capability-v1-42-selection-0002": 0.625,
+          "capability-v1-42-selection-0003": 0.375,
+          "capability-v1-42-selection-0004": 0.125,
+          "capability-v1-42-selection-0005": 0.0,
+          "capability-v1-42-selection-0006": 0.4375,
+          "capability-v1-42-selection-0007": 0.875,
+          "capability-v1-42-selection-0008": 0.625,
+          "capability-v1-42-selection-0009": 0.375
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.875,
+        "between_task_sd": 0.26319352828922926,
+        "mixed_tasks": 9,
+        "IGF": 0.9,
+        "failures": {
+          "unnecessary_call": 87,
+          "invalid_arguments": 1
+        },
+        "json_schema_failures": 0,
+        "strict_json_first_outputs": 160,
+        "protocol_valid_first_outputs": 159,
+        "parsed_first_tool_fields": 160,
+        "correct_first_action_count": 72,
+        "required_tool_name_matches": 121,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 87,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 72,
+        "lookup_observations": 72,
+        "later_model_turns": 0
+      },
+      "all/multistep": {
+        "attempts": 160,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.022791749455466526
+        ],
+        "tasks": 10,
+        "task_success_rates": {
+          "capability-v1-42-multistep-0000": 0.0,
+          "capability-v1-42-multistep-0001": 0.0,
+          "capability-v1-42-multistep-0002": 0.0,
+          "capability-v1-42-multistep-0003": 0.0,
+          "capability-v1-42-multistep-0004": 0.0,
+          "capability-v1-42-multistep-0005": 0.0,
+          "capability-v1-42-multistep-0006": 0.0,
+          "capability-v1-42-multistep-0007": 0.0,
+          "capability-v1-42-multistep-0008": 0.0,
+          "capability-v1-42-multistep-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_json": 81,
+          "invalid_format": 58,
+          "missing_requirements": 3,
+          "wrong_final_answer": 2,
+          "unnecessary_call": 16
+        },
+        "json_schema_failures": 139,
+        "strict_json_first_outputs": 80,
+        "protocol_valid_first_outputs": 22,
+        "parsed_first_tool_fields": 71,
+        "correct_first_action_count": 1,
+        "required_tool_name_matches": 64,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 16,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 1,
+        "lookup_observations": 1,
+        "later_model_turns": 1
+      },
+      "all/overall": {
+        "attempts": 640,
+        "successes": 73,
+        "success_rate": 0.1140625,
+        "binomial_cp95_nominal": [
+          0.09047983045082741,
+          0.14127172651751602
+        ],
+        "tasks": 40,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0000": 0.0,
+          "capability-v1-42-comparison-0001": 0.0,
+          "capability-v1-42-comparison-0002": 0.0,
+          "capability-v1-42-comparison-0003": 0.0,
+          "capability-v1-42-comparison-0004": 0.0,
+          "capability-v1-42-comparison-0005": 0.0625,
+          "capability-v1-42-comparison-0006": 0.0,
+          "capability-v1-42-comparison-0007": 0.0,
+          "capability-v1-42-comparison-0008": 0.0,
+          "capability-v1-42-comparison-0009": 0.0,
+          "capability-v1-42-extraction-0000": 0.0,
+          "capability-v1-42-extraction-0001": 0.0,
+          "capability-v1-42-extraction-0002": 0.0,
+          "capability-v1-42-extraction-0003": 0.0,
+          "capability-v1-42-extraction-0004": 0.0,
+          "capability-v1-42-extraction-0005": 0.0,
+          "capability-v1-42-extraction-0006": 0.0,
+          "capability-v1-42-extraction-0007": 0.0,
+          "capability-v1-42-extraction-0008": 0.0,
+          "capability-v1-42-extraction-0009": 0.0,
+          "capability-v1-42-multistep-0000": 0.0,
+          "capability-v1-42-multistep-0001": 0.0,
+          "capability-v1-42-multistep-0002": 0.0,
+          "capability-v1-42-multistep-0003": 0.0,
+          "capability-v1-42-multistep-0004": 0.0,
+          "capability-v1-42-multistep-0005": 0.0,
+          "capability-v1-42-multistep-0006": 0.0,
+          "capability-v1-42-multistep-0007": 0.0,
+          "capability-v1-42-multistep-0008": 0.0,
+          "capability-v1-42-multistep-0009": 0.0,
+          "capability-v1-42-selection-0000": 0.375,
+          "capability-v1-42-selection-0001": 0.6875,
+          "capability-v1-42-selection-0002": 0.625,
+          "capability-v1-42-selection-0003": 0.375,
+          "capability-v1-42-selection-0004": 0.125,
+          "capability-v1-42-selection-0005": 0.0,
+          "capability-v1-42-selection-0006": 0.4375,
+          "capability-v1-42-selection-0007": 0.875,
+          "capability-v1-42-selection-0008": 0.625,
+          "capability-v1-42-selection-0009": 0.375
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.875,
+        "between_task_sd": 0.23380539759019184,
+        "mixed_tasks": 10,
+        "IGF": 0.25,
+        "failures": {
+          "invalid_format": 252,
+          "unnecessary_call": 194,
+          "wrong_final_answer": 23,
+          "invalid_json": 94,
+          "invalid_arguments": 1,
+          "missing_requirements": 3
+        },
+        "json_schema_failures": 346,
+        "strict_json_first_outputs": 547,
+        "protocol_valid_first_outputs": 272,
+        "parsed_first_tool_fields": 408,
+        "correct_first_action_count": 74,
+        "required_tool_name_matches": 185,
+        "gratuitous_calls": 91,
+        "incorrect_required_calls": 103,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 73,
+        "lookup_observations": 73,
+        "later_model_turns": 1
+      },
+      "train/extraction": {
+        "attempts": 112,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.0323999259313599
+        ],
+        "tasks": 7,
+        "task_success_rates": {
+          "capability-v1-42-extraction-0000": 0.0,
+          "capability-v1-42-extraction-0002": 0.0,
+          "capability-v1-42-extraction-0003": 0.0,
+          "capability-v1-42-extraction-0004": 0.0,
+          "capability-v1-42-extraction-0006": 0.0,
+          "capability-v1-42-extraction-0007": 0.0,
+          "capability-v1-42-extraction-0008": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_format": 62,
+          "unnecessary_call": 35,
+          "wrong_final_answer": 15
+        },
+        "json_schema_failures": 62,
+        "strict_json_first_outputs": 112,
+        "protocol_valid_first_outputs": 35,
+        "parsed_first_tool_fields": 39,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 35,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "train/comparison": {
+        "attempts": 112,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.0323999259313599
+        ],
+        "tasks": 7,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0000": 0.0,
+          "capability-v1-42-comparison-0002": 0.0,
+          "capability-v1-42-comparison-0003": 0.0,
+          "capability-v1-42-comparison-0004": 0.0,
+          "capability-v1-42-comparison-0006": 0.0,
+          "capability-v1-42-comparison-0007": 0.0,
+          "capability-v1-42-comparison-0008": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_format": 64,
+          "unnecessary_call": 39,
+          "invalid_json": 8,
+          "wrong_final_answer": 1
+        },
+        "json_schema_failures": 72,
+        "strict_json_first_outputs": 104,
+        "protocol_valid_first_outputs": 38,
+        "parsed_first_tool_fields": 97,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 39,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "train/selection": {
+        "attempts": 112,
+        "successes": 55,
+        "success_rate": 0.49107142857142855,
+        "binomial_cp95_nominal": [
+          0.39537134820442543,
+          0.5872552532045119
+        ],
+        "tasks": 7,
+        "task_success_rates": {
+          "capability-v1-42-selection-0000": 0.375,
+          "capability-v1-42-selection-0002": 0.625,
+          "capability-v1-42-selection-0003": 0.375,
+          "capability-v1-42-selection-0004": 0.125,
+          "capability-v1-42-selection-0006": 0.4375,
+          "capability-v1-42-selection-0007": 0.875,
+          "capability-v1-42-selection-0008": 0.625
+        },
+        "task_rate_min": 0.125,
+        "task_rate_max": 0.875,
+        "between_task_sd": 0.24051965071684347,
+        "mixed_tasks": 7,
+        "IGF": 1.0,
+        "failures": {
+          "unnecessary_call": 56,
+          "invalid_arguments": 1
+        },
+        "json_schema_failures": 0,
+        "strict_json_first_outputs": 112,
+        "protocol_valid_first_outputs": 111,
+        "parsed_first_tool_fields": 112,
+        "correct_first_action_count": 55,
+        "required_tool_name_matches": 82,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 56,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 55,
+        "lookup_observations": 55,
+        "later_model_turns": 0
+      },
+      "train/multistep": {
+        "attempts": 112,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.0323999259313599
+        ],
+        "tasks": 7,
+        "task_success_rates": {
+          "capability-v1-42-multistep-0000": 0.0,
+          "capability-v1-42-multistep-0002": 0.0,
+          "capability-v1-42-multistep-0003": 0.0,
+          "capability-v1-42-multistep-0004": 0.0,
+          "capability-v1-42-multistep-0006": 0.0,
+          "capability-v1-42-multistep-0007": 0.0,
+          "capability-v1-42-multistep-0008": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_json": 55,
+          "invalid_format": 40,
+          "missing_requirements": 3,
+          "wrong_final_answer": 2,
+          "unnecessary_call": 12
+        },
+        "json_schema_failures": 95,
+        "strict_json_first_outputs": 58,
+        "protocol_valid_first_outputs": 18,
+        "parsed_first_tool_fields": 50,
+        "correct_first_action_count": 1,
+        "required_tool_name_matches": 46,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 12,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 1,
+        "lookup_observations": 1,
+        "later_model_turns": 1
+      },
+      "train/overall": {
+        "attempts": 448,
+        "successes": 55,
+        "success_rate": 0.12276785714285714,
+        "binomial_cp95_nominal": [
+          0.0938395933728455,
+          0.15678592228971228
+        ],
+        "tasks": 28,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0000": 0.0,
+          "capability-v1-42-comparison-0002": 0.0,
+          "capability-v1-42-comparison-0003": 0.0,
+          "capability-v1-42-comparison-0004": 0.0,
+          "capability-v1-42-comparison-0006": 0.0,
+          "capability-v1-42-comparison-0007": 0.0,
+          "capability-v1-42-comparison-0008": 0.0,
+          "capability-v1-42-extraction-0000": 0.0,
+          "capability-v1-42-extraction-0002": 0.0,
+          "capability-v1-42-extraction-0003": 0.0,
+          "capability-v1-42-extraction-0004": 0.0,
+          "capability-v1-42-extraction-0006": 0.0,
+          "capability-v1-42-extraction-0007": 0.0,
+          "capability-v1-42-extraction-0008": 0.0,
+          "capability-v1-42-multistep-0000": 0.0,
+          "capability-v1-42-multistep-0002": 0.0,
+          "capability-v1-42-multistep-0003": 0.0,
+          "capability-v1-42-multistep-0004": 0.0,
+          "capability-v1-42-multistep-0006": 0.0,
+          "capability-v1-42-multistep-0007": 0.0,
+          "capability-v1-42-multistep-0008": 0.0,
+          "capability-v1-42-selection-0000": 0.375,
+          "capability-v1-42-selection-0002": 0.625,
+          "capability-v1-42-selection-0003": 0.375,
+          "capability-v1-42-selection-0004": 0.125,
+          "capability-v1-42-selection-0006": 0.4375,
+          "capability-v1-42-selection-0007": 0.875,
+          "capability-v1-42-selection-0008": 0.625
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.875,
+        "between_task_sd": 0.24442992944820183,
+        "mixed_tasks": 7,
+        "IGF": 0.25,
+        "failures": {
+          "invalid_format": 166,
+          "unnecessary_call": 142,
+          "wrong_final_answer": 18,
+          "invalid_json": 63,
+          "invalid_arguments": 1,
+          "missing_requirements": 3
+        },
+        "json_schema_failures": 229,
+        "strict_json_first_outputs": 386,
+        "protocol_valid_first_outputs": 202,
+        "parsed_first_tool_fields": 298,
+        "correct_first_action_count": 56,
+        "required_tool_name_matches": 128,
+        "gratuitous_calls": 74,
+        "incorrect_required_calls": 68,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 56,
+        "lookup_observations": 56,
+        "later_model_turns": 1
+      },
+      "test/extraction": {
+        "attempts": 48,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.07397278534728022
+        ],
+        "tasks": 3,
+        "task_success_rates": {
+          "capability-v1-42-extraction-0001": 0.0,
+          "capability-v1-42-extraction-0005": 0.0,
+          "capability-v1-42-extraction-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "invalid_format": 44,
+          "wrong_final_answer": 3,
+          "unnecessary_call": 1
+        },
+        "json_schema_failures": 44,
+        "strict_json_first_outputs": 48,
+        "protocol_valid_first_outputs": 1,
+        "parsed_first_tool_fields": 1,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 1,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "test/comparison": {
+        "attempts": 48,
+        "successes": 1,
+        "success_rate": 0.020833333333333332,
+        "binomial_cp95_nominal": [
+          0.0005273152534231193,
+          0.11069616059315232
+        ],
+        "tasks": 3,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0001": 0.0,
+          "capability-v1-42-comparison-0005": 0.0625,
+          "capability-v1-42-comparison-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0625,
+        "between_task_sd": 0.036084391824351615,
+        "mixed_tasks": 1,
+        "IGF": 0.3333333333333333,
+        "failures": {
+          "unnecessary_call": 16,
+          "invalid_format": 24,
+          "invalid_json": 5,
+          "wrong_final_answer": 2
+        },
+        "json_schema_failures": 29,
+        "strict_json_first_outputs": 43,
+        "protocol_valid_first_outputs": 17,
+        "parsed_first_tool_fields": 40,
+        "correct_first_action_count": 1,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 16,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "test/selection": {
+        "attempts": 48,
+        "successes": 17,
+        "success_rate": 0.3541666666666667,
+        "binomial_cp95_nominal": [
+          0.2216059329118258,
+          0.5054317445633694
+        ],
+        "tasks": 3,
+        "task_success_rates": {
+          "capability-v1-42-selection-0001": 0.6875,
+          "capability-v1-42-selection-0005": 0.0,
+          "capability-v1-42-selection-0009": 0.375
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.6875,
+        "between_task_sd": 0.3442231592053814,
+        "mixed_tasks": 2,
+        "IGF": 0.6666666666666666,
+        "failures": {
+          "unnecessary_call": 31
+        },
+        "json_schema_failures": 0,
+        "strict_json_first_outputs": 48,
+        "protocol_valid_first_outputs": 48,
+        "parsed_first_tool_fields": 48,
+        "correct_first_action_count": 17,
+        "required_tool_name_matches": 39,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 31,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 17,
+        "lookup_observations": 17,
+        "later_model_turns": 0
+      },
+      "test/multistep": {
+        "attempts": 48,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.07397278534728022
+        ],
+        "tasks": 3,
+        "task_success_rates": {
+          "capability-v1-42-multistep-0001": 0.0,
+          "capability-v1-42-multistep-0005": 0.0,
+          "capability-v1-42-multistep-0009": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0.0,
+        "mixed_tasks": 0,
+        "IGF": 0.0,
+        "failures": {
+          "unnecessary_call": 4,
+          "invalid_format": 18,
+          "invalid_json": 26
+        },
+        "json_schema_failures": 44,
+        "strict_json_first_outputs": 22,
+        "protocol_valid_first_outputs": 4,
+        "parsed_first_tool_fields": 21,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 18,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 4,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "test/overall": {
+        "attempts": 192,
+        "successes": 18,
+        "success_rate": 0.09375,
+        "binomial_cp95_nominal": [
+          0.05651257554162864,
+          0.1441166777024952
+        ],
+        "tasks": 12,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0001": 0.0,
+          "capability-v1-42-comparison-0005": 0.0625,
+          "capability-v1-42-comparison-0009": 0.0,
+          "capability-v1-42-extraction-0001": 0.0,
+          "capability-v1-42-extraction-0005": 0.0,
+          "capability-v1-42-extraction-0009": 0.0,
+          "capability-v1-42-multistep-0001": 0.0,
+          "capability-v1-42-multistep-0005": 0.0,
+          "capability-v1-42-multistep-0009": 0.0,
+          "capability-v1-42-selection-0001": 0.6875,
+          "capability-v1-42-selection-0005": 0.0,
+          "capability-v1-42-selection-0009": 0.375
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.6875,
+        "between_task_sd": 0.21568469200116258,
+        "mixed_tasks": 3,
+        "IGF": 0.25,
+        "failures": {
+          "invalid_format": 86,
+          "wrong_final_answer": 5,
+          "unnecessary_call": 52,
+          "invalid_json": 31
+        },
+        "json_schema_failures": 117,
+        "strict_json_first_outputs": 161,
+        "protocol_valid_first_outputs": 70,
+        "parsed_first_tool_fields": 110,
+        "correct_first_action_count": 18,
+        "required_tool_name_matches": 57,
+        "gratuitous_calls": 17,
+        "incorrect_required_calls": 35,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 17,
+        "lookup_observations": 17,
+        "later_model_turns": 0
+      }
+    }
+  },
+  "paired_uncertainty": {
+    "v1.1->v1.3": {
+      "all/extraction": {
+        "fixed": 0,
+        "regressed": 20,
+        "paired_task_bootstrap": {
+          "delta": -0.125,
+          "ci95": [
+            -0.18125,
+            -0.06875
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 10,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "all/comparison": {
+        "fixed": 1,
+        "regressed": 2,
+        "paired_task_bootstrap": {
+          "delta": -0.00625,
+          "ci95": [
+            -0.03125,
+            0.0125
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 10,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "all/selection": {
+        "fixed": 44,
+        "regressed": 22,
+        "paired_task_bootstrap": {
+          "delta": 0.1375,
+          "ci95": [
+            -0.04375,
+            0.3375
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 10,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "all/multistep": {
+        "fixed": 0,
+        "regressed": 0,
+        "paired_task_bootstrap": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 10,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "all/overall": {
+        "fixed": 45,
+        "regressed": 44,
+        "paired_task_bootstrap": {
+          "delta": 0.0015625,
+          "ci95": [
+            -0.0453125,
+            0.053125
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 40,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "train/extraction": {
+        "fixed": 0,
+        "regressed": 16,
+        "paired_task_bootstrap": {
+          "delta": -0.14285714285714285,
+          "ci95": [
+            -0.20535714285714285,
+            -0.08928571428571429
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 7,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "train/comparison": {
+        "fixed": 0,
+        "regressed": 2,
+        "paired_task_bootstrap": {
+          "delta": -0.017857142857142856,
+          "ci95": [
+            -0.05357142857142857,
+            0.0
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 7,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "train/selection": {
+        "fixed": 32,
+        "regressed": 14,
+        "paired_task_bootstrap": {
+          "delta": 0.16071428571428573,
+          "ci95": [
+            -0.03571428571428571,
+            0.38392857142857145
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 7,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "train/multistep": {
+        "fixed": 0,
+        "regressed": 0,
+        "paired_task_bootstrap": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 7,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "train/overall": {
+        "fixed": 32,
+        "regressed": 32,
+        "paired_task_bootstrap": {
+          "delta": 0.0,
+          "ci95": [
+            -0.05357142857142857,
+            0.05585937499999919
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 28,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "test/extraction": {
+        "fixed": 0,
+        "regressed": 4,
+        "paired_task_bootstrap": {
+          "delta": -0.08333333333333333,
+          "ci95": [
+            -0.25,
+            0.0
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 3,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "test/comparison": {
+        "fixed": 1,
+        "regressed": 0,
+        "paired_task_bootstrap": {
+          "delta": 0.020833333333333332,
+          "ci95": [
+            0.0,
+            0.0625
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 3,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "test/selection": {
+        "fixed": 12,
+        "regressed": 8,
+        "paired_task_bootstrap": {
+          "delta": 0.08333333333333333,
+          "ci95": [
+            -0.25,
+            0.5625
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 3,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "test/multistep": {
+        "fixed": 0,
+        "regressed": 0,
+        "paired_task_bootstrap": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 3,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "test/overall": {
+        "fixed": 13,
+        "regressed": 12,
+        "paired_task_bootstrap": {
+          "delta": 0.005208333333333333,
+          "ci95": [
+            -0.08854166666666667,
+            0.11979166666666667
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 12,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      }
+    },
+    "v1.2->v1.3": {
+      "all/extraction": {
+        "fixed": 0,
+        "regressed": 0,
+        "paired_task_bootstrap": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 10,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "all/comparison": {
+        "fixed": 1,
+        "regressed": 0,
+        "paired_task_bootstrap": {
+          "delta": 0.00625,
+          "ci95": [
+            0.0,
+            0.01875
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 10,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "all/selection": {
+        "fixed": 4,
+        "regressed": 20,
+        "paired_task_bootstrap": {
+          "delta": -0.1,
+          "ci95": [
+            -0.2,
+            -0.00625
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 10,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "all/multistep": {
+        "fixed": 0,
+        "regressed": 0,
+        "paired_task_bootstrap": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 10,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "all/overall": {
+        "fixed": 5,
+        "regressed": 20,
+        "paired_task_bootstrap": {
+          "delta": -0.0234375,
+          "ci95": [
+            -0.05,
+            0.0
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 40,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "train/extraction": {
+        "fixed": 0,
+        "regressed": 0,
+        "paired_task_bootstrap": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 7,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "train/comparison": {
+        "fixed": 0,
+        "regressed": 0,
+        "paired_task_bootstrap": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 7,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "train/selection": {
+        "fixed": 3,
+        "regressed": 13,
+        "paired_task_bootstrap": {
+          "delta": -0.08928571428571429,
+          "ci95": [
+            -0.17857142857142858,
+            0.008928571428571428
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 7,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "train/multistep": {
+        "fixed": 0,
+        "regressed": 0,
+        "paired_task_bootstrap": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 7,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "train/overall": {
+        "fixed": 3,
+        "regressed": 13,
+        "paired_task_bootstrap": {
+          "delta": -0.022321428571428572,
+          "ci95": [
+            -0.046875,
+            0.0
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 28,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "test/extraction": {
+        "fixed": 0,
+        "regressed": 0,
+        "paired_task_bootstrap": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 3,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "test/comparison": {
+        "fixed": 1,
+        "regressed": 0,
+        "paired_task_bootstrap": {
+          "delta": 0.020833333333333332,
+          "ci95": [
+            0.0,
+            0.0625
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 3,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "test/selection": {
+        "fixed": 1,
+        "regressed": 7,
+        "paired_task_bootstrap": {
+          "delta": -0.125,
+          "ci95": [
+            -0.4375,
+            0.0625
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 3,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "test/multistep": {
+        "fixed": 0,
+        "regressed": 0,
+        "paired_task_bootstrap": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 3,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      },
+      "test/overall": {
+        "fixed": 2,
+        "regressed": 7,
+        "paired_task_bootstrap": {
+          "delta": -0.026041666666666668,
+          "ci95": [
+            -0.09895833333333333,
+            0.020833333333333332
+          ],
+          "iterations": 5000,
+          "seed": 20261121,
+          "tasks": 12,
+          "method": "paired stratified task-cluster percentile bootstrap; all seed outcomes retained in task means"
+        }
+      }
+    }
+  },
+  "progression": {
+    "v1.1": {
+      "train/extraction": {
+        "first_tool_name_matches_required": 0,
+        "attempts": 112,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 99
+      },
+      "train/comparison": {
+        "first_tool_name_matches_required": 0,
+        "attempts": 112,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 29
+      },
+      "train/selection": {
+        "first_tool_name_matches_required": 56,
+        "attempts": 112,
+        "first_lookup_executions": 37,
+        "successful_lookup_observations": 37,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 64
+      },
+      "train/multistep": {
+        "first_tool_name_matches_required": 43,
+        "attempts": 112,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 3
+      },
+      "train/overall": {
+        "first_tool_name_matches_required": 99,
+        "attempts": 448,
+        "first_lookup_executions": 37,
+        "successful_lookup_observations": 37,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 195
+      },
+      "test/extraction": {
+        "first_tool_name_matches_required": 0,
+        "attempts": 48,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 20
+      },
+      "test/comparison": {
+        "first_tool_name_matches_required": 0,
+        "attempts": 48,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 9
+      },
+      "test/selection": {
+        "first_tool_name_matches_required": 26,
+        "attempts": 48,
+        "first_lookup_executions": 13,
+        "successful_lookup_observations": 13,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 27
+      },
+      "test/multistep": {
+        "first_tool_name_matches_required": 14,
+        "attempts": 48,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 4
+      },
+      "test/overall": {
+        "first_tool_name_matches_required": 40,
+        "attempts": 192,
+        "first_lookup_executions": 13,
+        "successful_lookup_observations": 13,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 60
+      }
+    },
+    "v1.2": {
+      "train/extraction": {
+        "first_tool_name_matches_required": 0,
+        "attempts": 112,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 96
+      },
+      "train/comparison": {
+        "first_tool_name_matches_required": 0,
+        "attempts": 112,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 45
+      },
+      "train/selection": {
+        "first_tool_name_matches_required": 98,
+        "attempts": 112,
+        "first_lookup_executions": 65,
+        "successful_lookup_observations": 65,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 110
+      },
+      "train/multistep": {
+        "first_tool_name_matches_required": 45,
+        "attempts": 112,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 6
+      },
+      "train/overall": {
+        "first_tool_name_matches_required": 143,
+        "attempts": 448,
+        "first_lookup_executions": 65,
+        "successful_lookup_observations": 65,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 257
+      },
+      "test/extraction": {
+        "first_tool_name_matches_required": 0,
+        "attempts": 48,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 34
+      },
+      "test/comparison": {
+        "first_tool_name_matches_required": 0,
+        "attempts": 48,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 15
+      },
+      "test/selection": {
+        "first_tool_name_matches_required": 46,
+        "attempts": 48,
+        "first_lookup_executions": 23,
+        "successful_lookup_observations": 23,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 47
+      },
+      "test/multistep": {
+        "first_tool_name_matches_required": 25,
+        "attempts": 48,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 4
+      },
+      "test/overall": {
+        "first_tool_name_matches_required": 71,
+        "attempts": 192,
+        "first_lookup_executions": 23,
+        "successful_lookup_observations": 23,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 100
+      }
+    },
+    "v1.3": {
+      "train/extraction": {
+        "first_tool_name_matches_required": 0,
+        "attempts": 112,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 50
+      },
+      "train/comparison": {
+        "first_tool_name_matches_required": 0,
+        "attempts": 112,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 40
+      },
+      "train/selection": {
+        "first_tool_name_matches_required": 82,
+        "attempts": 112,
+        "first_lookup_executions": 55,
+        "successful_lookup_observations": 55,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 112
+      },
+      "train/multistep": {
+        "first_tool_name_matches_required": 46,
+        "attempts": 112,
+        "first_lookup_executions": 1,
+        "successful_lookup_observations": 1,
+        "later_model_turns": 1,
+        "prior_history_pairs_verified": 1,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {
+          "invalid_json": 1
+        },
+        "first_valid_action_envelopes": 18
+      },
+      "train/overall": {
+        "first_tool_name_matches_required": 128,
+        "attempts": 448,
+        "first_lookup_executions": 56,
+        "successful_lookup_observations": 56,
+        "later_model_turns": 1,
+        "prior_history_pairs_verified": 1,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {
+          "invalid_json": 1
+        },
+        "first_valid_action_envelopes": 220
+      },
+      "test/extraction": {
+        "first_tool_name_matches_required": 0,
+        "attempts": 48,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 4
+      },
+      "test/comparison": {
+        "first_tool_name_matches_required": 0,
+        "attempts": 48,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 19
+      },
+      "test/selection": {
+        "first_tool_name_matches_required": 39,
+        "attempts": 48,
+        "first_lookup_executions": 17,
+        "successful_lookup_observations": 17,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 48
+      },
+      "test/multistep": {
+        "first_tool_name_matches_required": 18,
+        "attempts": 48,
+        "first_lookup_executions": 0,
+        "successful_lookup_observations": 0,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 4
+      },
+      "test/overall": {
+        "first_tool_name_matches_required": 57,
+        "attempts": 192,
+        "first_lookup_executions": 17,
+        "successful_lookup_observations": 17,
+        "later_model_turns": 0,
+        "prior_history_pairs_verified": 0,
+        "correct_actions_after_observation": 0,
+        "terminal_successes_after_observation": 0,
+        "terminal_failures_after_observation": {},
+        "first_valid_action_envelopes": 75
+      }
+    }
+  },
+  "pilot": {
+    "v1.1": {
+      "extraction": {
+        "attempts": 4,
+        "successes": 1,
+        "success_rate": 0.25,
+        "binomial_cp95_nominal": [
+          0.006309463209709857,
+          0.8058795503167566
+        ],
+        "tasks": 1,
+        "task_success_rates": {
+          "capability-v1-42-extraction-0000": 0.25
+        },
+        "task_rate_min": 0.25,
+        "task_rate_max": 0.25,
+        "between_task_sd": 0,
+        "mixed_tasks": 1,
+        "IGF": 1,
+        "failures": {
+          "wrong_final_answer": 2,
+          "unnecessary_call": 1
+        },
+        "json_schema_failures": 0,
+        "strict_json_first_outputs": 4,
+        "protocol_valid_first_outputs": 2,
+        "parsed_first_tool_fields": 1,
+        "correct_first_action_count": 1,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 1,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "comparison": {
+        "attempts": 4,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.6023646356164747
+        ],
+        "tasks": 1,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0000": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0,
+        "mixed_tasks": 0,
+        "IGF": 0,
+        "failures": {
+          "wrong_final_answer": 1,
+          "invalid_json": 3
+        },
+        "json_schema_failures": 3,
+        "strict_json_first_outputs": 1,
+        "protocol_valid_first_outputs": 1,
+        "parsed_first_tool_fields": 0,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "selection": {
+        "attempts": 4,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.6023646356164747
+        ],
+        "tasks": 1,
+        "task_success_rates": {
+          "capability-v1-42-selection-0000": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0,
+        "mixed_tasks": 0,
+        "IGF": 0,
+        "failures": {
+          "unnecessary_call": 4
+        },
+        "json_schema_failures": 0,
+        "strict_json_first_outputs": 4,
+        "protocol_valid_first_outputs": 4,
+        "parsed_first_tool_fields": 4,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 3,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 4,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "multistep": {
+        "attempts": 4,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.6023646356164747
+        ],
+        "tasks": 1,
+        "task_success_rates": {
+          "capability-v1-42-multistep-0000": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0,
+        "mixed_tasks": 0,
+        "IGF": 0,
+        "failures": {
+          "invalid_json": 2,
+          "invalid_format": 2
+        },
+        "json_schema_failures": 4,
+        "strict_json_first_outputs": 2,
+        "protocol_valid_first_outputs": 0,
+        "parsed_first_tool_fields": 2,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 1,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      }
+    },
+    "v1.2": {
+      "extraction": {
+        "attempts": 4,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.6023646356164747
+        ],
+        "tasks": 1,
+        "task_success_rates": {
+          "capability-v1-42-extraction-0000": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0,
+        "mixed_tasks": 0,
+        "IGF": 0,
+        "failures": {
+          "invalid_format": 1,
+          "unnecessary_call": 3
+        },
+        "json_schema_failures": 1,
+        "strict_json_first_outputs": 4,
+        "protocol_valid_first_outputs": 3,
+        "parsed_first_tool_fields": 4,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 3,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "comparison": {
+        "attempts": 4,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.6023646356164747
+        ],
+        "tasks": 1,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0000": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0,
+        "mixed_tasks": 0,
+        "IGF": 0,
+        "failures": {
+          "invalid_format": 3,
+          "unnecessary_call": 1
+        },
+        "json_schema_failures": 3,
+        "strict_json_first_outputs": 4,
+        "protocol_valid_first_outputs": 1,
+        "parsed_first_tool_fields": 4,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 1,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "selection": {
+        "attempts": 4,
+        "successes": 2,
+        "success_rate": 0.5,
+        "binomial_cp95_nominal": [
+          0.06758598648854253,
+          0.9324140135114569
+        ],
+        "tasks": 1,
+        "task_success_rates": {
+          "capability-v1-42-selection-0000": 0.5
+        },
+        "task_rate_min": 0.5,
+        "task_rate_max": 0.5,
+        "between_task_sd": 0,
+        "mixed_tasks": 1,
+        "IGF": 1,
+        "failures": {
+          "unnecessary_call": 2
+        },
+        "json_schema_failures": 0,
+        "strict_json_first_outputs": 4,
+        "protocol_valid_first_outputs": 4,
+        "parsed_first_tool_fields": 4,
+        "correct_first_action_count": 2,
+        "required_tool_name_matches": 3,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 2,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 2,
+        "lookup_observations": 2,
+        "later_model_turns": 0
+      },
+      "multistep": {
+        "attempts": 4,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.6023646356164747
+        ],
+        "tasks": 1,
+        "task_success_rates": {
+          "capability-v1-42-multistep-0000": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0,
+        "mixed_tasks": 0,
+        "IGF": 0,
+        "failures": {
+          "invalid_format": 3,
+          "invalid_json": 1
+        },
+        "json_schema_failures": 4,
+        "strict_json_first_outputs": 3,
+        "protocol_valid_first_outputs": 0,
+        "parsed_first_tool_fields": 3,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 3,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      }
+    },
+    "v1.3": {
+      "extraction": {
+        "attempts": 4,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.6023646356164747
+        ],
+        "tasks": 1,
+        "task_success_rates": {
+          "capability-v1-42-extraction-0000": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0,
+        "mixed_tasks": 0,
+        "IGF": 0,
+        "failures": {
+          "invalid_format": 1,
+          "unnecessary_call": 3
+        },
+        "json_schema_failures": 1,
+        "strict_json_first_outputs": 4,
+        "protocol_valid_first_outputs": 3,
+        "parsed_first_tool_fields": 3,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 3,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "comparison": {
+        "attempts": 4,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.6023646356164747
+        ],
+        "tasks": 1,
+        "task_success_rates": {
+          "capability-v1-42-comparison-0000": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0,
+        "mixed_tasks": 0,
+        "IGF": 0,
+        "failures": {
+          "invalid_format": 2,
+          "unnecessary_call": 2
+        },
+        "json_schema_failures": 2,
+        "strict_json_first_outputs": 4,
+        "protocol_valid_first_outputs": 2,
+        "parsed_first_tool_fields": 4,
+        "correct_first_action_count": 0,
+        "required_tool_name_matches": 0,
+        "gratuitous_calls": 2,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 0,
+        "lookup_observations": 0,
+        "later_model_turns": 0
+      },
+      "selection": {
+        "attempts": 4,
+        "successes": 2,
+        "success_rate": 0.5,
+        "binomial_cp95_nominal": [
+          0.06758598648854253,
+          0.9324140135114569
+        ],
+        "tasks": 1,
+        "task_success_rates": {
+          "capability-v1-42-selection-0000": 0.5
+        },
+        "task_rate_min": 0.5,
+        "task_rate_max": 0.5,
+        "between_task_sd": 0,
+        "mixed_tasks": 1,
+        "IGF": 1,
+        "failures": {
+          "unnecessary_call": 2
+        },
+        "json_schema_failures": 0,
+        "strict_json_first_outputs": 4,
+        "protocol_valid_first_outputs": 4,
+        "parsed_first_tool_fields": 4,
+        "correct_first_action_count": 2,
+        "required_tool_name_matches": 2,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 2,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 2,
+        "lookup_observations": 2,
+        "later_model_turns": 0
+      },
+      "multistep": {
+        "attempts": 4,
+        "successes": 0,
+        "success_rate": 0.0,
+        "binomial_cp95_nominal": [
+          0.0,
+          0.6023646356164747
+        ],
+        "tasks": 1,
+        "task_success_rates": {
+          "capability-v1-42-multistep-0000": 0.0
+        },
+        "task_rate_min": 0.0,
+        "task_rate_max": 0.0,
+        "between_task_sd": 0,
+        "mixed_tasks": 0,
+        "IGF": 0,
+        "failures": {
+          "invalid_json": 2,
+          "invalid_format": 2
+        },
+        "json_schema_failures": 4,
+        "strict_json_first_outputs": 3,
+        "protocol_valid_first_outputs": 1,
+        "parsed_first_tool_fields": 3,
+        "correct_first_action_count": 1,
+        "required_tool_name_matches": 3,
+        "gratuitous_calls": 0,
+        "incorrect_required_calls": 0,
+        "repeated_required_calls": 0,
+        "first_lookup_executions": 1,
+        "lookup_observations": 1,
+        "later_model_turns": 1
+      }
+    }
+  },
+  "uncertainty_notes": [
+    "95% Clopper-Pearson is exact under IID/common-probability binomial sampling. Pooled heterogeneous-task intervals are nominal descriptive intervals, not task-population generalization claims.",
+    "Paired bootstrap resamples whole paired task means within category/split strata, retains all 16 seed outcomes per task, 5000 iterations, statistics seed 20261121.",
+    "Small strata (3 held-out tasks/category) make intervals coarse. A degenerate bootstrap interval from all-zero observed tasks does not prove zero uncertainty for unseen tasks.",
+    "Per-task 16-trial CP intervals and task-level SD/min/max are reported separately. No treatment of 640 outcomes as 640 independent tasks."
+  ]
+}
