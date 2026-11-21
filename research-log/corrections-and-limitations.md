@@ -19,3 +19,7 @@
 ## Addendum: v1.1 contract-only experiment
 
 The later v1.1 configuration removes the advertised ROAS/campaign mismatch, but does not alter the original v1 evidence or fix its metric/winner shortcut. Success rises 16 -> 72/640; multistep remains zero first lookup/completion. These are prompt-intervention gains, not trained-model gains. Exact historical checkpoint identity remains unverified despite four exact original raw smoke matches.
+
+## Addendum: v1.2 prompt alignment
+
+Aggregate success 72→88/640 is not a universal improvement: all 88 v1.2 successes are selection, with extraction/comparison regressions and zero multi-step progress. JSON/schema errors decline 385→283 but unnecessary calls increase 61→231. Only selection has mixed training groups. Explicit instructions are not equivalent to model compliance; causal attribution to individual wording choices remains unverified. No historical scores changed.

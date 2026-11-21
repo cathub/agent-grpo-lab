@@ -1,0 +1,56 @@
+[
+  {
+    "source": "capability-runs/v1.2-protocol/comparison.json",
+    "snapshot": "research-log/evidence/capability-v1.2/comparison.json",
+    "sha256": "7ac019feecef36bc216f140f932d0be15c95e16170c2298ec62ac2398662c2fa",
+    "bytes": 51718
+  },
+  {
+    "source": "capability-runs/v1.2-protocol/comparison.md",
+    "snapshot": "research-log/evidence/capability-v1.2/comparison.md",
+    "sha256": "6c025e9b428bbe3c1b62ad43147cfe049ee544f086875367d577f3be9fd6198b",
+    "bytes": 6844
+  },
+  {
+    "source": "capability-runs/v1.2-protocol/paired.json",
+    "snapshot": "research-log/evidence/capability-v1.2/paired.json",
+    "sha256": "51c759e67da70664bc9ab7c10a557c7ff524e19a228a07d87e1afdc8d6bb3efb",
+    "bytes": 142089
+  },
+  {
+    "source": "capability-runs/v1.2-protocol/per-instance.csv",
+    "snapshot": "research-log/evidence/capability-v1.2/per-instance.csv",
+    "sha256": "ba0dd275219a1217c6a7cff5288f87f487cee1cbc72b40d16937c3f0032a6bb9",
+    "bytes": 2680
+  },
+  {
+    "source": "capability-runs/v1.2-protocol/pilot.json",
+    "snapshot": "research-log/evidence/capability-v1.2/pilot.json",
+    "sha256": "de012a2efae7a08778a9e45da3e3287908038621393c0f3f310133f834fe492b",
+    "bytes": 125338
+  },
+  {
+    "source": "capability-runs/v1.2-protocol/provenance.json",
+    "snapshot": "research-log/evidence/capability-v1.2/provenance.json",
+    "sha256": "0c63bec6adb16e28513c3cda355848d273086dcd403de9f91eed85a6423d32a7",
+    "bytes": 1194
+  },
+  {
+    "source": "capability-runs/v1.2-protocol/representatives.json",
+    "snapshot": "research-log/evidence/capability-v1.2/representatives.json",
+    "sha256": "f0d7ed742a5a3be38ac05192f57e9ea08e31b279693026e0e824ef418b23716b",
+    "bytes": 44551
+  },
+  {
+    "source": "capability-runs/v1.2-protocol/samples.jsonl",
+    "snapshot": "research-log/evidence/capability-v1.2/samples.jsonl",
+    "sha256": "017bc2d81ed6f1b3155ee3c02bc09653e1bc2fec4faa4c86abeed56a3fc7d848",
+    "bytes": 2782125
+  },
+  {
+    "source": "capability-runs/v1.2-protocol/summary.json",
+    "snapshot": "research-log/evidence/capability-v1.2/summary.json",
+    "sha256": "0168ff857b5e7d69bf5a9619a5889f6d8bd7920c0cfc1e498dc5aba30e9490ba",
+    "bytes": 14315
+  }
+]

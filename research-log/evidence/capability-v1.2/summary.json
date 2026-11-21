@@ -1,0 +1,410 @@
+{
+  "groups": {
+    "train/extraction": {
+      "successes": 0,
+      "attempts": 112,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.0,
+      "failures": {
+        "invalid_format": 16,
+        "unnecessary_call": 75,
+        "wrong_final_answer": 21
+      },
+      "format_failures": 16
+    },
+    "train/comparison": {
+      "successes": 0,
+      "attempts": 112,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.0,
+      "failures": {
+        "invalid_format": 60,
+        "unnecessary_call": 43,
+        "invalid_json": 7,
+        "invalid_arguments": 2
+      },
+      "format_failures": 67
+    },
+    "train/selection": {
+      "successes": 65,
+      "attempts": 112,
+      "success_rate": 0.5803571428571429,
+      "mixed_instance_fraction": 1.0,
+      "next_action_correct_rate": 0.5803571428571429,
+      "failures": {
+        "unnecessary_call": 44,
+        "invalid_format": 1,
+        "invalid_arguments": 1,
+        "invalid_json": 1
+      },
+      "format_failures": 2
+    },
+    "train/multistep": {
+      "successes": 0,
+      "attempts": 112,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.0,
+      "failures": {
+        "invalid_format": 42,
+        "invalid_json": 64,
+        "unnecessary_call": 6
+      },
+      "format_failures": 106
+    },
+    "train/overall": {
+      "successes": 65,
+      "attempts": 448,
+      "success_rate": 0.14508928571428573,
+      "mixed_instance_fraction": 0.25,
+      "next_action_correct_rate": 0.14508928571428573,
+      "failures": {
+        "invalid_format": 119,
+        "unnecessary_call": 168,
+        "wrong_final_answer": 21,
+        "invalid_json": 72,
+        "invalid_arguments": 3
+      },
+      "format_failures": 191
+    },
+    "test/extraction": {
+      "successes": 0,
+      "attempts": 48,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.0,
+      "failures": {
+        "invalid_format": 14,
+        "wrong_final_answer": 12,
+        "unnecessary_call": 22
+      },
+      "format_failures": 14
+    },
+    "test/comparison": {
+      "successes": 0,
+      "attempts": 48,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.0,
+      "failures": {
+        "invalid_format": 29,
+        "unnecessary_call": 13,
+        "wrong_final_answer": 1,
+        "invalid_json": 4,
+        "invalid_arguments": 1
+      },
+      "format_failures": 33
+    },
+    "test/selection": {
+      "successes": 23,
+      "attempts": 48,
+      "success_rate": 0.4791666666666667,
+      "mixed_instance_fraction": 0.6666666666666666,
+      "next_action_correct_rate": 0.4791666666666667,
+      "failures": {
+        "unnecessary_call": 24,
+        "invalid_format": 1
+      },
+      "format_failures": 1
+    },
+    "test/multistep": {
+      "successes": 0,
+      "attempts": 48,
+      "success_rate": 0.0,
+      "mixed_instance_fraction": 0.0,
+      "next_action_correct_rate": 0.0,
+      "failures": {
+        "unnecessary_call": 4,
+        "invalid_format": 26,
+        "invalid_json": 18
+      },
+      "format_failures": 44
+    },
+    "test/overall": {
+      "successes": 23,
+      "attempts": 192,
+      "success_rate": 0.11979166666666667,
+      "mixed_instance_fraction": 0.16666666666666666,
+      "next_action_correct_rate": 0.11979166666666667,
+      "failures": {
+        "invalid_format": 70,
+        "wrong_final_answer": 13,
+        "unnecessary_call": 63,
+        "invalid_json": 22,
+        "invalid_arguments": 1
+      },
+      "format_failures": 92
+    }
+  },
+  "instances": {
+    "capability-v1-42-extraction-0000": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0001": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0002": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0003": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0004": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0005": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0006": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0007": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0008": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-extraction-0009": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0000": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0001": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0002": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0003": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0004": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0005": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0006": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0007": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0008": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-comparison-0009": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-selection-0000": {
+      "successes": 10,
+      "attempts": 16,
+      "success_rate": 0.625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0001": {
+      "successes": 10,
+      "attempts": 16,
+      "success_rate": 0.625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0002": {
+      "successes": 10,
+      "attempts": 16,
+      "success_rate": 0.625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0003": {
+      "successes": 10,
+      "attempts": 16,
+      "success_rate": 0.625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0004": {
+      "successes": 3,
+      "attempts": 16,
+      "success_rate": 0.1875,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0005": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-selection-0006": {
+      "successes": 10,
+      "attempts": 16,
+      "success_rate": 0.625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0007": {
+      "successes": 13,
+      "attempts": 16,
+      "success_rate": 0.8125,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0008": {
+      "successes": 9,
+      "attempts": 16,
+      "success_rate": 0.5625,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-selection-0009": {
+      "successes": 13,
+      "attempts": 16,
+      "success_rate": 0.8125,
+      "mixed_rewards": true
+    },
+    "capability-v1-42-multistep-0000": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0001": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0002": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0003": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0004": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0005": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0006": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0007": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0008": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    },
+    "capability-v1-42-multistep-0009": {
+      "successes": 0,
+      "attempts": 16,
+      "success_rate": 0.0,
+      "mixed_rewards": false
+    }
+  },
+  "configuration": {
+    "version": "capability-v1.2",
+    "dataset": "research-log/evidence/benchmarks/capability-v1/dataset.json",
+    "dataset_sha256": "c7712fe925f53c0f6f65d699800ec3122b0604601af08b232935473931bc5586",
+    "scorer_snapshot_sha256": "b5b3b82ce73d182c8d5f0308ee6141be9dcb399feda9f310e8f1fc24ed788b19",
+    "system_prompt": "Return one action per response as one valid JSON object. No Markdown fences, explanatory prose, tags, comments, or text outside the object. There are exactly two mutually exclusive action forms. For a tool call, the object must have exactly tool and arguments, both required. tool is a JSON string naming one available tool. arguments is a JSON object with exactly platform, start_date, and end_date, all required JSON strings. platform is a lowercase supported platform name. Dates are YYYY-MM-DD strings copied from the requested scope. There are no optional fields or campaign arguments. Use tool, not tool-action or name. Do not add final_answer, result, id, or other fields to a tool call. Send only one call and wait for the tool observation. For a final answer, the object must have exactly one required key, final_answer. Its value is only the requested answer. Amounts and counts must be JSON integers, without quotation marks, decimal points, units, explanations, lists, or nested objects. A platform comparison answer must be the lowercase platform-name string. Never put tool or arguments into a final-answer object. If the requested data is already supplied in the question, use it. If needed data is missing, call the matching lookup. When the task explicitly requires lookups, complete those lookups before submitting the final answer. A request for only the next tool action should receive a tool call, not a final answer. After each tool observation, read its result and retain which lookup was completed. If another required lookup is missing, call that next. If all required information and lookups are complete, submit final_answer. Do not repeat a completed lookup or invent a tool result. Tool observations have id and result; these are observation fields, not fields to copy into an action. Date ranges include both endpoints. Preserve the requested scope. Perform all checks requested by the task before submitting the answer. Available tool schemas: [{\"name\": \"get_ad_spend\", \"description\": \"Total ad spend in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_conversions\", \"description\": \"Total conversions.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}, {\"name\": \"get_revenue\", \"description\": \"Total revenue in USD.\", \"parameters\": {\"type\": \"object\", \"properties\": {\"platform\": {\"type\": \"string\", \"enum\": [\"google\", \"meta\", \"tiktok\"]}, \"start_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}, \"end_date\": {\"type\": \"string\", \"description\": \"YYYY-MM-DD inclusive\"}}, \"required\": [\"platform\", \"start_date\", \"end_date\"], \"additionalProperties\": false}}] Example tool action (raw JSON, without Markdown fences): {\"tool\":\"get_conversions\",\"arguments\":{\"platform\":\"tiktok\",\"start_date\":\"2024-06-10\",\"end_date\":\"2024-06-12\"}}",
+    "decoding": {
+      "max_tokens": 128,
+      "temperature": 0.7,
+      "top_p": 1.0,
+      "seed": 0
+    },
+    "samples_per_instance": 16,
+    "sampling_seed_base": 500000,
+    "pilot": "first train instance/category, first four frozen seeds each; paired live v1.1/v1.2"
+  },
+  "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+  "versions": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.30.7",
+    "transformers": "5.23.0"
+  },
+  "checkpoint_revision": "a5339a4131f135d0fdc6a5c8b5bbed2753bbe0f3",
+  "started_utc": "2026-11-21T08:02:33.563176+00:00",
+  "finished_utc": "2026-11-21T08:17:46.725316+00:00",
+  "pilot_revision_count": 0,
+  "note": "Pilot frozen before inference. No test-set tuning. No reward/parser changes."
+}

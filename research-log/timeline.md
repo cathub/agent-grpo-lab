@@ -15,3 +15,5 @@ Dates use explicit evidence, not filesystem mtimes. Relative ordering is RECONST
 Saved artifacts verify results and configurations, not most timestamps. See experiment entries for raw evidence, limitations and commands.
 
 10. **2026-11-20 client date, VERIFIED artifacts:** [Benchmark v1.1 contract correction](experiments/009-benchmark-v1.1-contract.md), after four exact original-prompt smoke matches and passing contract tests. Same 640 seeds/tasks; 16 -> 72 successes, unknown_tool 56 -> 0; no training. Full UTC timestamps are in the entry and run metadata.
+
+11. **2026-11-21 client date, VERIFIED artifacts:** [Benchmark v1.2 output protocol](experiments/010-benchmark-v1.2-protocol.md). Training-only paired pilot reproduced 16 v1.1 controls; frozen full run 72→88/640 but extraction/comparison regress to zero. Selection improves 50→88/160. No training; no test-set-driven revisions.

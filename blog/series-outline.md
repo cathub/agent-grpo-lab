@@ -12,3 +12,5 @@ This is an outline, not a claim that training occurred. Link evidence from resea
 8. **What must be fixed before GRPO.** Newversioncontract, independentlybalancedlabels,freshholdout,validation-onlypromptselection and immutable provenance. Finish with testable plans, not nonexistenttrainingimprovements.
 
 9. **Fixing the advertised contract without training.** Benchmark v1.1 keeps tasks/scoring/seeds frozen, removes unsupported ROAS/campaign material, and improves 16/640 to 72/640. Show paired fixes/regressions and why zero unknown tools does not mean solved multi-step behavior. Keep the metric shortcut explicit; this is not v2 or GRPO. Evidence: research-log/experiments/009-benchmark-v1.1-contract.md.
+
+10. **More explicit is not universally better.** V1.2 protocol wording improves selection but loses every direct-final-answer success. Present the paired pilot, 47 fixes/31 regressions and IGF decline. Separate better JSON from better task performance; do not claim training or numerical reasoning gains. See research-log/experiments/010-benchmark-v1.2-protocol.md.

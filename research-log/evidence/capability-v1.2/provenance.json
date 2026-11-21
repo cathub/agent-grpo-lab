@@ -1,0 +1,24 @@
+{
+  "base_git_commit": "5544081a49e7b174f22562a779a28ecec670c923",
+  "host": "macOS-14.5-arm64-arm-64bit",
+  "python": "3.11.14",
+  "checkpoint_revision": "a5339a4131f135d0fdc6a5c8b5bbed2753bbe0f3",
+  "commands": [
+    ".venv/bin/python -m unittest discover -q",
+    ".venv/bin/python -m src.capability_v12 --output capability-runs/v1.2-protocol",
+    ".venv/bin/python -m src.report_capability_v12"
+  ],
+  "source_sha256": {
+    "src/capability_v12.py": "3c76dcb48ed6fcc320a0afa12a15366c792d780b6762f6b2e8e52385327bb4f7",
+    "src/report_capability_v12.py": "827b230dd8e9dcf3ff07b40bf65a6b0db5beb733166aef340e21a7dede25c896",
+    "tests/test_capability_v12.py": "cc690e20059f337c887dd07d51be132a73a38de235c23a935e1dc2015894cca9",
+    "benchmark-configs/capability-v1.2.json": "59e9e5d0302e797868db7806c9b8cdc670ea7a6613407e5f6de6c9b1bb630797"
+  },
+  "preflight_tests_passed": 39,
+  "final_tests_passed": 40,
+  "pilot_v11_exact_matches": 16,
+  "pilot_v12_full_run_exact_matches": 16,
+  "prompt_revisions": 0,
+  "dataset_sha256": "c7712fe925f53c0f6f65d699800ec3122b0604601af08b232935473931bc5586",
+  "scorer_snapshot_sha256": "b5b3b82ce73d182c8d5f0308ee6141be9dcb399feda9f310e8f1fc24ed788b19"
+}
